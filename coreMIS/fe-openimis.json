@@ -68,5 +68,23 @@
       "name": "OpenSearchReportsModule",
       "pip": "@openimis/fe-opensearch_reports@https://github.com/openimis/openimis-fe-opensearch_reports_js#develop"
     }
+  ],
+  "locales": [
+    {
+      "languages": [
+        "en",
+        "en-GB"
+      ],
+      "intl": "en-GB",
+      "fileNames": "en"
+    },
+    {
+      "languages": [
+        "fr",
+        "fr-FR"
+      ],
+      "intl": "fr-FR",
+      "fileNames": "fr"
+    }
   ]
 }

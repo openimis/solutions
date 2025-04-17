@@ -1,0 +1,78 @@
+{
+  "local_admin": {
+    "roleName": "LOCAL Administrator",
+    "code": "local_admin",
+    "permissions": [
+      {
+        "name": "opensearch_reports.opensearch_reports",
+        "code": "199001"
+      },
+      {
+        "name": "opensearch_reports.update_opensearch_report",
+        "code": "199003"
+      }
+    ]
+  },
+  "social_protection_manager": {
+    "roleName": "Social Protection Manager",
+    "code": "social_protection_manager",
+    "permissions": [
+      {
+        "name": "opensearch_reports.opensearch_reports",
+        "code": "199001"
+      },
+      {
+        "name": "opensearch_reports.update_opensearch_report",
+        "code": "199003"
+      }
+    ]
+  },
+  "grievance_manager": {
+    "roleName": "Grievance Manager",
+    "code": "grievance_manager",
+    "permissions": [
+      {
+        "name": "grievance.read_grievance",
+        "code": "127000"
+      },
+      {
+        "name": "grievance.create_grievance",
+        "code": "127001"
+      },
+      {
+        "name": "grievance.update_grievance",
+        "code": "127002"
+      },
+      {
+        "name": "grievance.delete_grievance",
+        "code": "127003"
+      },
+      {
+        "name": "grievance.read_comment",
+        "code": "127004"
+      },
+      {
+        "name": "grievance.create_comment",
+        "code": "127005"
+      },
+      {
+        "name": "grievance.resolve_grievance",
+        "code": "127006"
+      }
+    ]
+  },
+  "reporting_manager": {
+    "roleName": "Reporting Manager",
+    "code": "reporting_manager",
+    "permissions": [
+      {
+        "name": "opensearch_reports.opensearch_reports",
+        "code": "199001"
+      },
+      {
+        "name": "opensearch_reports.update_opensearch_report",
+        "code": "199003"
+      }
+    ]
+  }
+}

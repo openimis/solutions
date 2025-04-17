@@ -2,71 +2,71 @@
   "modules": [
     {
       "name": "IndividualModule",
-      "pip": "@openimis/fe-individual@https://github.com/openimis/openimis-fe-individual_js#develop"
+      "npm": "@openimis/fe-individual@https://github.com/openimis/openimis-fe-individual_js#develop"
     },
     {
       "name": "SocialProtectionModule",
-      "pip": "@openimis/fe-social_protection@https://github.com/openimis/openimis-fe-social_protection_js#develop"
+      "npm": "@openimis/fe-social_protection@https://github.com/openimis/openimis-fe-social_protection_js#develop"
     },
     {
       "name": "DeduplicationModule",
-      "pip": "@openimis/fe-deduplication@https://github.com/openimis/openimis-fe-deduplication_js#develop"
+      "npm": "@openimis/fe-deduplication@https://github.com/openimis/openimis-fe-deduplication_js#develop"
     },
     {
       "name": "InvoiceModule",
-      "pip": "@openimis/fe-invoice@https://github.com/openimis/openimis-fe-invoice_js#develop"
+      "npm": "@openimis/fe-invoice@https://github.com/openimis/openimis-fe-invoice_js#develop"
     },
     {
       "name": "ContributionPlanModule",
-      "pip": "@openimis/fe-contribution_plan@https://github.com/openimis/openimis-fe-contribution_plan_js#develop"
+      "npm": "@openimis/fe-contribution_plan@https://github.com/openimis/openimis-fe-contribution_plan_js#develop"
     },
     {
       "name": "PayrollModule",
-      "pip": "@openimis/fe-payroll@https://github.com/openimis/openimis-fe-payroll_js#develop"
+      "npm": "@openimis/fe-payroll@https://github.com/openimis/openimis-fe-payroll_js#develop"
     },
     {
       "name": "PaymentCycleModule",
-      "pip": "@openimis/fe-payment_cycle@https://github.com/openimis/openimis-fe-payment_cycle_js#develop"
+      "npm": "@openimis/fe-payment_cycle@https://github.com/openimis/openimis-fe-payment_cycle_js#develop"
     },
     {
       "name": "LocationModule",
-      "pip": "@openimis/fe-location@https://github.com/openimis/openimis-fe-location_js#develop"
+      "npm": "@openimis/fe-location@https://github.com/openimis/openimis-fe-location_js#develop"
     },
     {
       "name": "TasksManagementModule",
-      "pip": "@openimis/fe-tasks_management@https://github.com/openimis/openimis-fe-tasks_management_js#develop"
+      "npm": "@openimis/fe-tasks_management@https://github.com/openimis/openimis-fe-tasks_management_js#develop"
     },
     {
       "name": "CalculationModule",
-      "pip": "@openimis/fe-calculation@https://github.com/openimis/openimis-fe-calculation_js#develop"
+      "npm": "@openimis/fe-calculation@https://github.com/openimis/openimis-fe-calculation_js#develop"
     },
     {
       "name": "CoreModule",
-      "pip": "@openimis/fe-core@https://github.com/openimis/openimis-fe-core_js#develop"
+      "npm": "@openimis/fe-core@https://github.com/openimis/openimis-fe-core_js#develop"
     },
     {
       "name": "AdminModule",
-      "pip": "@openimis/fe-admin@https://github.com/openimis/openimis-fe-admin_js#develop"
+      "npm": "@openimis/fe-admin@https://github.com/openimis/openimis-fe-admin_js#develop"
     },
     {
       "name": "ProfileModule",
-      "pip": "@openimis/fe-profile@https://github.com/openimis/openimis-fe-profile_js#develop"
+      "npm": "@openimis/fe-profile@https://github.com/openimis/openimis-fe-profile_js#develop"
     },
     {
       "name": "HomeModule",
-      "pip": "@openimis/fe-home@https://github.com/openimis/openimis-fe-home_js#develop"
+      "npm": "@openimis/fe-home@https://github.com/openimis/openimis-fe-home_js#develop"
     },
     {
       "name": "ToolsModule",
-      "pip": "@openimis/fe-tools@https://github.com/openimis/openimis-fe-tools_js#develop"
+      "npm": "@openimis/fe-tools@https://github.com/openimis/openimis-fe-tools_js#develop"
     },
     {
       "name": "GrievanceSocialProtectionModule",
-      "pip": "@openimis/fe-grievance_social_protection@https://github.com/openimis/openimis-fe-grievance_social_protection_js#develop"
+      "npm": "@openimis/fe-grievance_social_protection@https://github.com/openimis/openimis-fe-grievance_social_protection_js#develop"
     },
     {
       "name": "OpenSearchReportsModule",
-      "pip": "@openimis/fe-opensearch_reports@https://github.com/openimis/openimis-fe-opensearch_reports_js#develop"
+      "npm": "@openimis/fe-opensearch_reports@https://github.com/openimis/openimis-fe-opensearch_reports_js#develop"
     }
   ],
   "locales": [

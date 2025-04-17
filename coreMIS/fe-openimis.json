@@ -1,5 +1,21 @@
 {
   "modules": [
-    null
+    "IndividualModule",
+    "SocialProtectionModule",
+    "DeduplicationModule",
+    "InvoiceModule",
+    "ContributionPlanModule",
+    "PayrollModule",
+    "PaymentCycleModule",
+    "LocationModule",
+    "TasksManagementModule",
+    "CalculationModule",
+    "CoreModule",
+    "AdminModule",
+    "ProfileModule",
+    "HomeModule",
+    "ToolsModule",
+    "GrievanceSocialProtectionModule",
+    "OpenSearchReportsModule"
   ]
 }

@@ -13,8 +13,3 @@ cache:
   path: compose.cache.yml
   env_file:
     - .env.cache
-openSearch:
-  path: compose.openSearch.yml
-  env_file:
-    - .env
-    - .env.openSearch

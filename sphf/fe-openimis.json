@@ -65,10 +65,6 @@
       "npm": "@openimis/fe-grievance_social_protection@https://github.com/openimis/openimis-fe-grievance_social_protection_js#develop"
     },
     {
-      "name": "OpenSearchReportsModule",
-      "npm": "@openimis/fe-opensearch_reports@https://github.com/openimis/openimis-fe-opensearch_reports_js#develop"
-    },
-    {
       "name": "PayerModule",
       "npm": "@openimis/fe-payer@https://github.com/openimis/openimis-fe-payer_js#develop"
     }

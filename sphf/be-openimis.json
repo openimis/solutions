@@ -1,6 +1,10 @@
 {
   "modules": [
     {
+      "name": "location",
+      "pip": "git+https://github.com/openimis/openimis-be-location_py.git@develop#egg=openimis-be-location"
+    },
+    {
       "name": "policyholder",
       "pip": "git+https://github.com/openimis/openimis-be-policyholder_py.git@develop#egg=openimis-be-policyholder"
     },
@@ -35,10 +39,6 @@
     {
       "name": "product",
       "pip": "git+https://github.com/openimis/openimis-be-product_py.git@develop#egg=openimis-be-product"
-    },
-    {
-      "name": "location",
-      "pip": "git+https://github.com/openimis/openimis-be-location_py.git@develop#egg=openimis-be-location"
     },
     {
       "name": "report",

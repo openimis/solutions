@@ -4,20 +4,32 @@
     "code": "local_admin",
     "permissions": [
       {
-        "name": "payer.payers",
-        "code": "121801"
+        "name": "grievance.read_grievance",
+        "code": "127000"
       },
       {
-        "name": "payer.create_payers",
-        "code": "121802"
+        "name": "grievance.create_grievance",
+        "code": "127001"
       },
       {
-        "name": "payer.update_payers",
-        "code": "121803"
+        "name": "grievance.update_grievance",
+        "code": "127002"
       },
       {
-        "name": "payer.delete_payers",
-        "code": "121804"
+        "name": "grievance.delete_grievance",
+        "code": "127003"
+      },
+      {
+        "name": "grievance.read_comment",
+        "code": "127004"
+      },
+      {
+        "name": "grievance.create_comment",
+        "code": "127005"
+      },
+      {
+        "name": "grievance.resolve_grievance",
+        "code": "127006"
       }
     ]
   },

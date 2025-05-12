@@ -53,22 +53,6 @@
       "pip": "git+https://github.com/openimis/openimis-be-medical_pricelist_py.git@release/25.04#egg=openimis-be-medical_pricelist"
     },
     {
-      "name": "tasks_management",
-      "pip": "git+https://github.com/openimis/openimis-be-tasks_management_py.git@release/25.04#egg=openimis-be-tasks_management"
-    },
-    {
-      "name": "calculation",
-      "pip": "git+https://github.com/openimis/openimis-be-calculation_py.git@release/25.04#egg=openimis-be-calculation"
-    },
-    {
-      "name": "core",
-      "pip": "git+https://github.com/openimis/openimis-be-core_py.git@release/25.04#egg=openimis-be-core"
-    },
-    {
-      "name": "grievance_social_protection",
-      "pip": "git+https://github.com/openimis/openimis-be-grievance_social_protection_py.git@release/25.04#egg=openimis-be-grievance_social_protection"
-    },
-    {
       "name": "payer",
       "pip": "git+https://github.com/openimis/openimis-be-payer_py.git@release/25.04#egg=openimis-be-payer"
     },
@@ -83,6 +67,22 @@
     {
       "name": "payment",
       "pip": "git+https://github.com/openimis/openimis-be-payment_py.git@release/25.04#egg=openimis-be-payment"
+    },
+    {
+      "name": "tasks_management",
+      "pip": "git+https://github.com/openimis/openimis-be-tasks_management_py.git@release/25.04#egg=openimis-be-tasks_management"
+    },
+    {
+      "name": "calculation",
+      "pip": "git+https://github.com/openimis/openimis-be-calculation_py.git@release/25.04#egg=openimis-be-calculation"
+    },
+    {
+      "name": "core",
+      "pip": "git+https://github.com/openimis/openimis-be-core_py.git@release/25.04#egg=openimis-be-core"
+    },
+    {
+      "name": "grievance_social_protection",
+      "pip": "git+https://github.com/openimis/openimis-be-grievance_social_protection_py.git@release/25.04#egg=openimis-be-grievance_social_protection"
     }
   ]
 }

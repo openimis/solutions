@@ -37,6 +37,30 @@
       "npm": "@openimis/fe-tools@https://github.com/openimis/openimis-fe-tools_js#release/25.04"
     },
     {
+      "name": "MedicalModule",
+      "npm": "@openimis/fe-medical@https://github.com/openimis/openimis-fe-medical_js#release/25.04"
+    },
+    {
+      "name": "MedicalPriceListModule",
+      "npm": "@openimis/fe-medical_pricelist@https://github.com/openimis/openimis-fe-medical_pricelist_js#release/25.04"
+    },
+    {
+      "name": "PayerModule",
+      "npm": "@openimis/fe-payer@https://github.com/openimis/openimis-fe-payer_js#release/25.04"
+    },
+    {
+      "name": "ClaimModule",
+      "npm": "@openimis/fe-claim@https://github.com/openimis/openimis-fe-claim_js#release/25.04"
+    },
+    {
+      "name": "ClaimBatchModule",
+      "npm": "@openimis/fe-claim_batch@https://github.com/openimis/openimis-fe-claim_batch_js#release/25.04"
+    },
+    {
+      "name": "PaymentModule",
+      "npm": "@openimis/fe-payment@https://github.com/openimis/openimis-fe-payment_js#release/25.04"
+    },
+    {
       "name": "TasksManagementModule",
       "npm": "@openimis/fe-tasks_management@https://github.com/openimis/openimis-fe-tasks_management_js#release/25.04"
     },
@@ -63,22 +87,6 @@
     {
       "name": "GrievanceSocialProtectionModule",
       "npm": "@openimis/fe-grievance_social_protection@https://github.com/openimis/openimis-fe-grievance_social_protection_js#release/25.04"
-    },
-    {
-      "name": "PayerModule",
-      "npm": "@openimis/fe-payer@https://github.com/openimis/openimis-fe-payer_js#release/25.04"
-    },
-    {
-      "name": "ClaimModule",
-      "npm": "@openimis/fe-claim@https://github.com/openimis/openimis-fe-claim_js#release/25.04"
-    },
-    {
-      "name": "ClaimBatchModule",
-      "npm": "@openimis/fe-claim_batch@https://github.com/openimis/openimis-fe-claim_batch_js#release/25.04"
-    },
-    {
-      "name": "PaymentModule",
-      "npm": "@openimis/fe-payment@https://github.com/openimis/openimis-fe-payment_js#release/25.04"
     }
   ],
   "locales": [

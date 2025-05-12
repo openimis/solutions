@@ -4,32 +4,40 @@
     "code": "local_admin",
     "permissions": [
       {
-        "name": "grievance.read_grievance",
-        "code": "127000"
+        "name": "individual.read_individual",
+        "code": "159001"
       },
       {
-        "name": "grievance.create_grievance",
-        "code": "127001"
+        "name": "individual.create_individual",
+        "code": "159002"
       },
       {
-        "name": "grievance.update_grievance",
-        "code": "127002"
+        "name": "individual.update_individual",
+        "code": "159003"
       },
       {
-        "name": "grievance.delete_grievance",
-        "code": "127003"
+        "name": "individual.delete_individual",
+        "code": "159004"
       },
       {
-        "name": "grievance.read_comment",
-        "code": "127004"
+        "name": "individual.individual_undo",
+        "code": "159005"
       },
       {
-        "name": "grievance.create_comment",
-        "code": "127005"
+        "name": "individual.read_group",
+        "code": "180001"
       },
       {
-        "name": "grievance.resolve_grievance",
-        "code": "127006"
+        "name": "individual.create_group",
+        "code": "180002"
+      },
+      {
+        "name": "individual.update_group",
+        "code": "180003"
+      },
+      {
+        "name": "individual.delete_group",
+        "code": "180004"
       }
     ]
   },
@@ -38,32 +46,40 @@
     "code": "social_protection_manager",
     "permissions": [
       {
-        "name": "grievance.read_grievance",
-        "code": "127000"
+        "name": "individual.read_individual",
+        "code": "159001"
       },
       {
-        "name": "grievance.create_grievance",
-        "code": "127001"
+        "name": "individual.create_individual",
+        "code": "159002"
       },
       {
-        "name": "grievance.update_grievance",
-        "code": "127002"
+        "name": "individual.update_individual",
+        "code": "159003"
       },
       {
-        "name": "grievance.delete_grievance",
-        "code": "127003"
+        "name": "individual.delete_individual",
+        "code": "159004"
       },
       {
-        "name": "grievance.read_comment",
-        "code": "127004"
+        "name": "individual.individual_undo",
+        "code": "159005"
       },
       {
-        "name": "grievance.create_comment",
-        "code": "127005"
+        "name": "individual.read_group",
+        "code": "180001"
       },
       {
-        "name": "grievance.resolve_grievance",
-        "code": "127006"
+        "name": "individual.create_group",
+        "code": "180002"
+      },
+      {
+        "name": "individual.update_group",
+        "code": "180003"
+      },
+      {
+        "name": "individual.delete_group",
+        "code": "180004"
       }
     ]
   },

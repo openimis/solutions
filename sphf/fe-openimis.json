@@ -87,6 +87,10 @@
     {
       "name": "GrievanceSocialProtectionModule",
       "npm": "@openimis/fe-grievance_social_protection@https://github.com/openimis/openimis-fe-grievance_social_protection_js#release/25.04"
+    },
+    {
+      "name": "IndividualModule",
+      "npm": "@openimis/fe-individual@https://github.com/openimis/openimis-fe-individual_js#release/25.04"
     }
   ],
   "locales": [

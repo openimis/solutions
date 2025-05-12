@@ -75,6 +75,10 @@
     {
       "name": "ClaimBatchModule",
       "npm": "@openimis/fe-claim_batch@https://github.com/openimis/openimis-fe-claim_batch_js#release/25.04"
+    },
+    {
+      "name": "PaymentModule",
+      "npm": "@openimis/fe-payment@https://github.com/openimis/openimis-fe-payment_js#release/25.04"
     }
   ],
   "locales": [

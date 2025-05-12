@@ -75,6 +75,10 @@
     {
       "name": "claim",
       "pip": "git+https://github.com/openimis/openimis-be-claim_py.git@release/25.04#egg=openimis-be-claim"
+    },
+    {
+      "name": "claim_batch",
+      "pip": "git+https://github.com/openimis/openimis-be-claim_batch_py.git@release/25.04#egg=openimis-be-claim_batch"
     }
   ]
 }

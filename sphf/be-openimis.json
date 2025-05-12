@@ -1,10 +1,6 @@
 {
   "modules": [
     {
-      "name": "location",
-      "pip": "git+https://github.com/openimis/openimis-be-location_py.git@release/25.04#egg=openimis-be-location"
-    },
-    {
       "name": "policyholder",
       "pip": "git+https://github.com/openimis/openimis-be-policyholder_py.git@release/25.04#egg=openimis-be-policyholder"
     },
@@ -41,6 +37,10 @@
       "pip": "git+https://github.com/openimis/openimis-be-product_py.git@release/25.04#egg=openimis-be-product"
     },
     {
+      "name": "location",
+      "pip": "git+https://github.com/openimis/openimis-be-location_py.git@release/25.04#egg=openimis-be-location"
+    },
+    {
       "name": "report",
       "pip": "git+https://github.com/openimis/openimis-be-report_py.git@release/25.04#egg=openimis-be-report"
     },
@@ -71,6 +71,10 @@
     {
       "name": "payer",
       "pip": "git+https://github.com/openimis/openimis-be-payer_py.git@release/25.04#egg=openimis-be-payer"
+    },
+    {
+      "name": "claim",
+      "pip": "git+https://github.com/openimis/openimis-be-claim_py.git@release/25.04#egg=openimis-be-claim"
     }
   ]
 }

@@ -33,6 +33,14 @@
       "pip": "git+https://github.com/openimis/openimis-be-policy_py.git@release/25.04#egg=openimis-be-policy"
     },
     {
+      "name": "claim",
+      "pip": "git+https://github.com/openimis/openimis-be-claim_py.git@release/25.04#egg=openimis-be-claim"
+    },
+    {
+      "name": "claim_batch",
+      "pip": "git+https://github.com/openimis/openimis-be-claim_batch_py.git@release/25.04#egg=openimis-be-claim_batch"
+    },
+    {
       "name": "product",
       "pip": "git+https://github.com/openimis/openimis-be-product_py.git@release/25.04#egg=openimis-be-product"
     },
@@ -55,14 +63,6 @@
     {
       "name": "payer",
       "pip": "git+https://github.com/openimis/openimis-be-payer_py.git@release/25.04#egg=openimis-be-payer"
-    },
-    {
-      "name": "claim",
-      "pip": "git+https://github.com/openimis/openimis-be-claim_py.git@release/25.04#egg=openimis-be-claim"
-    },
-    {
-      "name": "claim_batch",
-      "pip": "git+https://github.com/openimis/openimis-be-claim_batch_py.git@release/25.04#egg=openimis-be-claim_batch"
     },
     {
       "name": "payment",

@@ -21,6 +21,14 @@
       "npm": "@openimis/fe-policy@https://github.com/openimis/openimis-fe-policy_js#release/25.04"
     },
     {
+      "name": "ClaimModule",
+      "npm": "@openimis/fe-claim@https://github.com/openimis/openimis-fe-claim_js#release/25.04"
+    },
+    {
+      "name": "ClaimBatchModule",
+      "npm": "@openimis/fe-claim_batch@https://github.com/openimis/openimis-fe-claim_batch_js#release/25.04"
+    },
+    {
       "name": "ProductModule",
       "npm": "@openimis/fe-product@https://github.com/openimis/openimis-fe-product_js#release/25.04"
     },
@@ -47,14 +55,6 @@
     {
       "name": "PayerModule",
       "npm": "@openimis/fe-payer@https://github.com/openimis/openimis-fe-payer_js#release/25.04"
-    },
-    {
-      "name": "ClaimModule",
-      "npm": "@openimis/fe-claim@https://github.com/openimis/openimis-fe-claim_js#release/25.04"
-    },
-    {
-      "name": "ClaimBatchModule",
-      "npm": "@openimis/fe-claim_batch@https://github.com/openimis/openimis-fe-claim_batch_js#release/25.04"
     },
     {
       "name": "PaymentModule",

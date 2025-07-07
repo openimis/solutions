@@ -1,0 +1,15 @@
+db:
+  path: compose.${DB_DEFAULT:-postgresql}.yml
+  env_file:
+    - .env.database
+base:
+  path: compose.base.yml
+  env_file:
+    - .env
+    - .env.redis
+    - .env.openSearch
+    - .env.cache
+cache:
+  path: compose.cache.yml
+  env_file:
+    - .env.cache

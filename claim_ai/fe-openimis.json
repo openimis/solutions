@@ -94,23 +94,17 @@
     },
     {
       "name": "ClaimAIQualityModule",
-      "npm": "@openimis/fe-claim_ai_quality@https://github.com/openimis/openimis-fe-claim_ai_quality_js.git#release/25.04"
+      "npm": "@openimis/fe-claim_ai_quality@https://github.com/openimis/openimis-fe-claim_ai_quality_js.git#rdevelop"
     }
   ],
   "locales": [
     {
-      "languages": [
-        "en",
-        "en-GB"
-      ],
+      "languages": ["en", "en-GB"],
       "intl": "en-GB",
       "fileNames": "en"
     },
     {
-      "languages": [
-        "fr",
-        "fr-FR"
-      ],
+      "languages": ["fr", "fr-FR"],
       "intl": "fr-FR",
       "fileNames": "fr"
     }

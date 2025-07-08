@@ -94,11 +94,11 @@
     },
     {
       "name": "claim_ai",
-      "pip": "git+https://github.com/openimis/openimis-be-claim_ai_py.git.git@release/25.04#egg=openimis-be-claim_ai"
+      "pip": "git+https://github.com/openimis/openimis-be-claim_ai_py.git.git@develop#egg=openimis-be-claim_ai"
     },
     {
       "name": "claim_ai_quality",
-      "pip": "git+https://github.com/openimis/openimis-be-claim_ai_quality_py.git.git@release/25.04#egg=openimis-be-claim_ai_quality"
+      "pip": "git+https://github.com/openimis/openimis-be-claim_ai_quality_py.git.git@develop#egg=openimis-be-claim_ai_quality"
     },
     {
       "name": "api_fhir_r4",

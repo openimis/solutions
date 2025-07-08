@@ -94,7 +94,7 @@
     },
     {
       "name": "ClaimAIQualityModule",
-      "npm": "@openimis/fe-claim_ai_quality@https://github.com/openimis/openimis-fe-claim_ai_quality_js#rdevelop"
+      "npm": "@openimis/fe-claim_ai_quality@https://github.com/openimis/openimis-fe-claim_ai_quality_js#develop"
     }
   ],
   "locales": [

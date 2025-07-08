@@ -57,10 +57,6 @@
       "npm": "@openimis/fe-home@https://github.com/openimis/openimis-fe-home_js#develop"
     },
     {
-      "name": "ToolsModule",
-      "npm": "@openimis/fe-tools@https://github.com/openimis/openimis-fe-tools_js#develop"
-    },
-    {
       "name": "GrievanceSocialProtectionModule",
       "npm": "@openimis/fe-grievance_social_protection@https://github.com/openimis/openimis-fe-grievance_social_protection_js#develop"
     },

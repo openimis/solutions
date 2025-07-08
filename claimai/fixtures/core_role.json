@@ -1,0 +1,44 @@
+[
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "7ee5525d-7be3-4491-aaaf-97182f7c929d",
+      "name": "LOCAL Administrator",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "839163cc-e7b2-4f3e-a7bd-e30f8a20cd19",
+      "name": "Social Protection Manager",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "df31fac6-66e5-4562-89ca-90c85a7ac922",
+      "name": "Grievance Manager",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  }
+]

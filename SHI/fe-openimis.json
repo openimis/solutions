@@ -21,6 +21,10 @@
       "npm": "@openimis/fe-policy@https://github.com/openimis/openimis-fe-policy_js#develop"
     },
     {
+      "name": "ContributionModule",
+      "npm": "@openimis/fe-contribution@https://github.com/openimis/openimis-fe-contribution_js#develop"
+    },
+    {
       "name": "ClaimModule",
       "npm": "@openimis/fe-claim@https://github.com/openimis/openimis-fe-claim_js#develop"
     },

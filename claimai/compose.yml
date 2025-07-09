@@ -6,11 +6,6 @@ include:
     env_file:
       - .env
       - .env.cache
-      - .env.openSearch
   - path: compose.cache.yml
     env_file:
       - .env.cache
-  - path: compose.openSearch.yml
-    env_file:
-      - .env
-      - .env.openSearch

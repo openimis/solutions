@@ -1,0 +1,21 @@
+services:
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - '6379:6379'
+    command: >-
+      redis-server /usr/local/etc/redis/redis.conf --requirepass
+      ${REDIS_PASSWORD} --maxmemory ${REDIS_MAX_MEMORY:-256mb}
+    volumes:
+      - redis-database:/data
+    env_file:
+      - .env.cache
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_PORT=6379
+      - REDIS_DATABASES=1
+    networks:
+      openimis-net: null
+volumes:
+  redis-database: null

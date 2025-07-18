@@ -5,7 +5,7 @@ services:
     ports:
       - '6379:6379'
     command: >-
-      redis-server /usr/local/etc/redis/redis.conf --requirepass
+      redis-server --requirepass
       ${REDIS_PASSWORD} --maxmemory ${REDIS_MAX_MEMORY:-256mb}
     volumes:
       - redis-database:/data

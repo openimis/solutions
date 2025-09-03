@@ -1,0 +1,70 @@
+{
+  "modules": [
+    {
+      "name": "LanguageFrModule",
+      "npm": "@openimis/fe-language_fr@https://github.com/openimis/openimis-fe-language_fr_js#develop"
+    },
+    {
+      "name": "LocationModule",
+      "npm": "@openimis/fe-location@https://github.com/openimis/openimis-fe-location_js#develop"
+    },
+    {
+      "name": "AdminModule",
+      "npm": "@openimis/fe-admin@https://github.com/openimis/openimis-fe-admin_js#develop"
+    },
+    {
+      "name": "TasksManagementModule",
+      "npm": "@openimis/fe-tasks_management@https://github.com/openimis/openimis-fe-tasks_management_js#develop"
+    },
+    {
+      "name": "CalculationModule",
+      "npm": "@openimis/fe-calculation@https://github.com/openimis/openimis-fe-calculation_js#develop"
+    },
+    {
+      "name": "CoreModule",
+      "npm": "@openimis/fe-core@https://github.com/openimis/openimis-fe-core_js#develop"
+    },
+    {
+      "name": "ProfileModule",
+      "npm": "@openimis/fe-profile@https://github.com/openimis/openimis-fe-profile_js#develop"
+    },
+    {
+      "name": "HomeModule",
+      "npm": "@openimis/fe-home@https://github.com/openimis/openimis-fe-home_js#develop"
+    },
+    {
+      "name": "GrievanceSocialProtectionModule",
+      "npm": "@openimis/fe-grievance_social_protection@https://github.com/openimis/openimis-fe-grievance_social_protection_js#develop"
+    },
+    {
+      "name": "OpenSearchReportsModule",
+      "npm": "@openimis/fe-opensearch_reports@https://github.com/openimis/openimis-fe-opensearch_reports_js#develop"
+    },
+    {
+      "name": "IndividualModule",
+      "npm": "@openimis/fe-individual@https://github.com/openimis/openimis-fe-individual_js#develop"
+    },
+    {
+      "name": "DeduplicationModule",
+      "npm": "@openimis/fe-deduplication@https://github.com/openimis/openimis-fe-deduplication_js#develop"
+    }
+  ],
+  "locales": [
+    {
+      "languages": [
+        "fr",
+        "fr-FR"
+      ],
+      "intl": "fr-FR",
+      "fileNames": "fr"
+    },
+    {
+      "languages": [
+        "en",
+        "en-GB"
+      ],
+      "intl": "en-GB",
+      "fileNames": "en"
+    }
+  ]
+}

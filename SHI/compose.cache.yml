@@ -17,5 +17,16 @@ services:
       - REDIS_DATABASES=1
     networks:
       openimis-net: null
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - '-a'
+        - $$REDIS_PASSWORD
+        - ping
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
 volumes:
   redis-database: null

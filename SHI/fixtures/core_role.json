@@ -2,7 +2,7 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "444dd40f-fa32-4ef5-91aa-c73444474317",
+      "uuid": "00a42d1d-ff5a-4a3e-96aa-2fb6fdde48c2",
       "name": "LOCAL Administrator",
       "alt_language": null,
       "is_system": 0,
@@ -30,7 +30,7 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "de55090f-a062-427c-b80e-9660177dd24a",
+      "uuid": "9eb81b88-6014-4edd-b98c-efbe9c6d4300",
       "name": "Grievance Manager",
       "alt_language": null,
       "is_system": 0,

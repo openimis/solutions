@@ -1,6 +1,11 @@
 {
   "modules": [
     {
+      "name": "LanguageFrModule",
+      "npm": "@openimis/fe-language_fr@https://github.com/openimis/openimis-fe-language_fr_js#develop"
+    },
+    {
+
       "name": "PolicyHolderModule",
       "npm": "@openimis/fe-policyholder@https://github.com/openimis/openimis-fe-policyholder_js#develop"
     },
@@ -41,6 +46,11 @@
       "npm": "@openimis/fe-location@https://github.com/openimis/openimis-fe-location_js#develop"
     },
     {
+      "name": "AdminModule",
+      "npm": "@openimis/fe-admin@https://github.com/openimis/openimis-fe-admin_js#develop"
+    },
+    {
+
       "name": "InvoiceModule",
       "npm": "@openimis/fe-invoice@https://github.com/openimis/openimis-fe-invoice_js#develop"
     },
@@ -96,11 +106,22 @@
   "locales": [
     {
       "languages": [
+
+        "fr",
+        "fr-FR"
+      ],
+      "intl": "fr-FR",
+      "fileNames": "fr"
+    },
+    {
+      "languages": [
+
         "en",
         "en-GB"
       ],
       "intl": "en-GB",
       "fileNames": "en"
+
     },
     {
       "languages": [

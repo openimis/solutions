@@ -1,0 +1,32 @@
+services:
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - '6379:6379'
+    command: >-
+      redis-server /usr/local/etc/redis/redis.conf --requirepass
+      ${REDIS_PASSWORD}
+    volumes:
+      - redis-database:/data
+      - ./conf/redis/redis.conf:/usr/local/etc/redis/redis.conf
+    env_file:
+      - .env.cache
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_PORT=6379
+      - REDIS_DATABASES=1
+    networks:
+      openimis-net: null
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - '-a'
+        - $$REDIS_PASSWORD
+        - ping
+      interval: 5s
+      timeout: 3s
+      retries: 5
+volumes:
+  redis-database: null

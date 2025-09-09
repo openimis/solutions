@@ -58,7 +58,7 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "342eada3-e7a5-45fa-ac1c-a9619333feb3",
+      "uuid": "77b56778-72a8-496b-a798-eb3d6e4cbded",
       "name": "LOCAL Administrator",
       "alt_language": null,
       "is_system": 0,
@@ -72,7 +72,7 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "90d42933-0650-44ac-899f-8526258585cf",
+      "uuid": "13ccd02d-2616-4225-a891-90cfb835286e",
       "name": "Social Protection Manager",
       "alt_language": null,
       "is_system": 0,
@@ -86,7 +86,7 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "f28d65be-bfd9-40f3-9512-0593ec15d94f",
+      "uuid": "331fae40-665b-47c3-8583-21ad8a82b660",
       "name": "Grievance Manager",
       "alt_language": null,
       "is_system": 0,
@@ -100,7 +100,7 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "f7889cd4-fbb6-4aa7-a1d5-dd77914501a6",
+      "uuid": "aeff8969-fcf0-4ea1-8a06-de64659a9b0e",
       "name": "Reporting Manager",
       "alt_language": null,
       "is_system": 0,

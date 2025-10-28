@@ -105,7 +105,8 @@ jobs:
       packages: write
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}   # ← JSON **array**
+      matrix:
+        include: ${{ fromJson(needs.discover.outputs.matrix) }}
     env:
       TAG_PREFIX: ${{ github.event.inputs.tag }}
       BASE_BE: ${{ needs.build-base.outputs.BASE_BE_TAG }}

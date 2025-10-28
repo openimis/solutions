@@ -10,7 +10,7 @@ on:
 
 jobs:
   # -------------------------------------------------
-  # 1. Discover solutions with be-openimis.json / fe-openimis.json
+  # 1. Discover solutions → output a JSON **array**
   # -------------------------------------------------
   discover:
     runs-on: ubuntu-latest
@@ -24,7 +24,8 @@ jobs:
       - id: set
         run: |
           cd solutions
-          MATRIX=$(find . -mindepth 1 -maxdepth 1 -type d | while read -r d; do
+          # Build JSON **array** → [ {"solution":"nepal","be":true,"fe":false}, ... ]
+          items=$(find . -mindepth 1 -maxdepth 1 -type d | while read -r d; do
             folder=$(basename "$d")
             be=false; fe=false
             [ -f "$d/be-openimis.json" ] && be=true
@@ -32,10 +33,10 @@ jobs:
             [[ $be == true || $fe == true ]] && \
               printf '{"solution":"%s","be":%s,"fe":%s},' "$folder" "$be" "$fe"
           done | sed 's/,$//')
-          echo "matrix=[${MATRIX}]" >> $GITHUB_OUTPUT
+          echo "matrix=[${items}]" >> $GITHUB_OUTPUT
 
   # -------------------------------------------------
-  # 2. Build BASE images (once) – with cache
+  # 2. Build BASE images (once) – cached
   # -------------------------------------------------
   build-base:
     needs: discover
@@ -77,14 +78,25 @@ jobs:
           build-args: |
             OPENIMIS_CONF_JSON={}
 
+      # Export tag using bash (no pipe in expression)
       - name: Export base tag
         run: |
-          COMPONENT_UPPER=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
-          echo "BASE_${COMPONENT_UPPER}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_ENV
+          COMP=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
+          echo "BASE_${COMP}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_ENV
 
+      # Also expose as job output (required for downstream job)
+      - name: Set output
+        id: out
+        run: |
+          COMP=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
+          echo "tag=${{ env.BASE_TAG }}" >> $GITHUB_OUTPUT
+
+    outputs:
+      BASE_BE_TAG: ${{ steps.out.outputs.tag && steps.out.outputs.tag || '' }}
+      BASE_FE_TAG: ${{ steps.out.outputs.tag && steps.out.outputs.tag || '' }}
 
   # -------------------------------------------------
-  # 3. Build solution images – reuse base + copy json
+  # 3. Build solution images – reuse base + JSON
   # -------------------------------------------------
   build-solution:
     needs: [discover, build-base]
@@ -93,7 +105,7 @@ jobs:
       packages: write
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}   # ← JSON **array**
     env:
       TAG_PREFIX: ${{ github.event.inputs.tag }}
       BASE_BE: ${{ needs.build-base.outputs.BASE_BE_TAG }}
@@ -119,7 +131,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: solutions/${{ matrix.solution }}
-          file: ${{ matrix.component == 'be' && 'openimis-be_py/Dockerfile' || 'openimis-fe_js/Dockerfile' }}
+          file: solutions/${{ matrix.solution }}/be-openimis.json   # core Dockerfile reads it
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution }}-be
@@ -127,7 +139,7 @@ jobs:
             OPENIMIS_CONF_JSON=$(cat solutions/${{ matrix.solution }}/be-openimis.json)
           cache-from: |
             type=gha,scope=base-be
-            ghcr.io/openimis/openimis-be-base:${{ github.event.inputs.tag }}
+            ${{ env.BASE_BE }}
           cache-to: type=gha,mode=max,scope=solution-${{ matrix.solution }}-be
 
       # ---------- FE ----------
@@ -136,7 +148,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: solutions/${{ matrix.solution }}
-          file: openimis-fe_js/Dockerfile
+          file: solutions/${{ matrix.solution }}/fe-openimis.json
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution }}-fe
@@ -144,5 +156,5 @@ jobs:
             OPENIMIS_CONF_JSON=$(cat solutions/${{ matrix.solution }}/fe-openimis.json)
           cache-from: |
             type=gha,scope=base-fe
-            ghcr.io/openimis/openimis-fe-base:${{ github.event.inputs.tag }}
+            ${{ env.BASE_FE }}
           cache-to: type=gha,mode=max,scope=solution-${{ matrix.solution }}-fe

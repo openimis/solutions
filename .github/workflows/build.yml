@@ -10,7 +10,7 @@ on:
 
 jobs:
   # -------------------------------------------------
-  # 1. Discover solutions → output a JSON **array**
+  # 1. Discover solutions → output JSON array
   # -------------------------------------------------
   discover:
     runs-on: ubuntu-latest
@@ -24,7 +24,6 @@ jobs:
       - id: set
         run: |
           cd solutions
-          # Build JSON **array** → [ {"solution":"nepal","be":true,"fe":false}, ... ]
           items=$(find . -mindepth 1 -maxdepth 1 -type d | while read -r d; do
             folder=$(basename "$d")
             be=false; fe=false
@@ -78,25 +77,25 @@ jobs:
           build-args: |
             OPENIMIS_CONF_JSON={}
 
-      # Export tag using bash (no pipe in expression)
+      # Export tag using bash
       - name: Export base tag
         run: |
           COMP=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
           echo "BASE_${COMP}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_ENV
 
-      # Also expose as job output (required for downstream job)
-      - name: Set output
+      # Expose as job output
+      - name: Set job output
         id: out
         run: |
           COMP=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
-          echo "tag=${{ env.BASE_TAG }}" >> $GITHUB_OUTPUT
+          echo "BASE_${COMP}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_OUTPUT
 
     outputs:
-      BASE_BE_TAG: ${{ steps.out.outputs.tag && steps.out.outputs.tag || '' }}
-      BASE_FE_TAG: ${{ steps.out.outputs.tag && steps.out.outputs.tag || '' }}
+      BASE_BE_TAG: ${{ steps.out.outputs.BASE_BE_TAG }}
+      BASE_FE_TAG: ${{ steps.out.outputs.BASE_FE_TAG }}
 
   # -------------------------------------------------
-  # 3. Build solution images – reuse base + JSON
+  # 3. Build solution images – reuse base + compact JSON
   # -------------------------------------------------
   build-solution:
     needs: [discover, build-base]
@@ -106,7 +105,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include: ${{ fromJson(needs.discover.outputs.matrix) }}
+        include: ${{ fromJson(needs.discover.outputs.matrix) }}   # ← FIXED
     env:
       TAG_PREFIX: ${{ github.event.inputs.tag }}
       BASE_BE: ${{ needs.build-base.outputs.BASE_BE_TAG }}
@@ -117,6 +116,10 @@ jobs:
         with:
           path: solutions
 
+      # Install jq (for compacting JSON)
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3
 
@@ -126,18 +129,26 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      # Copy core Dockerfiles into solution folder
+      - name: Copy core Dockerfiles
+        run: |
+          mkdir -p solutions/${{ matrix.solution }}/core/be
+          mkdir -p solutions/${{ matrix.solution }}/core/fe
+          cp -r base-repo-be/* solutions/${{ matrix.solution }}/core/be/ 2>/dev/null || true
+          cp -r base-repo-fe/* solutions/${{ matrix.solution }}/core/fe/ 2>/dev/null || true
+
       # ---------- BE ----------
       - name: Build BE image
         if: matrix.be
         uses: docker/build-push-action@v5
         with:
           context: solutions/${{ matrix.solution }}
-          file: solutions/${{ matrix.solution }}/be-openimis.json   # core Dockerfile reads it
+          file: core/be/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution }}-be
           build-args: |
-            OPENIMIS_CONF_JSON=$(cat solutions/${{ matrix.solution }}/be-openimis.json)
+            OPENIMIS_CONF_JSON=$(jq -c . solutions/${{ matrix.solution }}/be-openimis.json)
           cache-from: |
             type=gha,scope=base-be
             ${{ env.BASE_BE }}
@@ -149,12 +160,12 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: solutions/${{ matrix.solution }}
-          file: solutions/${{ matrix.solution }}/fe-openimis.json
+          file: core/fe/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution }}-fe
           build-args: |
-            OPENIMIS_CONF_JSON=$(cat solutions/${{ matrix.solution }}/fe-openimis.json)
+            OPENIMIS_CONF_JSON=$(jq -c . solutions/${{ matrix.solution }}/fe-openimis.json)
           cache-from: |
             type=gha,scope=base-fe
             ${{ env.BASE_FE }}

@@ -125,12 +125,12 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       # -------------------------------------------------
-      # Build context: copy full BE/FE + solution files
+      # Prepare BE build context
       # -------------------------------------------------
       - name: Prepare BE build context
         if: matrix.be
         run: |
-          SOL=${{ matrix.solution }}
+          SOL="${{ matrix.solution }}"
           LOWER_SOL=$(echo "$SOL" | tr '[:upper:]' '[:lower:]')
           BUILD_DIR="build-context-be-$LOWER_SOL"
           mkdir -p "$BUILD_DIR"
@@ -138,18 +138,22 @@ jobs:
           # Copy full BE source
           cp -r base-repo-be/* "$BUILD_DIR/"
 
-          # Copy solution config
+          # Copy solution config as openimis.json
           cp "solutions/$SOL/be-openimis.json" "$BUILD_DIR/openimis.json"
 
           # Copy fixtures if exist
           [ -d "solutions/$SOL/fixtures" ] && cp -r "solutions/$SOL/fixtures" "$BUILD_DIR/fixtures/" || true
 
           echo "BUILD_DIR_BE=$BUILD_DIR" >> $GITHUB_ENV
+          echo "LOWER_SOL=$LOWER_SOL" >> $GITHUB_ENV
 
+      # -------------------------------------------------
+      # Prepare FE build context
+      # -------------------------------------------------
       - name: Prepare FE build context
         if: matrix.fe
         run: |
-          SOL=${{ matrix.solution }}
+          SOL="${{ matrix.solution }}"
           LOWER_SOL=$(echo "$SOL" | tr '[:upper:]' '[:lower:]')
           BUILD_DIR="build-context-fe-$LOWER_SOL"
           mkdir -p "$BUILD_DIR"
@@ -158,6 +162,7 @@ jobs:
           cp "solutions/$SOL/fe-openimis.json" "$BUILD_DIR/openimis.json"
 
           echo "BUILD_DIR_FE=$BUILD_DIR" >> $GITHUB_ENV
+          echo "LOWER_SOL=$LOWER_SOL" >> $GITHUB_ENV
 
       # -------------------------------------------------
       # Build BE
@@ -170,13 +175,13 @@ jobs:
           file: ${{ env.BUILD_DIR_BE }}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution | lower }}-be
+          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ env.LOWER_SOL }}-be
           build-args: |
             OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_BE }}/openimis.json)
           cache-from: |
             type=gha,scope=base-be
             ${{ env.BASE_BE }}
-          cache-to: type=gha,mode=max,scope=solution-${{ matrix.solution | lower }}-be
+          cache-to: type=gha,mode=max,scope=solution-${{ env.LOWER_SOL }}-be
 
       # -------------------------------------------------
       # Build FE
@@ -189,10 +194,10 @@ jobs:
           file: ${{ env.BUILD_DIR_FE }}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution | lower }}-fe
+          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ env.LOWER_SOL }}-fe
           build-args: |
             OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_FE }}/openimis.json)
           cache-from: |
             type=gha,scope=base-fe
             ${{ env.BASE_FE }}
-          cache-to: type=gha,mode=max,scope=solution-${{ matrix.solution | lower }}-fe
+          cache-to: type=gha,mode=max,scope=solution-${{ env.LOWER_SOL }}-fe

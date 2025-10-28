@@ -79,7 +79,7 @@ jobs:
 
       - name: Export base tag
         run: |
-          UPPER_TAG=`echo ${{ matrix.component }} | tr '[:lower:]' '[:upper:]'`
+          echo "UPPER_TAG=`echo ${{ matrix.component }} | tr '[:lower:]' '[:upper:]'`"
           echo "BASE_${{ UPPER_TAG }}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_ENV
 
   # -------------------------------------------------

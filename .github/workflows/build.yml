@@ -1,4 +1,4 @@
-name: Build Solution Images (BE + FE) – Cached Base
+name: Build Solution Images (BE + FE) – Full Copy + Lowercase Tags
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   # -------------------------------------------------
-  # 1. Discover solutions → output JSON array
+  # 1. Discover solutions
   # -------------------------------------------------
   discover:
     runs-on: ubuntu-latest
@@ -57,7 +57,6 @@ jobs:
 
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3
-
       - uses: docker/login-action@v3
         with:
           registry: ghcr.io
@@ -77,13 +76,11 @@ jobs:
           build-args: |
             OPENIMIS_CONF_JSON={}
 
-      # Export tag using bash
       - name: Export base tag
         run: |
           COMP=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
           echo "BASE_${COMP}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_ENV
 
-      # Expose as job output
       - name: Set job output
         id: out
         run: |
@@ -95,7 +92,7 @@ jobs:
       BASE_FE_TAG: ${{ steps.out.outputs.BASE_FE_TAG }}
 
   # -------------------------------------------------
-  # 3. Build solution images – reuse base + compact JSON
+  # 3. Build solution images – full copy + fixtures
   # -------------------------------------------------
   build-solution:
     needs: [discover, build-base]
@@ -105,7 +102,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include: ${{ fromJson(needs.discover.outputs.matrix) }}   # ← FIXED
+        include: ${{ fromJson(needs.discover.outputs.matrix) }}
     env:
       TAG_PREFIX: ${{ github.event.inputs.tag }}
       BASE_BE: ${{ needs.build-base.outputs.BASE_BE_TAG }}
@@ -116,57 +113,86 @@ jobs:
         with:
           path: solutions
 
-      # Install jq (for compacting JSON)
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3
-
       - uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # Copy core Dockerfiles into solution folder
-      - name: Copy core Dockerfiles
+      # -------------------------------------------------
+      # Build context: copy full BE/FE + solution files
+      # -------------------------------------------------
+      - name: Prepare BE build context
+        if: matrix.be
         run: |
-          mkdir -p solutions/${{ matrix.solution }}/core/be
-          mkdir -p solutions/${{ matrix.solution }}/core/fe
-          cp -r base-repo-be/* solutions/${{ matrix.solution }}/core/be/ 2>/dev/null || true
-          cp -r base-repo-fe/* solutions/${{ matrix.solution }}/core/fe/ 2>/dev/null || true
+          SOL=${{ matrix.solution }}
+          LOWER_SOL=$(echo "$SOL" | tr '[:upper:]' '[:lower:]')
+          BUILD_DIR="build-context-be-$LOWER_SOL"
+          mkdir -p "$BUILD_DIR"
 
-      # ---------- BE ----------
+          # Copy full BE source
+          cp -r base-repo-be/* "$BUILD_DIR/"
+
+          # Copy solution config
+          cp "solutions/$SOL/be-openimis.json" "$BUILD_DIR/openimis.json"
+
+          # Copy fixtures if exist
+          [ -d "solutions/$SOL/fixtures" ] && cp -r "solutions/$SOL/fixtures" "$BUILD_DIR/fixtures/" || true
+
+          echo "BUILD_DIR_BE=$BUILD_DIR" >> $GITHUB_ENV
+
+      - name: Prepare FE build context
+        if: matrix.fe
+        run: |
+          SOL=${{ matrix.solution }}
+          LOWER_SOL=$(echo "$SOL" | tr '[:upper:]' '[:lower:]')
+          BUILD_DIR="build-context-fe-$LOWER_SOL"
+          mkdir -p "$BUILD_DIR"
+
+          cp -r base-repo-fe/* "$BUILD_DIR/"
+          cp "solutions/$SOL/fe-openimis.json" "$BUILD_DIR/openimis.json"
+
+          echo "BUILD_DIR_FE=$BUILD_DIR" >> $GITHUB_ENV
+
+      # -------------------------------------------------
+      # Build BE
+      # -------------------------------------------------
       - name: Build BE image
         if: matrix.be
         uses: docker/build-push-action@v5
         with:
-          context: solutions/${{ matrix.solution }}
-          file: core/be/Dockerfile
+          context: ${{ env.BUILD_DIR_BE }}
+          file: ${{ env.BUILD_DIR_BE }}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution }}-be
+          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution | lower }}-be
           build-args: |
-            OPENIMIS_CONF_JSON=$(jq -c . solutions/${{ matrix.solution }}/be-openimis.json)
+            OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_BE }}/openimis.json)
           cache-from: |
             type=gha,scope=base-be
             ${{ env.BASE_BE }}
-          cache-to: type=gha,mode=max,scope=solution-${{ matrix.solution }}-be
+          cache-to: type=gha,mode=max,scope=solution-${{ matrix.solution | lower }}-be
 
-      # ---------- FE ----------
+      # -------------------------------------------------
+      # Build FE
+      # -------------------------------------------------
       - name: Build FE image
         if: matrix.fe
         uses: docker/build-push-action@v5
         with:
-          context: solutions/${{ matrix.solution }}
-          file: core/fe/Dockerfile
+          context: ${{ env.BUILD_DIR_FE }}
+          file: ${{ env.BUILD_DIR_FE }}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution }}-fe
+          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution | lower }}-fe
           build-args: |
-            OPENIMIS_CONF_JSON=$(jq -c . solutions/${{ matrix.solution }}/fe-openimis.json)
+            OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_FE }}/openimis.json)
           cache-from: |
             type=gha,scope=base-fe
             ${{ env.BASE_FE }}
-          cache-to: type=gha,mode=max,scope=solution-${{ matrix.solution }}-fe
+          cache-to: type=gha,mode=max,scope=solution-${{ matrix.solution | lower }}-fe

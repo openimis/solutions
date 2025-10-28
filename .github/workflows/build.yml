@@ -79,8 +79,9 @@ jobs:
 
       - name: Export base tag
         run: |
-          echo "UPPER_TAG=`echo ${{ matrix.component }} | tr '[:lower:]' '[:upper:]'`"
-          echo "BASE_${{ UPPER_TAG }}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_ENV
+          COMPONENT_UPPER=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
+          echo "BASE_${COMPONENT_UPPER}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_ENV
+
 
   # -------------------------------------------------
   # 3. Build solution images – reuse base + copy json

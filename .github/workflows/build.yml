@@ -1,0 +1,146 @@
+name: Build Solution Images (BE + FE) – Cached Base
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag prefix (e.g. v1.5, latest, dev)'
+        required: true
+        default: 'latest'
+
+jobs:
+  # -------------------------------------------------
+  # 1. Discover solutions with be-openimis.json / fe-openimis.json
+  # -------------------------------------------------
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: solutions
+
+      - id: set
+        run: |
+          cd solutions
+          MATRIX=$(find . -mindepth 1 -maxdepth 1 -type d | while read -r d; do
+            folder=$(basename "$d")
+            be=false; fe=false
+            [ -f "$d/be-openimis.json" ] && be=true
+            [ -f "$d/fe-openimis.json" ] && fe=true
+            [[ $be == true || $fe == true ]] && \
+              printf '{"solution":"%s","be":%s,"fe":%s},' "$folder" "$be" "$fe"
+          done | sed 's/,$//')
+          echo "matrix=[${MATRIX}]" >> $GITHUB_OUTPUT
+
+  # -------------------------------------------------
+  # 2. Build BASE images (once) – with cache
+  # -------------------------------------------------
+  build-base:
+    needs: discover
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    strategy:
+      matrix:
+        component: [be, fe]
+    env:
+      REPO: ${{ matrix.component == 'be' && 'openimis-be_py' || 'openimis-fe_js' }}
+      BASE_TAG: ghcr.io/openimis/openimis-${{ matrix.component }}-base:${{ github.event.inputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: openimis/${{ env.REPO }}
+          ref: develop
+          path: base-repo
+
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build & push BASE image (cached)
+        uses: docker/build-push-action@v5
+        with:
+          context: base-repo
+          target: base
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: ${{ env.BASE_TAG }}
+          cache-from: type=gha,scope=base-${{ matrix.component }}
+          cache-to: type=gha,mode=max,scope=base-${{ matrix.component }}
+          build-args: |
+            OPENIMIS_CONF_JSON={}
+
+      - name: Export base tag
+        run: |
+          echo "BASE_${{ matrix.component | upper }}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_ENV
+
+  # -------------------------------------------------
+  # 3. Build solution images – reuse base + copy json
+  # -------------------------------------------------
+  build-solution:
+    needs: [discover, build-base]
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+    env:
+      TAG_PREFIX: ${{ github.event.inputs.tag }}
+      BASE_BE: ${{ needs.build-base.outputs.BASE_BE_TAG }}
+      BASE_FE: ${{ needs.build-base.outputs.BASE_FE_TAG }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: solutions
+
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # ---------- BE ----------
+      - name: Build BE image
+        if: matrix.be
+        uses: docker/build-push-action@v5
+        with:
+          context: solutions/${{ matrix.solution }}
+          file: ${{ matrix.component == 'be' && 'openimis-be_py/Dockerfile' || 'openimis-fe_js/Dockerfile' }}
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution }}-be
+          build-args: |
+            OPENIMIS_CONF_JSON=$(cat solutions/${{ matrix.solution }}/be-openimis.json)
+          cache-from: |
+            type=gha,scope=base-be
+            ghcr.io/openimis/openimis-be-base:${{ github.event.inputs.tag }}
+          cache-to: type=gha,mode=max,scope=solution-${{ matrix.solution }}-be
+
+      # ---------- FE ----------
+      - name: Build FE image
+        if: matrix.fe
+        uses: docker/build-push-action@v5
+        with:
+          context: solutions/${{ matrix.solution }}
+          file: openimis-fe_js/Dockerfile
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ matrix.solution }}-fe
+          build-args: |
+            OPENIMIS_CONF_JSON=$(cat solutions/${{ matrix.solution }}/fe-openimis.json)
+          cache-from: |
+            type=gha,scope=base-fe
+            ghcr.io/openimis/openimis-fe-base:${{ github.event.inputs.tag }}
+          cache-to: type=gha,mode=max,scope=solution-${{ matrix.solution }}-fe

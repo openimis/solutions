@@ -10,18 +10,34 @@ on:
 
 jobs:
   # -------------------------------------------------
-  # 1. Discover solutions
+  # 1. Discover solutions + checkout core repos
   # -------------------------------------------------
-  discover:
+  prepare:
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ steps.set.outputs.matrix }}
+      matrix: ${{ steps.discover.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout solutions repo
+        uses: actions/checkout@v4
         with:
           path: solutions
 
-      - id: set
+      - name: Checkout openimis-be_py (develop)
+        uses: actions/checkout@v4
+        with:
+          repository: openimis/openimis-be_py
+          ref: develop
+          path: openimis-be_py
+
+      - name: Checkout openimis-fe_js (develop)
+        uses: actions/checkout@v4
+        with:
+          repository: openimis/openimis-fe_js
+          ref: develop
+          path: openimis-fe_js
+
+      - name: Discover solutions
+        id: discover
         run: |
           cd solutions
           items=$(find . -mindepth 1 -maxdepth 1 -type d | while read -r d; do
@@ -38,7 +54,7 @@ jobs:
   # 2. Build BASE images (once) – cached
   # -------------------------------------------------
   build-base:
-    needs: discover
+    needs: prepare
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -46,14 +62,14 @@ jobs:
       matrix:
         component: [be, fe]
     env:
-      REPO: ${{ matrix.component == 'be' && 'openimis-be_py' || 'openimis-fe_js' }}
+      REPO_DIR: ${{ matrix.component == 'be' && 'openimis-be_py' || 'openimis-fe_js' }}
       BASE_TAG: ghcr.io/openimis/openimis-${{ matrix.component }}-base:${{ github.event.inputs.tag }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Download artifacts from prepare job
+        uses: actions/download-artifact@v4
         with:
-          repository: openimis/${{ env.REPO }}
-          ref: develop
-          path: base-repo
+          name: core-repos
+          path: .
 
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3
@@ -66,7 +82,7 @@ jobs:
       - name: Build & push BASE image (cached)
         uses: docker/build-push-action@v5
         with:
-          context: base-repo
+          context: ${{ env.REPO_DIR }}
           target: base
           platforms: linux/amd64,linux/arm64
           push: true
@@ -95,21 +111,28 @@ jobs:
   # 3. Build solution images – full copy + fixtures
   # -------------------------------------------------
   build-solution:
-    needs: [discover, build-base]
+    needs: [prepare, build-base]
     runs-on: ubuntu-latest
     permissions:
       packages: write
     strategy:
       fail-fast: false
       matrix:
-        include: ${{ fromJson(needs.discover.outputs.matrix) }}
+        include: ${{ fromJson(needs.prepare.outputs.matrix) }}
     env:
       TAG_PREFIX: ${{ github.event.inputs.tag }}
       BASE_BE: ${{ needs.build-base.outputs.BASE_BE_TAG }}
       BASE_FE: ${{ needs.build-base.outputs.BASE_FE_TAG }}
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Download core repos
+        uses: actions/download-artifact@v4
+        with:
+          name: core-repos
+          path: .
+
+      - name: Download solutions
+        uses: actions/checkout@v4
         with:
           path: solutions
 
@@ -136,9 +159,9 @@ jobs:
           mkdir -p "$BUILD_DIR"
 
           # Copy full BE source
-          cp -r base-repo-be/* "$BUILD_DIR/"
+          cp -r openimis-be_py/* "$BUILD_DIR/"
 
-          # Copy solution config as openimis.json
+          # Copy solution config
           cp "solutions/$SOL/be-openimis.json" "$BUILD_DIR/openimis.json"
 
           # Copy fixtures if exist
@@ -158,7 +181,7 @@ jobs:
           BUILD_DIR="build-context-fe-$LOWER_SOL"
           mkdir -p "$BUILD_DIR"
 
-          cp -r base-repo-fe/* "$BUILD_DIR/"
+          cp -r openimis-fe_js/* "$BUILD_DIR/"
           cp "solutions/$SOL/fe-openimis.json" "$BUILD_DIR/openimis.json"
 
           echo "BUILD_DIR_FE=$BUILD_DIR" >> $GITHUB_ENV
@@ -184,7 +207,7 @@ jobs:
           cache-to: type=gha,mode=max,scope=solution-${{ env.LOWER_SOL }}-be
 
       # -------------------------------------------------
-      # Build FE
+      # 4. Build FE
       # -------------------------------------------------
       - name: Build FE image
         if: matrix.fe
@@ -201,3 +224,18 @@ jobs:
             type=gha,scope=base-fe
             ${{ env.BASE_FE }}
           cache-to: type=gha,mode=max,scope=solution-${{ env.LOWER_SOL }}-fe
+
+  # -------------------------------------------------
+  # Upload core repos as artifact (for downstream jobs)
+  # -------------------------------------------------
+  upload-artifacts:
+    needs: prepare
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload core repos
+        uses: actions/upload-artifact@v4
+        with:
+          name: core-repos
+          path: |
+            openimis-be_py
+            openimis-fe_js

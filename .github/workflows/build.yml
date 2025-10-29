@@ -98,9 +98,7 @@ jobs:
           tags: ${{ env.BASE_TAG }}
           cache-from: type=gha,scope=base-${{ matrix.component }}
           cache-to: type=gha,mode=max,scope=base-${{ matrix.component }}
-          build-args: |
-            OPENIMIS_CONF_JSON={}
-
+          
       - name: Export base tag
         run: |
           COMP=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
@@ -139,10 +137,6 @@ jobs:
         with:
           name: source-repos
           path: .
-
-      - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
-
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3
       - uses: docker/login-action@v3
@@ -213,19 +207,10 @@ jobs:
       # -------------------------------------------------
       - name: Build BE image
         if: matrix.be
-        uses: docker/build-push-action@v5
-        with:
-          context: ${{ env.BUILD_DIR_BE }}
-          file: ${{ env.BUILD_DIR_BE }}/Dockerfile
-          platforms: linux/amd64,linux/arm64
-          push: true
-          tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ env.LOWER_SOL }}-be
-          build-args: |
-            OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_BE }}/openimis.json)
-          cache-from: |
-            type=gha,scope=base-be
-            ${{ env.BASE_BE }}
-          cache-to: type=gha,mode=max,scope=solution-${{ env.LOWER_SOL }}-be
+        run: |
+         docker build . --tag ghcr.io/openimis/${{ env.TAG_PREFIX }}:${{ env.LOWER_SOL }}
+         docker push ghcr.io/openimis/${{ env.TAG_PREFIX }}:${{ env.LOWER_SOL }}
+     
 
       # -------------------------------------------------
       # Build FE
@@ -239,8 +224,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ env.LOWER_SOL }}-fe
-          build-args: |
-            OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_FE }}/openimis.json)
+          #build-args: |
+          #  OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_FE }}/openimis.json)
           cache-from: |
             type=gha,scope=base-fe
             ${{ env.BASE_FE }}

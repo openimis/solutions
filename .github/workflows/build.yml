@@ -109,7 +109,7 @@ jobs:
       - name: Set output
         id: out
         run: |
-          COMP=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
+          COMP=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]ab }')
           echo "BASE_${COMP}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_OUTPUT
 
     outputs:
@@ -163,9 +163,21 @@ jobs:
           mkdir -p "$BUILD_DIR"
 
           cp -r openimis-be_py/* "$BUILD_DIR/"
+
+          # Copy and validate be-openimis.json
+          if [ ! -f "solutions/$SOL/be-openimis.json" ]; then
+            echo "ERROR: be-openimis.json not found in solutions/$SOL"
+            exit 1
+          fi
           cp "solutions/$SOL/be-openimis.json" "$BUILD_DIR/openimis.json"
-          echo "BE openimis.json: $(cat $BUILD_DIR/openimis.json)" >> $GITHUB_OUTPUT
-          [ -d "solutions/$SOL/fixtures" ] && cp -r "solutions/$SOL/fixtures" "$BUILD_DIR/fixtures/" || true
+
+          # Show content (safe for logs)
+          echo "=== BE openimis.json for $SOL ==="
+          cat "$BUILD_DIR/openimis.json"
+          echo "=== END ==="
+
+          # Copy fixtures
+          [ -d "solutions/$SOL/fixtures" ] && cp -r "solutions/$SOL/fixtures" "$BUILD_DIR/fixtures/" || echo "No fixtures"
 
           echo "BUILD_DIR_BE=$BUILD_DIR" >> $GITHUB_ENV
           echo "LOWER_SOL=$LOWER_SOL" >> $GITHUB_ENV
@@ -182,8 +194,16 @@ jobs:
           mkdir -p "$BUILD_DIR"
 
           cp -r openimis-fe_js/* "$BUILD_DIR/"
+
+          if [ ! -f "solutions/$SOL/fe-openimis.json" ]; then
+            echo "ERROR: fe-openimis.json not found in solutions/$SOL"
+            exit 1
+          fi
           cp "solutions/$SOL/fe-openimis.json" "$BUILD_DIR/openimis.json"
-          echo "FE openimis.json: $(cat $BUILD_DIR/openimis.json)" >> $GITHUB_OUTPUT
+
+          echo "=== FE openimis.json for $SOL ==="
+          cat "$BUILD_DIR/openimis.json"
+          echo "=== END ==="
 
           echo "BUILD_DIR_FE=$BUILD_DIR" >> $GITHUB_ENV
           echo "LOWER_SOL=$LOWER_SOL" >> $GITHUB_ENV
@@ -200,8 +220,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ env.LOWER_SOL }}-be
-          #build-args: |
-          #  OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_BE }}/openimis.json)
+          build-args: |
+            OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_BE }}/openimis.json)
           cache-from: |
             type=gha,scope=base-be
             ${{ env.BASE_BE }}
@@ -219,8 +239,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/openimis/${{ env.TAG_PREFIX }}-${{ env.LOWER_SOL }}-fe
-          #build-args: |
-          #  OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_FE }}/openimis.json)
+          build-args: |
+            OPENIMIS_CONF_JSON=$(jq -c . ${{ env.BUILD_DIR_FE }}/openimis.json)
           cache-from: |
             type=gha,scope=base-fe
             ${{ env.BASE_FE }}

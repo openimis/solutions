@@ -171,7 +171,7 @@ jobs:
           echo "=== Contents of ${{ env.BUILD_DIR_BE }} ==="
           ls -la $BUILD_DIR
           echo "=== Contents of ${{ env.BUILD_DIR_BE }}/fixtures (should exist) ==="
-          ls -la $$BUILD_DIR/fixtures || echo "fixtures/ not found!"
+          ls -la $BUILD_DIR/fixtures || echo "fixtures/ not found!"
           
           echo "=== BE openimis.json for $SOL ==="
           cat "$BUILD_DIR/openimis.json"

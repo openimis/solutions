@@ -168,16 +168,14 @@ jobs:
             exit 1
           fi
           cp "solutions/$SOL/be-openimis.json" "$BUILD_DIR/openimis.json"
-          echo "=== Contents of ${{ env.BUILD_DIR_BE }} ==="
-          ls -la $BUILD_DIR
-          echo "=== Contents of ${{ env.BUILD_DIR_BE }}/fixtures (should exist) ==="
-          ls -la $BUILD_DIR/fixtures || echo "fixtures/ not found!"
+
           
           echo "=== BE openimis.json for $SOL ==="
           cat "$BUILD_DIR/openimis.json"
           echo "=== END ==="
 
           [ -d "solutions/$SOL/fixtures" ] && cp -r "solutions/$SOL/fixtures" "$BUILD_DIR/" || echo "No fixtures"
+          [ -d "solutions/$SOL/fixtures" ] && ls "$BUILD_DIR/fixtures" || echo ""
 
           echo "BUILD_DIR_BE=$BUILD_DIR" >> $GITHUB_ENV
           echo "LOWER_SOL=$LOWER_SOL" >> $GITHUB_ENV

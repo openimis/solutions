@@ -849,7 +849,7 @@
       },
       "assembly": {
         "package": "openimis-be",
-        "git": "https://github.com/openimis/openimis-be",
+        "git": "https://github.com/openimis/openimis-be_py",
         "version": "26.04",
         "branch": "feature/load_demo"
       }
@@ -1078,7 +1078,7 @@
       },
       "assembly": {
         "package": "openimis-fe",
-        "git": "https://github.com/openimis/openimis-fe",
+        "git": "https://github.com/openimis/openimis-fe_js",
         "version": "26.04",
         "branch": "feature/vite-migration"
       }

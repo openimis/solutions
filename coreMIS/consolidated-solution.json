@@ -1136,5 +1136,5 @@
   "initData": [
     "solution/fixtures/core/language.json"
   ],
-  "assemblyBranch": "feature/load_demo"
+  "assemblyBranch": "feature/load-demo"
 }

@@ -1,0 +1,47 @@
+name: Build All Solution Images
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Main tag prefix (e.g. v1.5, latest, dev)'
+        required: true
+        default: 'latest'
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.discover.outputs.matrix }}
+    steps:
+      - name: Checkout solutions repo
+        uses: actions/checkout@v4
+        with:
+          path: solutions
+
+      - name: Discover solutions
+        id: discover
+        run: |
+          cd solutions
+          items=$(find . -mindepth 1 -maxdepth 1 -type d | while read -r d; do
+            folder=$(basename "$d")
+            be=false; fe=false
+            [ -f "$d/be-openimis.json" ] && be=true
+            [ -f "$d/fe-openimis.json" ] && fe=true
+            [[ $be == true || $fe == true ]] && \
+              printf '{"solution":"%s"},' "$folder"
+          done | sed 's/,$//')
+          echo "matrix=[${items}]" >> $GITHUB_OUTPUT
+
+  dispatch:
+    needs: discover
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include: ${{ fromJson(needs.discover.outputs.matrix) }}
+    steps:
+      - name: Dispatch build for ${{ matrix.solution }}
+        run: |
+          gh workflow run build.yml -f tag=${{ inputs.tag }} -f solution=${{ matrix.solution }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

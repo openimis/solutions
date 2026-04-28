@@ -7,140 +7,100 @@ on:
         description: 'Main tag prefix (e.g. v1.5, latest, dev)'
         required: true
         default: 'latest'
+      solution:
+        description: 'Solution name (e.g. coreMIS)'
+        required: true
 
 jobs:
-  # -------------------------------------------------
-  # 1. Checkout all repos + discover solutions
-  # -------------------------------------------------
-  prepare:
+  build:
     runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.discover.outputs.matrix }}
+    permissions:
+      packages: write
     steps:
+      # -------------------------------------------------
+      # 1. Checkout all repos + discover what to build
+      # -------------------------------------------------
       - name: Checkout solutions repo
         uses: actions/checkout@v4
         with:
           path: solutions
 
-      - name: Checkout openimis-be_py (develop)
-        uses: actions/checkout@v4
-        with:
-          repository: openimis/openimis-be_py
-          ref: develop
-          path: openimis-be_py
-
-      - name: Checkout openimis-fe_js (develop)
-        uses: actions/checkout@v4
-        with:
-          repository: openimis/openimis-fe_js
-          ref: develop
-          path: openimis-fe_js
-
-      - name: Discover solutions
-        id: discover
-        run: |
-          cd solutions
-          items=$(find . -mindepth 1 -maxdepth 1 -type d | while read -r d; do
-            folder=$(basename "$d")
-            be=false; fe=false
-            [ -f "$d/be-openimis.json" ] && be=true
-            [ -f "$d/fe-openimis.json" ] && fe=true
-            [[ $be == true || $fe == true ]] && \
-              printf '{"solution":"%s","be":%s,"fe":%s},' "$folder" "$be" "$fe"
-          done | sed 's/,$//')
-          echo "matrix=[${items}]" >> $GITHUB_OUTPUT
-
-      - name: Upload source repos as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: source-repos
-          path: |
-            openimis-be_py
-            openimis-fe_js
-            solutions
-
-  # -------------------------------------------------
-  # 2. Build BASE images (once) – cached
-  # -------------------------------------------------
-  build-base:
-    needs: prepare
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-    strategy:
-      matrix:
-        component: [be, fe]
-    env:
-      SOURCE_DIR: ${{ matrix.component == 'be' && 'openimis-be_py' || 'openimis-fe_js' }}
-      BASE_TAG: ghcr.io/openimis/openimis-${{ matrix.component }}-base:${{ github.event.inputs.tag }}
-    steps:
-      - name: Download source repos
-        uses: actions/download-artifact@v4
-        with:
-          name: source-repos
-          path: .
-
-      - uses: docker/setup-qemu-action@v3
-      - uses: docker/setup-buildx-action@v3
-      - uses: docker/login-action@v3
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build & push BASE image
-        uses: docker/build-push-action@v5
-        with:
-          context: ${{ env.SOURCE_DIR }}
-          target: base
-          platforms: linux/amd64,linux/arm64
-          push: true
-          tags: ${{ env.BASE_TAG }}
-          cache-from: type=gha,scope=base-${{ matrix.component }}
-          cache-to: type=gha,mode=max,scope=base-${{ matrix.component }}
-
-      - name: Export base tag
-        run: |
-          COMP=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
-          echo "BASE_${COMP}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_ENV
-
-      - name: Set output
-        id: out
-        run: |
-          COMP=$(echo "${{ matrix.component }}" | tr '[:lower:]' '[:upper:]')
-          echo "BASE_${COMP}_TAG=${{ env.BASE_TAG }}" >> $GITHUB_OUTPUT
-
-    outputs:
-      BASE_BE_TAG: ${{ steps.out.outputs.BASE_BE_TAG }}
-      BASE_FE_TAG: ${{ steps.out.outputs.BASE_FE_TAG }}
-
-  # -------------------------------------------------
-  # 3. Build solution images – single image name, multiple tags
-  # -------------------------------------------------
-  build-solution:
-    needs: [prepare, build-base]
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-    strategy:
-      fail-fast: false
-      matrix:
-        include: ${{ fromJson(needs.prepare.outputs.matrix) }}
-    env:
-      TAG_PREFIX: ${{ github.event.inputs.tag }}
-      BASE_BE: ${{ needs.build-base.outputs.BASE_BE_TAG }}
-      BASE_FE: ${{ needs.build-base.outputs.BASE_FE_TAG }}
-
-    steps:
-      - name: Download source repos
-        uses: actions/download-artifact@v4
-        with:
-          name: source-repos
-          path: .
-
       - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
+        run: |
+          sed -i 's/deb.debian.org/archive.debian.org/g' /etc/apt/sources.list
+          sed -i 's|security.debian.org/debian-security|archive.debian.org/debian-security|g' /etc/apt/sources.list
+          sed -i '/buster-updates/d' /etc/apt/sources.list
+          apt-get update && apt-get install -y jq
 
+      - name: Set BE repo and ref
+        run: |
+          JSON_FILE="solutions/${{ inputs.solution }}/consolidated-solution.json"
+          if [ -f "$JSON_FILE" ]; then
+            BE_GIT_URL=$(jq -r '.bePackages.definitions.assembly.git // empty' "$JSON_FILE")
+            BE_REF=$(jq -r '.bePackages.definitions.assembly.branch // "develop"' "$JSON_FILE")
+            if [ -n "$BE_GIT_URL" ]; then
+              BE_REPO=$(echo "$BE_GIT_URL" | sed -E 's|https://github.com/([^/]+)/([^/]+)(\.git)?$|\1/\2|')
+            else
+              BE_REPO="openimis/openimis-be_py"
+              BE_REF="develop"
+            fi
+          else
+            BE_REPO="openimis/openimis-be_py"
+            BE_REF="develop"
+          fi
+          echo "BE_REPO=$BE_REPO" >> $GITHUB_ENV
+          echo "BE_REF=$BE_REF" >> $GITHUB_ENV
+
+      - name: Set FE repo and ref
+        run: |
+          JSON_FILE="solutions/${{ inputs.solution }}/consolidated-solution.json"
+          if [ -f "$JSON_FILE" ]; then
+            FE_GIT_URL=$(jq -r '.fePackages.definitions.assembly.git // empty' "$JSON_FILE")
+            FE_REF=$(jq -r '.fePackages.definitions.assembly.branch // "develop"' "$JSON_FILE")
+            if [ -n "$FE_GIT_URL" ]; then
+              FE_REPO=$(echo "$FE_GIT_URL" | sed -E 's|https://github.com/([^/]+)/([^/]+)(\.git)?$|\1/\2|')
+            else
+              FE_REPO="openimis/openimis-fe_js"
+              FE_REF="develop"
+            fi
+          else
+            FE_REPO="openimis/openimis-fe_js"
+            FE_REF="develop"
+          fi
+          echo "FE_REPO=$FE_REPO" >> $GITHUB_ENV
+          echo "FE_REF=$FE_REF" >> $GITHUB_ENV
+
+      - name: Checkout openimis-be_py
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.BE_REPO }}
+          ref: ${{ env.BE_REF }}
+          path: openimis-be_py
+          token: ${{ secrets.GITHUB_TOKEN || 'dummy-token-for-act' }}
+
+      - name: Checkout openimis-fe_js
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.FE_REPO }}
+          ref: ${{ env.FE_REF }}
+          path: openimis-fe_js
+          token: ${{ secrets.GITHUB_TOKEN || 'dummy-token-for-act' }}
+
+      - name: Check solution components
+        run: |
+          SOL="${{ inputs.solution }}"
+          BE=false; FE=false
+          [ -f "solutions/$SOL/be-openimis.json" ] && BE=true
+          [ -f "solutions/$SOL/fe-openimis.json" ] && FE=true
+          echo "BUILD_BE=$BE" >> $GITHUB_ENV
+          echo "BUILD_FE=$FE" >> $GITHUB_ENV
+          echo "=== Solution: $SOL ==="
+          echo "build_be=$BE"
+          echo "build_fe=$FE"
+
+      # -------------------------------------------------
+      # 2. Docker setup + login (once)
+      # -------------------------------------------------
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3
       - uses: docker/login-action@v3
@@ -150,13 +110,12 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       # -------------------------------------------------
-      # Prepare BE build context
+      # 3. Build solution images (no more shared base)
       # -------------------------------------------------
       - name: Prepare BE build context
-        if: matrix.be
-        id: prep_be
+        if: env.BUILD_BE == 'true'
         run: |
-          SOL="${{ matrix.solution }}"
+          SOL="${{ inputs.solution }}"
           LOWER_SOL=$(echo "$SOL" | tr '[:upper:]' '[:lower:]')
           BUILD_DIR="build-be-$LOWER_SOL"
           mkdir -p "$BUILD_DIR"
@@ -169,26 +128,20 @@ jobs:
           fi
           cp "solutions/$SOL/be-openimis.json" "$BUILD_DIR/openimis.json"
 
-          
           echo "=== BE openimis.json for $SOL ==="
           cat "$BUILD_DIR/openimis.json"
           echo "=== END ==="
 
           [ -d "solutions/$SOL/fixtures" ] && cp -r "solutions/$SOL/fixtures" "$BUILD_DIR/" || echo "No fixtures"
-          [ -d "solutions/$SOL/fixtures" ] && ls "$BUILD_DIR/fixtures" || echo ""
 
           echo "BUILD_DIR_BE=$BUILD_DIR" >> $GITHUB_ENV
           echo "LOWER_SOL=$LOWER_SOL" >> $GITHUB_ENV
-          echo "TAG_BE=${{ env.TAG_PREFIX }}-$LOWER_SOL" >> $GITHUB_ENV
+          echo "TAG_BE=${{ inputs.tag }}-$LOWER_SOL" >> $GITHUB_ENV
 
-      # -------------------------------------------------
-      # Prepare FE build context
-      # -------------------------------------------------
       - name: Prepare FE build context
-        if: matrix.fe
-        id: prep_fe
+        if: env.BUILD_FE == 'true'
         run: |
-          SOL="${{ matrix.solution }}"
+          SOL="${{ inputs.solution }}"
           LOWER_SOL=$(echo "$SOL" | tr '[:upper:]' '[:lower:]')
           BUILD_DIR="build-fe-$LOWER_SOL"
           mkdir -p "$BUILD_DIR"
@@ -207,22 +160,18 @@ jobs:
 
           echo "BUILD_DIR_FE=$BUILD_DIR" >> $GITHUB_ENV
           echo "LOWER_SOL=$LOWER_SOL" >> $GITHUB_ENV
-          echo "TAG_FE=${{ env.TAG_PREFIX }}-$LOWER_SOL" >> $GITHUB_ENV
+          echo "TAG_FE=${{ inputs.tag }}-$LOWER_SOL" >> $GITHUB_ENV
 
       - name: Debug - List build context (BE)
-        if: matrix.be
+        if: env.BUILD_BE == 'true'
         run: |
           echo "=== Contents of ${{ env.BUILD_DIR_BE }} ==="
           ls -la ${{ env.BUILD_DIR_BE }}
-          echo "=== Contents of ${{ env.BUILD_DIR_BE }}/fixtures (should exist) ==="
+          echo "=== Contents of ${{ env.BUILD_DIR_BE }}/fixtures ==="
           ls -la ${{ env.BUILD_DIR_BE }}/fixtures || echo "fixtures/ not found!"
-            
-      
-      # -------------------------------------------------
-      # Build BE image → openimis-be:<tag>-<solution>
-      # -------------------------------------------------
-      - name: Build BE image
-        if: matrix.be
+
+      - name: Build BE solution image
+        if: env.BUILD_BE == 'true'
         uses: docker/build-push-action@v5
         with:
           context: ${{ env.BUILD_DIR_BE }}
@@ -231,16 +180,11 @@ jobs:
           push: true
           tags: |
             ghcr.io/openimis/openimis-be:${{ env.TAG_BE }}
-          cache-from: |
-            type=gha,scope=base-be
-            ${{ env.BASE_BE }}
+          cache-from: type=gha,scope=solution-${{ env.LOWER_SOL }}-be
           cache-to: type=gha,mode=max,scope=solution-${{ env.LOWER_SOL }}-be
 
-      # -------------------------------------------------
-      # Build FE image → openimis-fe:<tag>-<solution>
-      # -------------------------------------------------
-      - name: Build FE image
-        if: matrix.fe
+      - name: Build FE solution image
+        if: env.BUILD_FE == 'true'
         uses: docker/build-push-action@v5
         with:
           context: ${{ env.BUILD_DIR_FE }}
@@ -249,7 +193,5 @@ jobs:
           push: true
           tags: |
             ghcr.io/openimis/openimis-fe:${{ env.TAG_FE }}
-          cache-from: |
-            type=gha,scope=base-fe
-            ${{ env.BASE_FE }}
+          cache-from: type=gha,scope=solution-${{ env.LOWER_SOL }}-fe
           cache-to: type=gha,mode=max,scope=solution-${{ env.LOWER_SOL }}-fe

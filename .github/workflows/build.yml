@@ -22,11 +22,12 @@ jobs:
       # -------------------------------------------------
       - name: Checkout solutions repo
         uses: actions/checkout@v4
-        with:
-          path: solutions
+        # No 'path:' → solution folders (coreMIS/, etc.) are directly in workspace root
+        # This avoids nesting issues with act and makes paths consistent locally + on GitHub
+
       - name: Set BE repo and ref
         run: |
-          JSON_FILE="solutions/${{ inputs.solution }}/consolidated-solution.json"
+          JSON_FILE="${{ inputs.solution }}/consolidated-solution.json"
           if [ -f "$JSON_FILE" ]; then
             BE_GIT_URL=$(jq -r '.bePackages.definitions.assembly.git // empty' "$JSON_FILE")
             BE_REF=$(jq -r '.bePackages.definitions.assembly.branch // "develop"' "$JSON_FILE")
@@ -45,7 +46,7 @@ jobs:
 
       - name: Set FE repo and ref
         run: |
-          JSON_FILE="solutions/${{ inputs.solution }}/consolidated-solution.json"
+          JSON_FILE="${{ inputs.solution }}/consolidated-solution.json"
           if [ -f "$JSON_FILE" ]; then
             FE_GIT_URL=$(jq -r '.fePackages.definitions.assembly.git // empty' "$JSON_FILE")
             FE_REF=$(jq -r '.fePackages.definitions.assembly.branch // "develop"' "$JSON_FILE")
@@ -80,13 +81,12 @@ jobs:
 
       - name: Check solution components
         run: |
-          SOL="${{ inputs.solution }}"
           BE=false; FE=false
-          [ -f "solutions/$SOL/be-openimis.json" ] && BE=true
-          [ -f "solutions/$SOL/fe-openimis.json" ] && FE=true
+          [ -f "${{ inputs.solution }}/be-openimis.json" ] && BE=true
+          [ -f "${{ inputs.solution }}/fe-openimis.json" ] && FE=true
           echo "BUILD_BE=$BE" >> $GITHUB_ENV
           echo "BUILD_FE=$FE" >> $GITHUB_ENV
-          echo "=== Solution: $SOL ==="
+          echo "=== Solution: ${{ inputs.solution }} ==="
           echo "build_be=$BE"
           echo "build_fe=$FE"
 
@@ -107,24 +107,23 @@ jobs:
       - name: Prepare BE build context
         if: env.BUILD_BE == 'true'
         run: |
-          SOL="${{ inputs.solution }}"
-          LOWER_SOL=$(echo "$SOL" | tr '[:upper:]' '[:lower:]')
+          LOWER_SOL=$(echo "${{ inputs.solution }}" | tr '[:upper:]' '[:lower:]')
           BUILD_DIR="build-be-$LOWER_SOL"
           mkdir -p "$BUILD_DIR"
 
           cp -r openimis-be_py/* "$BUILD_DIR/"
 
-          if [ ! -f "solutions/$SOL/be-openimis.json" ]; then
-            echo "ERROR: be-openimis.json not found in solutions/$SOL"
+          if [ ! -f "${{ inputs.solution }}/be-openimis.json" ]; then
+            echo "ERROR: be-openimis.json not found in ${{ inputs.solution }}"
             exit 1
           fi
-          cp "solutions/$SOL/be-openimis.json" "$BUILD_DIR/openimis.json"
+          cp "${{ inputs.solution }}/be-openimis.json" "$BUILD_DIR/openimis.json"
 
-          echo "=== BE openimis.json for $SOL ==="
+          echo "=== BE openimis.json for ${{ inputs.solution }} ==="
           cat "$BUILD_DIR/openimis.json"
           echo "=== END ==="
 
-          [ -d "solutions/$SOL/fixtures" ] && cp -r "solutions/$SOL/fixtures" "$BUILD_DIR/" || echo "No fixtures"
+          [ -d "${{ inputs.solution }}/fixtures" ] && cp -r "${{ inputs.solution }}/fixtures" "$BUILD_DIR/" || echo "No fixtures"
 
           echo "BUILD_DIR_BE=$BUILD_DIR" >> $GITHUB_ENV
           echo "LOWER_SOL=$LOWER_SOL" >> $GITHUB_ENV
@@ -133,20 +132,19 @@ jobs:
       - name: Prepare FE build context
         if: env.BUILD_FE == 'true'
         run: |
-          SOL="${{ inputs.solution }}"
-          LOWER_SOL=$(echo "$SOL" | tr '[:upper:]' '[:lower:]')
+          LOWER_SOL=$(echo "${{ inputs.solution }}" | tr '[:upper:]' '[:lower:]')
           BUILD_DIR="build-fe-$LOWER_SOL"
           mkdir -p "$BUILD_DIR"
 
           cp -r openimis-fe_js/* "$BUILD_DIR/"
 
-          if [ ! -f "solutions/$SOL/fe-openimis.json" ]; then
-            echo "ERROR: fe-openimis.json not found in solutions/$SOL"
+          if [ ! -f "${{ inputs.solution }}/fe-openimis.json" ]; then
+            echo "ERROR: fe-openimis.json not found in ${{ inputs.solution }}"
             exit 1
           fi
-          cp "solutions/$SOL/fe-openimis.json" "$BUILD_DIR/openimis.json"
+          cp "${{ inputs.solution }}/fe-openimis.json" "$BUILD_DIR/openimis.json"
 
-          echo "=== FE openimis.json for $SOL ==="
+          echo "=== FE openimis.json for ${{ inputs.solution }} ==="
           cat "$BUILD_DIR/openimis.json"
           echo "=== END ==="
 

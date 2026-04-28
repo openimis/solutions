@@ -44,7 +44,6 @@
       "name": "invoice",
       "pip": "git+https://github.com/obenma/openimis-be-invoice_py.git@develop#egg=openimis-be-invoice"
     },
-    {},
     {
       "name": "opensearch_reports",
       "pip": "git+https://github.com/obenma/openimis-be-opensearch_reports_py.git@develop#egg=openimis-be-opensearch_reports"

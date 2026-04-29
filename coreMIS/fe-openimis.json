@@ -2,79 +2,79 @@
   "modules": [
     {
       "name": "GrievanceSocialProtectionModule",
-      "npm": "@openimis/fe-grievance_social_protection@https://github.com/obenma/openimis-fe-grievance_social_protection_js#feature/load_demo"
+      "npm": "@openimis/fe-grievance_social_protection@https://github.com/obenma/openimis-fe-grievance_social_protection_js#feature/vite-migration"
     },
     {
       "name": "ProfileModule",
-      "npm": "@openimis/fe-profile@https://github.com/obenma/openimis-fe-profile_js#feature/load_demo"
+      "npm": "@openimis/fe-profile@https://github.com/obenma/openimis-fe-profile_js#feature/vite-migration"
     },
     {
       "name": "CoreModule",
-      "npm": "@openimis/fe-core@https://github.com/obenma/openimis-fe-core_js#feature/load_demo"
+      "npm": "@openimis/fe-core@https://github.com/obenma/openimis-fe-core_js#feature/vite-migration"
     },
     {
       "name": "AdminModule",
-      "npm": "@openimis/fe-admin@https://github.com/obenma/openimis-fe-admin_js#feature/load_demo"
+      "npm": "@openimis/fe-admin@https://github.com/obenma/openimis-fe-admin_js#feature/vite-migration"
     },
     {
       "name": "HomeModule",
-      "npm": "@openimis/fe-home@https://github.com/obenma/openimis-fe-home_js#feature/load_demo"
+      "npm": "@openimis/fe-home@https://github.com/obenma/openimis-fe-home_js#feature/vite-migration"
     },
     {
       "name": "CalculationModule",
-      "npm": "@openimis/fe-calculation@https://github.com/obenma/openimis-fe-calculation_js#feature/load_demo"
+      "npm": "@openimis/fe-calculation@https://github.com/obenma/openimis-fe-calculation_js#feature/vite-migration"
     },
     {
       "name": "LocationModule",
-      "npm": "@openimis/fe-location@https://github.com/obenma/openimis-fe-location_js#feature/load_demo"
+      "npm": "@openimis/fe-location@https://github.com/obenma/openimis-fe-location_js#feature/vite-migration"
     },
     {
       "name": "TasksManagementModule",
-      "npm": "@openimis/fe-tasks_management@https://github.com/obenma/openimis-fe-tasks_management_js#feature/load_demo"
+      "npm": "@openimis/fe-tasks_management@https://github.com/obenma/openimis-fe-tasks_management_js#feature/vite-migration"
     },
     {
       "name": "PayrollModule",
-      "npm": "@openimis/fe-payroll@https://github.com/obenma/openimis-fe-payroll_js#feature/load_demo"
+      "npm": "@openimis/fe-payroll@https://github.com/obenma/openimis-fe-payroll_js#feature/vite-migration"
     },
     {
       "name": "PaymentCycleModule",
-      "npm": "@openimis/fe-payment_cycle@https://github.com/obenma/openimis-fe-payment_cycle_js#feature/load_demo"
+      "npm": "@openimis/fe-payment_cycle@https://github.com/obenma/openimis-fe-payment_cycle_js#feature/vite-migration"
     },
     {
       "name": "PaymentModule",
-      "npm": "@openimis/fe-payment@https://github.com/obenma/openimis-fe-payment_js#feature/load_demo"
+      "npm": "@openimis/fe-payment@https://github.com/obenma/openimis-fe-payment_js#feature/vite-migration"
     },
     {
       "name": "ContributionPlanModule",
-      "npm": "@openimis/fe-contribution_plan@https://github.com/obenma/openimis-fe-contribution_plan_js#feature/load_demo"
+      "npm": "@openimis/fe-contribution_plan@https://github.com/obenma/openimis-fe-contribution_plan_js#feature/vite-migration"
     },
     {
       "name": "InvoiceModule",
-      "npm": "@openimis/fe-invoice@https://github.com/obenma/openimis-fe-invoice_js#feature/load_demo"
+      "npm": "@openimis/fe-invoice@https://github.com/obenma/openimis-fe-invoice_js#feature/vite-migration"
     },
     {
       "name": "OpenSearchReportsModule",
-      "npm": "@openimis/fe-opensearch_reports@https://github.com/obenma/openimis-fe-opensearch_reports_js#feature/load_demo"
+      "npm": "@openimis/fe-opensearch_reports@https://github.com/obenma/openimis-fe-opensearch_reports_js#feature/vite-migration"
     },
     {
       "name": "CoreMISLanguageModule",
-      "npm": "@openimis/fe-coremis_language_pack@https://github.com/obenma/openimis-fe-coremis_language_pack_js.git#develop"
+      "npm": "@openimis/fe-coremis_language_pack@https://github.com/obenma/openimis-fe-coremis_language_pack_js.git#feature/vite-migration"
     },
     {
       "name": "DeduplicationModule",
-      "npm": "@openimis/fe-deduplication@https://github.com/obenma/openimis-fe-deduplication_js#feature/load_demo"
+      "npm": "@openimis/fe-deduplication@https://github.com/obenma/openimis-fe-deduplication_js#feature/vite-migration"
     },
     {
       "name": "SocialProtectionModule",
-      "npm": "@openimis/fe-social_protection@https://github.com/obenma/openimis-fe-social_protection_js#feature/load_demo"
+      "npm": "@openimis/fe-social_protection@https://github.com/obenma/openimis-fe-social_protection_js#feature/vite-migration"
     },
     {
       "name": "IndividualModule",
-      "npm": "@openimis/fe-individual@https://github.com/obenma/openimis-fe-individual_js#feature/load_demo"
+      "npm": "@openimis/fe-individual@https://github.com/obenma/openimis-fe-individual_js#feature/vite-migration"
     },
     {
       "name": "LanguageFrModule",
-      "npm": "@openimis/fe-language_fr@https://github.com/obenma/openimis-fe-language_fr_js#feature/load_demo"
+      "npm": "@openimis/fe-language_fr@https://github.com/obenma/openimis-fe-language_fr_js#feature/vite-migration"
     }
   ],
   "locales": [

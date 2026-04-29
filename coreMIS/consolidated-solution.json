@@ -565,6 +565,7 @@
       "payroll",
       "payment_cycle",
       "payment",
+      "contribution",
       "contribution_plan",
       "invoice",
       "opensearch_reports",

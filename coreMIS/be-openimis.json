@@ -41,6 +41,10 @@
       "pip": "git+https://github.com/obenma/openimis-be-payment_py.git@develop#egg=openimis-be-payment"
     },
     {
+      "name": "contribution",
+      "pip": "git+https://github.com/obenma/openimis-be-contribution_py.git@develop#egg=openimis-be-contribution"
+    },
+    {
       "name": "contribution_plan",
       "pip": "git+https://github.com/obenma/openimis-be-contribution_plan_py.git@develop#egg=openimis-be-contribution-plan"
     },

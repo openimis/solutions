@@ -21,6 +21,10 @@
       "pip": "git+https://github.com/obenma/openimis-be-medical_pricelist_py.git@develop#egg=openimis-be-medical_pricelist"
     },
     {
+      "name": "medical",
+      "pip": "git+https://github.com/obenma/openimis-be-medical_py.git@develop#egg=openimis-be-medical"
+    },
+    {
       "name": "tasks_management",
       "pip": "git+https://github.com/obenma/openimis-be-tasks_management_py.git@develop#egg=openimis-be-tasks_management"
     },
@@ -44,6 +48,7 @@
       "name": "invoice",
       "pip": "git+https://github.com/obenma/openimis-be-invoice_py.git@develop#egg=openimis-be-invoice"
     },
+    {},
     {
       "name": "opensearch_reports",
       "pip": "git+https://github.com/obenma/openimis-be-opensearch_reports_py.git@develop#egg=openimis-be-opensearch_reports"

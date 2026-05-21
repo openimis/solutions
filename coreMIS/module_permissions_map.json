@@ -68,12 +68,6 @@
     "contribution_plan.replace_paymentplan",
     "contribution_plan.update_paymentplan"
   ],
-  "payment": [
-    "payment.create_payments",
-    "payment.delete_payments",
-    "payment.payments",
-    "payment.update_payments"
-  ],
   "payroll": [
     "payroll.csv_reconciliation_create",
     "payroll.csv_reconciliation_search",

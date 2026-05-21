@@ -10,7 +10,6 @@
     "opensearch-reports": "/mnt/data/Development/solution-builder/solution/modules/opensearch-reports.json",
     "invoice-supplier": "/mnt/data/Development/solution-builder/solution/modules/invoice-supplier.json",
     "payment-plan": "/mnt/data/Development/solution-builder/solution/modules/payment-plan.json",
-    "payment": "/mnt/data/Development/solution-builder/solution/modules/payment.json",
     "payroll": "/mnt/data/Development/solution-builder/solution/modules/payroll.json",
     "payment-cycle": "/mnt/data/Development/solution-builder/solution/modules/payment-cycle.json",
     "payment-point": "/mnt/data/Development/solution-builder/solution/modules/payment-point.json",
@@ -380,11 +379,6 @@
           "route": "paymentPlans"
         },
         {
-          "position": 10,
-          "icon": "Person",
-          "route": "payment/payments"
-        },
-        {
           "position": 14,
           "route": "payrollsReconciled",
           "withDivider": true
@@ -564,8 +558,6 @@
       "tasks_management",
       "payroll",
       "payment_cycle",
-      "payment",
-      "contribution",
       "contribution_plan",
       "invoice",
       "opensearch_reports",
@@ -580,279 +572,236 @@
     "definitions": {
       "core": {
         "package": "openimis-be-core",
-        "git": "https://github.com/obenma/openimis-be-core_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-core_py",
+        "version": "v1.9.0"
       },
       "individual": {
         "package": "openimis-be-individual",
-        "git": "https://github.com/obenma/openimis-be-individual_py",
-        "version": "v1.3.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-individual_py",
+        "version": "v1.3.0"
       },
       "workflow": {
         "package": "openimis-be-workflow",
-        "git": "https://github.com/obenma/openimis-be-workflow_py",
-        "version": "v1.0.1",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-workflow_py",
+        "version": "v1.0.1"
       },
       "tasks_management": {
         "package": "openimis-be-tasks_management",
-        "git": "https://github.com/obenma/openimis-be-tasks_management_py",
-        "version": "v1.3.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-tasks_management_py",
+        "version": "v1.3.0"
       },
       "report": {
         "package": "openimis-be-report",
-        "git": "https://github.com/obenma/openimis-be-report_py",
-        "version": "v1.6.2",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-report_py",
+        "version": "v1.6.2"
       },
       "location": {
         "package": "openimis-be-location",
-        "git": "https://github.com/obenma/openimis-be-location_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-location_py",
+        "version": "v1.9.0"
       },
       "medical": {
         "package": "openimis-be-medical",
-        "git": "https://github.com/obenma/openimis-be-medical_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-medical_py",
+        "version": "v1.9.0"
       },
       "medical_pricelist": {
         "package": "openimis-be-medical_pricelist",
-        "git": "https://github.com/obenma/openimis-be-medical_pricelist_py",
-        "version": "v1.7.1",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-medical_pricelist_py",
+        "version": "v1.7.1"
       },
       "product": {
         "package": "openimis-be-product",
-        "git": "https://github.com/obenma/openimis-be-product_py",
-        "version": "v1.8.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-product_py",
+        "version": "v1.8.0"
       },
       "insuree": {
         "package": "openimis-be-insuree",
-        "git": "https://github.com/obenma/openimis-be-insuree_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-insuree_py",
+        "version": "v1.9.0"
       },
       "policy": {
         "package": "openimis-be-policy",
-        "git": "https://github.com/obenma/openimis-be-policy_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-policy_py",
+        "version": "v1.9.0"
       },
       "contribution": {
         "package": "openimis-be-contribution",
-        "git": "https://github.com/obenma/openimis-be-contribution_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-contribution_py",
+        "version": "v1.9.0"
       },
       "payer": {
         "package": "openimis-be-payer",
-        "git": "https://github.com/obenma/openimis-be-payer_py",
-        "version": "v1.6.2",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-payer_py",
+        "version": "v1.6.2"
       },
       "payment": {
         "package": "openimis-be-payment",
-        "git": "https://github.com/obenma/openimis-be-payment_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-payment_py",
+        "version": "v1.9.0"
       },
       "claim": {
         "package": "openimis-be-claim",
-        "git": "https://github.com/obenma/openimis-be-claim_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-claim_py",
+        "version": "v1.9.0"
       },
       "claim_batch": {
         "package": "openimis-be-claim_batch",
-        "git": "https://github.com/obenma/openimis-be-claim_batch_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-claim_batch_py",
+        "version": "v1.9.0"
       },
       "tools": {
         "package": "openimis-be-tools",
-        "git": "https://github.com/obenma/openimis-be-tools_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-tools_py",
+        "version": "v1.9.0"
       },
       "api_fhir_r4": {
         "package": "openimis-be-api_fhir_r4",
-        "git": "https://github.com/obenma/openimis-be-api_fhir_r4_py",
-        "version": "v1.8.1",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-api_fhir_r4_py",
+        "version": "v1.8.1"
       },
       "calculation": {
         "package": "openimis-be-calculation",
-        "git": "https://github.com/obenma/openimis-be-calculation_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-calculation_py",
+        "version": "v1.9.0"
       },
       "contribution_plan": {
         "package": "openimis-be-contribution-plan",
-        "git": "https://github.com/obenma/openimis-be-contribution_plan_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-contribution_plan_py",
+        "version": "v1.9.0"
       },
       "policyholder": {
         "package": "openimis-be-policyholder",
-        "git": "https://github.com/obenma/openimis-be-policyholder_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-policyholder_py",
+        "version": "v1.9.0"
       },
       "contract": {
         "package": "openimis-be-contract",
-        "git": "https://github.com/obenma/openimis-be-contract_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-contract_py",
+        "version": "v1.9.0"
       },
       "invoice": {
         "package": "openimis-be-invoice",
-        "git": "https://github.com/obenma/openimis-be-invoice_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-invoice_py",
+        "version": "v1.9.0"
       },
       "calcrule_contribution_legacy": {
         "package": "openimis-be-calcrule-contribution-legacy",
-        "git": "https://github.com/obenma/openimis-be-calcrule_contribution_legacy_py",
-        "version": "v1.8.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-calcrule_contribution_legacy_py",
+        "version": "v1.8.0"
       },
       "calcrule_third_party_payment": {
         "package": "openimis-be-calcrule-third_party_payment",
-        "git": "https://github.com/obenma/openimis-be-calcrule_third_party_payment_py",
-        "version": "v1.8.1",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-calcrule_third_party_payment_py",
+        "version": "v1.8.1"
       },
       "calcrule_capitation_payment": {
         "package": "openimis-be-calcrule-capitation_payment",
-        "git": "https://github.com/obenma/openimis-be-calcrule_capitation_payment_py",
-        "version": "v1.9.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-calcrule_capitation_payment_py",
+        "version": "v1.9.0"
       },
       "calcrule_commission": {
         "package": "openimis-be-calcrule_commission",
-        "git": "https://github.com/obenma/openimis-be-calcrule_commission_py",
-        "version": "v1.6.1",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-calcrule_commission_py",
+        "version": "v1.6.1"
       },
       "calcrule_validations": {
         "package": "openimis-be-calcrule_validations",
-        "git": "https://github.com/obenma/openimis-be-calcrule_validations_py",
-        "version": "v1.2.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-calcrule_validations_py",
+        "version": "v1.2.0"
       },
       "calcrule_contribution_income_percentage": {
         "package": "openimis-be-calcrule_contribution_income_percentage",
-        "git": "https://github.com/obenma/openimis-be-calcrule_contribution_income_percentage_py",
-        "version": "v1.8.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-calcrule_contribution_income_percentage_py",
+        "version": "v1.8.0"
       },
       "calcrule_fees": {
         "package": "openimis-be-calcrule_fees",
-        "git": "https://github.com/obenma/openimis-be-calcrule_fees_py",
-        "version": "v1.6.1",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-calcrule_fees_py",
+        "version": "v1.6.1"
       },
       "calcrule_unconditional_cash_payment": {
         "package": "openimis-be-calcrule_unconditional_cash_payment",
-        "git": "https://github.com/obenma/openimis-be-calcrule_unconditional_cash_payment_py",
-        "version": "v1.6.1",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-calcrule_unconditional_cash_payment_py",
+        "version": "v1.6.1"
       },
       "im_export": {
         "package": "openimis-be-im_export",
-        "git": "https://github.com/obenma/openimis-be-im_export_py",
-        "version": "v1.4.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-im_export_py",
+        "version": "v1.4.0"
       },
       "dhis2_etl": {
         "package": "openimis-be-dhis2_etl",
-        "git": "https://github.com/obenma/openimis-be-dhis2_etl_py",
-        "version": "v1.3.1",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-dhis2_etl_py",
+        "version": "v1.3.1"
       },
       "social_protection": {
         "package": "openimis-be-social_protection",
-        "git": "https://github.com/obenma/openimis-be-social_protection_py",
-        "version": "v1.3.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-social_protection_py",
+        "version": "v1.3.0"
       },
       "opensearch_reports": {
         "package": "openimis-be-opensearch_reports",
-        "git": "https://github.com/obenma/openimis-be-opensearch_reports_py",
-        "version": "v1.2.2",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-opensearch_reports_py",
+        "version": "v1.2.2"
       },
       "payment_cycle": {
         "package": "openimis-be-payment_cycle",
-        "git": "https://github.com/obenma/openimis-be-payment_cycle_py",
-        "version": "v1.3.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-payment_cycle_py",
+        "version": "v1.3.0"
       },
       "calcrule_social_protection": {
         "package": "openimis-be-calcrule_social_protection",
-        "git": "https://github.com/obenma/openimis-be-calcrule_social_protection_py",
-        "version": "v1.2.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-calcrule_social_protection_py",
+        "version": "v1.2.0"
       },
       "payroll": {
         "package": "openimis-be-payroll",
-        "git": "https://github.com/obenma/openimis-be-payroll_py",
-        "version": "v1.3.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-payroll_py",
+        "version": "v1.3.0"
       },
       "controls": {
         "package": "openimis-be-controls",
-        "git": "https://github.com/obenma/openimis-be-controls_py",
-        "version": "v1.2.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-controls_py",
+        "version": "v1.2.0"
       },
       "grievance_social_protection": {
         "package": "openimis-be-grievance_social_protection",
-        "git": "https://github.com/obenma/openimis-be-grievance_social_protection_py",
-        "version": "v1.1.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-grievance_social_protection_py",
+        "version": "v1.1.0"
       },
       "claim_sampling": {
         "package": "openimis-be-claim_sampling",
-        "git": "https://github.com/obenma/openimis-be-claim_sampling_py",
-        "version": "v1.1.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-claim_sampling_py",
+        "version": "v1.1.0"
       },
       "deduplication": {
         "package": "openimis-be-deduplication",
-        "git": "https://github.com/obenma/openimis-be-deduplication_py",
-        "version": "v1.2.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-deduplication_py",
+        "version": "v1.2.0"
       },
       "api_etl": {
         "package": "openimis-be-api_etl",
-        "git": "https://github.com/obenma/openimis-be-api_etl_py",
-        "version": "v1.1.0",
-        "branch": "develop"
+        "git": "https://github.com/openimis/openimis-be-api_etl_py",
+        "version": "v1.1.0"
       },
       "claim_ai": {
         "package": "openimis-be-claim_ai",
-        "git": "https://github.com/obenma/openimis-be-claim_ai_py",
+        "git": "https://github.com/openimis/openimis-be-claim_ai_py",
         "version": "v2.0.0",
         "branch": "develop"
       },
       "claim_ai_quality": {
         "package": "openimis-be-claim_ai_quality",
-        "git": "https://github.com/obenma/openimis-be-claim_ai_quality_py",
+        "git": "https://github.com/openimis/openimis-be-claim_ai_quality_py",
         "version": "v2.0.0",
         "branch": "develop"
       },
       "assembly": {
         "package": "openimis-be",
-        "git": "https://github.com/openimis/openimis-be_py",
+        "git": "https://github.com/openimis/openimis-be",
         "version": "26.04",
-        "branch": "feature/load-demo"
+        "branch": "develop"
       }
     }
   },
@@ -868,9 +817,9 @@
       "TasksManagementModule",
       "PayrollModule",
       "PaymentCycleModule",
-      "PaymentModule",
       "ContributionPlanModule",
       "InvoiceModule",
+      "PaymentModule",
       "OpenSearchReportsModule",
       "CoreMISLanguageModule",
       "DeduplicationModule",
@@ -881,199 +830,199 @@
     "definitions": {
       "CoreModule": {
         "package": "@openimis/fe-core",
-        "git": "https://github.com/obenma/openimis-fe-core_js",
+        "git": "https://github.com/openimis/openimis-fe-core_js",
         "branch": "feature/vite-migration",
         "version": "v1.9.0"
       },
       "IndividualModule": {
         "package": "@openimis/fe-individual",
-        "git": "https://github.com/obenma/openimis-fe-individual_js",
+        "git": "https://github.com/openimis/openimis-fe-individual_js",
         "branch": "feature/vite-migration",
         "version": "v1.2.0"
       },
       "SocialProtectionModule": {
         "package": "@openimis/fe-social_protection",
-        "git": "https://github.com/obenma/openimis-fe-social_protection_js",
+        "git": "https://github.com/openimis/openimis-fe-social_protection_js",
         "branch": "feature/vite-migration",
         "version": "v1.3.0"
       },
       "OpenSearchReportsModule": {
         "package": "@openimis/fe-opensearch_reports",
-        "git": "https://github.com/obenma/openimis-fe-opensearch_reports_js",
+        "git": "https://github.com/openimis/openimis-fe-opensearch_reports_js",
         "branch": "feature/vite-migration",
         "version": "v1.3.0"
       },
       "HomeModule": {
         "package": "@openimis/fe-home",
-        "git": "https://github.com/obenma/openimis-fe-home_js",
+        "git": "https://github.com/openimis/openimis-fe-home_js",
         "branch": "feature/vite-migration",
         "version": "v1.6.0"
       },
       "LocationModule": {
         "package": "@openimis/fe-location",
-        "git": "https://github.com/obenma/openimis-fe-location_js",
+        "git": "https://github.com/openimis/openimis-fe-location_js",
         "branch": "feature/vite-migration",
         "version": "v1.6.0"
       },
       "InsureeModule": {
         "package": "@openimis/fe-insuree",
-        "git": "https://github.com/obenma/openimis-fe-insuree_js",
+        "git": "https://github.com/openimis/openimis-fe-insuree_js",
         "branch": "feature/vite-migration",
         "version": "v1.9.0"
       },
       "MedicalModule": {
         "package": "@openimis/fe-medical",
-        "git": "https://github.com/obenma/openimis-fe-medical_js",
+        "git": "https://github.com/openimis/openimis-fe-medical_js",
         "branch": "feature/vite-migration",
         "version": "v1.7.0"
       },
       "MedicalPriceListModule": {
         "package": "@openimis/fe-medical_pricelist",
-        "git": "https://github.com/obenma/openimis-fe-medical_pricelist_js",
+        "git": "https://github.com/openimis/openimis-fe-medical_pricelist_js",
         "branch": "feature/vite-migration",
         "version": "v1.6.0"
       },
       "ProductModule": {
         "package": "@openimis/fe-product",
-        "git": "https://github.com/obenma/openimis-fe-product_js",
+        "git": "https://github.com/openimis/openimis-fe-product_js",
         "branch": "feature/vite-migration",
         "version": "v1.8.0"
       },
       "PolicyModule": {
         "package": "@openimis/fe-policy",
-        "git": "https://github.com/obenma/openimis-fe-policy_js",
+        "git": "https://github.com/openimis/openimis-fe-policy_js",
         "branch": "feature/vite-migration",
         "version": "v1.8.0"
       },
       "PayerModule": {
         "package": "@openimis/fe-payer",
-        "git": "https://github.com/obenma/openimis-fe-payer_js",
+        "git": "https://github.com/openimis/openimis-fe-payer_js",
         "branch": "feature/vite-migration",
         "version": "v1.5.0"
       },
       "ContributionModule": {
         "package": "@openimis/fe-contribution",
-        "git": "https://github.com/obenma/openimis-fe-contribution_js",
+        "git": "https://github.com/openimis/openimis-fe-contribution_js",
         "branch": "feature/vite-migration",
         "version": "v1.7.0"
       },
       "PaymentModule": {
         "package": "@openimis/fe-payment",
-        "git": "https://github.com/obenma/openimis-fe-payment_js",
+        "git": "https://github.com/openimis/openimis-fe-payment_js",
         "branch": "feature/vite-migration",
         "version": "v1.5.0"
       },
       "ClaimModule": {
         "package": "@openimis/fe-claim",
-        "git": "https://github.com/obenma/openimis-fe-claim_js",
+        "git": "https://github.com/openimis/openimis-fe-claim_js",
         "branch": "feature/vite-migration",
         "version": "v1.8.0"
       },
       "ClaimBatchModule": {
         "package": "@openimis/fe-claim_batch",
-        "git": "https://github.com/obenma/openimis-fe-claim_batch_js",
+        "git": "https://github.com/openimis/openimis-fe-claim_batch_js",
         "branch": "feature/vite-migration",
         "version": "v1.5.0"
       },
       "AdminModule": {
         "package": "@openimis/fe-admin",
-        "git": "https://github.com/obenma/openimis-fe-admin_js",
+        "git": "https://github.com/openimis/openimis-fe-admin_js",
         "branch": "feature/vite-migration",
         "version": "v1.9.0"
       },
       "ToolsModule": {
         "package": "@openimis/fe-tools",
-        "git": "https://github.com/obenma/openimis-fe-tools_js",
+        "git": "https://github.com/openimis/openimis-fe-tools_js",
         "branch": "feature/vite-migration",
         "version": "v1.7.0"
       },
       "ProfileModule": {
         "package": "@openimis/fe-profile",
-        "git": "https://github.com/obenma/openimis-fe-profile_js",
+        "git": "https://github.com/openimis/openimis-fe-profile_js",
         "branch": "feature/vite-migration",
         "version": "v1.7.0"
       },
       "CalculationModule": {
         "package": "@openimis/fe-calculation",
-        "git": "https://github.com/obenma/openimis-fe-calculation_js",
+        "git": "https://github.com/openimis/openimis-fe-calculation_js",
         "branch": "feature/vite-migration",
         "version": "v1.6.0"
       },
       "PolicyHolderModule": {
         "package": "@openimis/fe-policyholder",
-        "git": "https://github.com/obenma/openimis-fe-policyholder_js",
+        "git": "https://github.com/openimis/openimis-fe-policyholder_js",
         "branch": "feature/vite-migration",
         "version": "v1.7.0"
       },
       "ContributionPlanModule": {
         "package": "@openimis/fe-contribution_plan",
-        "git": "https://github.com/obenma/openimis-fe-contribution_plan_js",
+        "git": "https://github.com/openimis/openimis-fe-contribution_plan_js",
         "branch": "feature/vite-migration",
         "version": "v1.9.0"
       },
       "PaymentCycleModule": {
         "package": "@openimis/fe-payment_cycle",
-        "git": "https://github.com/obenma/openimis-fe-payment_cycle_js",
+        "git": "https://github.com/openimis/openimis-fe-payment_cycle_js",
         "branch": "feature/vite-migration",
         "version": "v1.2.0"
       },
       "ContractModule": {
         "package": "@openimis/fe-contract",
-        "git": "https://github.com/obenma/openimis-fe-contract_js",
+        "git": "https://github.com/openimis/openimis-fe-contract_js",
         "branch": "feature/vite-migration",
         "version": "v1.6.0"
       },
       "TasksManagementModule": {
         "package": "@openimis/fe-tasks_management",
-        "git": "https://github.com/obenma/openimis-fe-tasks_management_js",
+        "git": "https://github.com/openimis/openimis-fe-tasks_management_js",
         "branch": "feature/vite-migration",
         "version": "v1.3.0"
       },
       "InvoiceModule": {
         "package": "@openimis/fe-invoice",
-        "git": "https://github.com/obenma/openimis-fe-invoice_js",
+        "git": "https://github.com/openimis/openimis-fe-invoice_js",
         "branch": "feature/vite-migration",
         "version": "v1.8.0"
       },
       "GrievanceSocialProtectionModule": {
         "package": "@openimis/fe-grievance_social_protection",
-        "git": "https://github.com/obenma/openimis-fe-grievance_social_protection_js",
+        "git": "https://github.com/openimis/openimis-fe-grievance_social_protection_js",
         "branch": "feature/vite-migration",
         "version": "v1.1.0"
       },
       "LanguageFrModule": {
         "package": "@openimis/fe-language_fr",
-        "git": "https://github.com/obenma/openimis-fe-language_fr_js",
+        "git": "https://github.com/openimis/openimis-fe-language_fr_js",
         "branch": "feature/vite-migration",
         "version": "v1.8.0"
       },
       "ClaimSamplingModule": {
         "package": "@openimis/fe-claim_sampling",
-        "git": "https://github.com/obenma/openimis-fe-claim_sampling_js",
+        "git": "https://github.com/openimis/openimis-fe-claim_sampling_js",
         "branch": "feature/vite-migration",
         "version": "v1.1.0"
       },
       "DeduplicationModule": {
         "package": "@openimis/fe-deduplication",
-        "git": "https://github.com/obenma/openimis-fe-deduplication_js",
+        "git": "https://github.com/openimis/openimis-fe-deduplication_js",
         "branch": "feature/vite-migration",
         "version": "v1.0.1"
       },
       "PayrollModule": {
         "package": "@openimis/fe-payroll",
-        "git": "https://github.com/obenma/openimis-fe-payroll_js",
+        "git": "https://github.com/openimis/openimis-fe-payroll_js",
         "branch": "feature/vite-migration",
         "version": "v1.3.0"
       },
       "ClaimAIQualityModule": {
         "package": "@openimis/fe-claim_ai_quality",
-        "git": "https://github.com/obenma/openimis-fe-claim_ai_quality_js.git",
+        "git": "https://github.com/openimis/openimis-fe-claim_ai_quality_js.git",
         "branch": "feature/vite-migration",
         "version": "v2.0.0"
       },
       "CoreMISLanguageModule": {
         "package": "@openimis/fe-coremis_language_pack",
-        "git": "https://github.com/obenma/openimis-fe-coremis_language_pack_js.git",
+        "git": "https://github.com/openimis/openimis-fe-coremis_language_pack_js.git",
         "branch": "feature/vite-migration",
         "version": "v1.2.0"
       },

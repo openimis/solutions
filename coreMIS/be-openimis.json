@@ -2,87 +2,79 @@
   "modules": [
     {
       "name": "grievance_social_protection",
-      "pip": "git+https://github.com/obenma/openimis-be-grievance_social_protection_py.git@develop#egg=openimis-be-grievance_social_protection"
+      "pip": "git+https://github.com/openimis/openimis-be-grievance_social_protection_py.git@develop#egg=openimis-be-grievance_social_protection"
     },
     {
       "name": "core",
-      "pip": "git+https://github.com/obenma/openimis-be-core_py.git@develop#egg=openimis-be-core"
+      "pip": "git+https://github.com/openimis/openimis-be-core_py.git@develop#egg=openimis-be-core"
     },
     {
       "name": "calculation",
-      "pip": "git+https://github.com/obenma/openimis-be-calculation_py.git@develop#egg=openimis-be-calculation"
+      "pip": "git+https://github.com/openimis/openimis-be-calculation_py.git@develop#egg=openimis-be-calculation"
     },
     {
       "name": "location",
-      "pip": "git+https://github.com/obenma/openimis-be-location_py.git@develop#egg=openimis-be-location"
+      "pip": "git+https://github.com/openimis/openimis-be-location_py.git@develop#egg=openimis-be-location"
     },
     {
       "name": "medical_pricelist",
-      "pip": "git+https://github.com/obenma/openimis-be-medical_pricelist_py.git@develop#egg=openimis-be-medical_pricelist"
+      "pip": "git+https://github.com/openimis/openimis-be-medical_pricelist_py.git@develop#egg=openimis-be-medical_pricelist"
     },
     {
       "name": "medical",
-      "pip": "git+https://github.com/obenma/openimis-be-medical_py.git@develop#egg=openimis-be-medical"
+      "pip": "git+https://github.com/openimis/openimis-be-medical_py.git@develop#egg=openimis-be-medical"
     },
     {
       "name": "tasks_management",
-      "pip": "git+https://github.com/obenma/openimis-be-tasks_management_py.git@develop#egg=openimis-be-tasks_management"
+      "pip": "git+https://github.com/openimis/openimis-be-tasks_management_py.git@develop#egg=openimis-be-tasks_management"
     },
     {
       "name": "payroll",
-      "pip": "git+https://github.com/obenma/openimis-be-payroll_py.git@develop#egg=openimis-be-payroll"
+      "pip": "git+https://github.com/openimis/openimis-be-payroll_py.git@develop#egg=openimis-be-payroll"
     },
     {
       "name": "payment_cycle",
-      "pip": "git+https://github.com/obenma/openimis-be-payment_cycle_py.git@develop#egg=openimis-be-payment_cycle"
-    },
-    {
-      "name": "payment",
-      "pip": "git+https://github.com/obenma/openimis-be-payment_py.git@develop#egg=openimis-be-payment"
-    },
-    {
-      "name": "contribution",
-      "pip": "git+https://github.com/obenma/openimis-be-contribution_py.git@develop#egg=openimis-be-contribution"
+      "pip": "git+https://github.com/openimis/openimis-be-payment_cycle_py.git@develop#egg=openimis-be-payment_cycle"
     },
     {
       "name": "contribution_plan",
-      "pip": "git+https://github.com/obenma/openimis-be-contribution_plan_py.git@develop#egg=openimis-be-contribution-plan"
+      "pip": "git+https://github.com/openimis/openimis-be-contribution_plan_py.git@develop#egg=openimis-be-contribution-plan"
     },
     {
       "name": "invoice",
-      "pip": "git+https://github.com/obenma/openimis-be-invoice_py.git@develop#egg=openimis-be-invoice"
+      "pip": "git+https://github.com/openimis/openimis-be-invoice_py.git@develop#egg=openimis-be-invoice"
     },
     {
       "name": "opensearch_reports",
-      "pip": "git+https://github.com/obenma/openimis-be-opensearch_reports_py.git@develop#egg=openimis-be-opensearch_reports"
+      "pip": "git+https://github.com/openimis/openimis-be-opensearch_reports_py.git@develop#egg=openimis-be-opensearch_reports"
     },
     {
       "name": "workflow",
-      "pip": "git+https://github.com/obenma/openimis-be-workflow_py.git@develop#egg=openimis-be-workflow"
+      "pip": "git+https://github.com/openimis/openimis-be-workflow_py.git@develop#egg=openimis-be-workflow"
     },
     {
       "name": "calcrule_social_protection",
-      "pip": "git+https://github.com/obenma/openimis-be-calcrule_social_protection_py.git@develop#egg=openimis-be-calcrule_social_protection"
+      "pip": "git+https://github.com/openimis/openimis-be-calcrule_social_protection_py.git@develop#egg=openimis-be-calcrule_social_protection"
     },
     {
       "name": "deduplication",
-      "pip": "git+https://github.com/obenma/openimis-be-deduplication_py.git@develop#egg=openimis-be-deduplication"
+      "pip": "git+https://github.com/openimis/openimis-be-deduplication_py.git@develop#egg=openimis-be-deduplication"
     },
     {
       "name": "social_protection",
-      "pip": "git+https://github.com/obenma/openimis-be-social_protection_py.git@develop#egg=openimis-be-social_protection"
+      "pip": "git+https://github.com/openimis/openimis-be-social_protection_py.git@develop#egg=openimis-be-social_protection"
     },
     {
       "name": "calcrule_validations",
-      "pip": "git+https://github.com/obenma/openimis-be-calcrule_validations_py.git@develop#egg=openimis-be-calcrule_validations"
+      "pip": "git+https://github.com/openimis/openimis-be-calcrule_validations_py.git@develop#egg=openimis-be-calcrule_validations"
     },
     {
       "name": "api_etl",
-      "pip": "git+https://github.com/obenma/openimis-be-api_etl_py.git@develop#egg=openimis-be-api_etl"
+      "pip": "git+https://github.com/openimis/openimis-be-api_etl_py.git@develop#egg=openimis-be-api_etl"
     },
     {
       "name": "individual",
-      "pip": "git+https://github.com/obenma/openimis-be-individual_py.git@develop#egg=openimis-be-individual"
+      "pip": "git+https://github.com/openimis/openimis-be-individual_py.git@develop#egg=openimis-be-individual"
     }
   ]
 }

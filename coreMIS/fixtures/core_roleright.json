@@ -603,58 +603,6 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "101402",
-      "audit_user_id": null,
-      "role": [
-        "Local Admin"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101404",
-      "audit_user_id": null,
-      "role": [
-        "Local Admin"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Local Admin"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101403",
-      "audit_user_id": null,
-      "role": [
-        "Local Admin"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
       "right_id": "200002",
       "audit_user_id": null,
       "role": [
@@ -1669,58 +1617,6 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "101402",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101404",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101403",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
       "right_id": "200002",
       "audit_user_id": null,
       "role": [
@@ -2320,45 +2216,6 @@
       "validity_to": null,
       "legacy_id": null,
       "right_id": "199003",
-      "audit_user_id": null,
-      "role": [
-        "Social Protection Manager"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101402",
-      "audit_user_id": null,
-      "role": [
-        "Social Protection Manager"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Social Protection Manager"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101403",
       "audit_user_id": null,
       "role": [
         "Social Protection Manager"
@@ -3360,45 +3217,6 @@
       "validity_to": null,
       "legacy_id": null,
       "right_id": "199001",
-      "audit_user_id": null,
-      "role": [
-        "Social Protection Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101402",
-      "audit_user_id": null,
-      "role": [
-        "Social Protection Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Social Protection Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101403",
       "audit_user_id": null,
       "role": [
         "Social Protection Officer"

@@ -799,7 +799,7 @@
       },
       "assembly": {
         "package": "openimis-be",
-        "git": "https://github.com/openimis/openimis-be",
+        "git": "https://github.com/openimis/openimis-be_py",
         "version": "26.04",
         "branch": "develop"
       }

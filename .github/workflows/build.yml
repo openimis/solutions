@@ -81,7 +81,7 @@ jobs:
 
       - name: Check solution components
         run: |
-          BE=false; FE=false
+          BE=true; FE=true
           [ -f "${{ inputs.solution }}/be-openimis.json" ] && BE=true
           [ -f "${{ inputs.solution }}/fe-openimis.json" ] && FE=true
           echo "BUILD_BE=$BE" >> $GITHUB_ENV

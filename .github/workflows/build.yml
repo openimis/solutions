@@ -10,6 +10,15 @@ on:
       solution:
         description: 'Solution name (e.g. coreMIS)'
         required: true
+      scope:
+        description: 'What to build (be / fe / all). Use with act to avoid re-running the other side on failure.'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - be
+          - fe
+          - all
 
 jobs:
   build:
@@ -81,7 +90,7 @@ jobs:
 
       - name: Check solution components
         run: |
-          BE=true; FE=true
+          BE=false; FE=true
           [ -f "${{ inputs.solution }}/be-openimis.json" ] && BE=true
           [ -f "${{ inputs.solution }}/fe-openimis.json" ] && FE=true
           echo "BUILD_BE=$BE" >> $GITHUB_ENV

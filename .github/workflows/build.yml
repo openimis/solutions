@@ -90,14 +90,22 @@ jobs:
 
       - name: Check solution components
         run: |
-          BE=false; FE=true
-          [ -f "${{ inputs.solution }}/be-openimis.json" ] && BE=true
-          [ -f "${{ inputs.solution }}/fe-openimis.json" ] && FE=true
-          echo "BUILD_BE=$BE" >> $GITHUB_ENV
-          echo "BUILD_FE=$FE" >> $GITHUB_ENV
-          echo "=== Solution: ${{ inputs.solution }} ==="
-          echo "build_be=$BE"
-          echo "build_fe=$FE"
+          SCOPE="${{ inputs.scope }}"
+          BUILD_BE=false
+          BUILD_FE=false
+
+          if [ "$SCOPE" = "be" ] || [ "$SCOPE" = "all" ]; then
+            [ -f "${{ inputs.solution }}/be-openimis.json" ] && BUILD_BE=true
+          fi
+          if [ "$SCOPE" = "fe" ] || [ "$SCOPE" = "all" ]; then
+            [ -f "${{ inputs.solution }}/fe-openimis.json" ] && BUILD_FE=true
+          fi
+
+          echo "BUILD_BE=$BUILD_BE" >> $GITHUB_ENV
+          echo "BUILD_FE=$BUILD_FE" >> $GITHUB_ENV
+          echo "=== Solution: ${{ inputs.solution }} (scope=$SCOPE) ==="
+          echo "build_be=$BUILD_BE"
+          echo "build_fe=$BUILD_FE"
 
       # -------------------------------------------------
       # 2. Docker setup + login (once)

@@ -573,7 +573,8 @@
       "core": {
         "package": "openimis-be-core",
         "git": "https://github.com/openimis/openimis-be-core_py",
-        "version": "v1.9.0"
+        "version": "v1.9.0",
+        "branch": "feature/add-user-business-access"
       },
       "individual": {
         "package": "openimis-be-individual",

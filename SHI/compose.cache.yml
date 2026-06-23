@@ -5,12 +5,13 @@ services:
     ports:
       - '6379:6379'
     command: >-
-      redis-server /usr/local/etc/redis/redis.conf --requirepass ${REDIS_PASSWORD} --maxmemory ${REDIS_MAX_MEMORY:-256mb}
+      redis-server /usr/local/etc/redis/redis.conf --requirepass
+      ${REDIS_PASSWORD}
     volumes:
       - redis-database:/data
-      #- ./conf/redis/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./conf/redis/redis.conf:/usr/local/etc/redis/redis.conf
     env_file:
-      - .env.cache
+      - .env
     environment:
       - REDIS_PASSWORD=${REDIS_PASSWORD}
       - REDIS_PORT=6379
@@ -27,6 +28,5 @@ services:
       interval: 5s
       timeout: 3s
       retries: 5
-
 volumes:
   redis-database: null

@@ -1,11 +1,11 @@
 include:
-  - path: compose.${DB_DEFAULT:-postgresql}.yml
-    env_file:
-      - .env
   - path: compose.base.yml
     env_file:
       - .env
       - .env.cache
+  - path: compose.${DB_DEFAULT:-postgresql}.yml
+    env_file:
+      - .env
   - path: compose.cache.yml
     env_file:
       - .env.cache

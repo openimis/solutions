@@ -1,0 +1,867 @@
+{
+  "modules": {
+    "policyholder": "/mnt/data/Development/solution-builder/solution/modules/policyholder.json",
+    "contribution-plan": "/mnt/data/Development/solution-builder/solution/modules/contribution-plan.json",
+    "contract": "/mnt/data/Development/solution-builder/solution/modules/contract.json",
+    "calculation-legacy": "/mnt/data/Development/solution-builder/solution/modules/calculation-legacy.json",
+    "insuree": "/mnt/data/Development/solution-builder/solution/modules/insuree.json",
+    "policy": "/mnt/data/Development/solution-builder/solution/modules/policy.json",
+    "claim": "/mnt/data/Development/solution-builder/solution/modules/claim.json",
+    "claim-batch": "/mnt/data/Development/solution-builder/solution/modules/claim_batch.json",
+    "product": "/mnt/data/Development/solution-builder/solution/modules/product.json",
+    "health-facility": "/mnt/data/Development/solution-builder/solution/modules/healthfacility.json",
+    "invoice-customer": "/mnt/data/Development/solution-builder/solution/modules/invoice-customer.json",
+    "invoice-supplier": "/mnt/data/Development/solution-builder/solution/modules/invoice-supplier.json",
+    "payment-plan": "/mnt/data/Development/solution-builder/solution/modules/payment-plan.json",
+    "report": "/mnt/data/Development/solution-builder/solution/modules/report.json",
+    "medical": "/mnt/data/Development/solution-builder/solution/modules/medical.json",
+    "payer": "/mnt/data/Development/solution-builder/solution/modules/payer.json",
+    "payment": "/mnt/data/Development/solution-builder/solution/modules/payment.json",
+    "controls": "/mnt/data/Development/solution-builder/solution/modules/controls.json",
+    "location": "/mnt/data/Development/solution-builder/solution/modules/administrative-location.json",
+    "task-management": "/mnt/data/Development/solution-builder/solution/modules/task-management.json",
+    "calculation": "/mnt/data/Development/solution-builder/solution/modules/calculation.json",
+    "core": "/mnt/data/Development/solution-builder/solution/modules/core.json",
+    "user-management": "/mnt/data/Development/solution-builder/solution/modules/user-management.json",
+    "profiles": "/mnt/data/Development/solution-builder/solution/modules/profiles.json",
+    "grievance": "/mnt/data/Development/solution-builder/solution/modules/grievance.json"
+  },
+  "roles": {},
+  "coreFeConfig": [
+    {
+      "position": 1,
+      "id": "ClientRegistry.MainMenu",
+      "name": "Client Registry",
+      "text": "Client Registry",
+      "icon": "Groups",
+      "entries": [
+        {
+          "position": 12,
+          "icon": "Group",
+          "route": "insuree/families"
+        },
+        {
+          "position": 11,
+          "icon": "GroupAdd",
+          "route": "insuree/family"
+        },
+        {
+          "position": 13,
+          "icon": "Person",
+          "route": "insuree/insurees"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "id": "Enrolment.MainMenu",
+      "name": "Enrolment",
+      "text": "Enrolment menu",
+      "icon": "Shield",
+      "entries": [
+        {
+          "position": 1,
+          "icon": "Contract",
+          "route": "contracts"
+        },
+        {
+          "position": 3,
+          "route": "policy/policies"
+        },
+        {
+          "position": 4,
+          "route": "contribution/contributions"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "id": "Benefit.MainMenu",
+      "name": "Benfits and claims",
+      "text": "Benefits",
+      "icon": "Payments",
+      "entries": [
+        {
+          "position": 1,
+          "route": "claim/healthFacilities"
+        },
+        {
+          "position": 2,
+          "route": "claim/reviews"
+        },
+        {
+          "position": 3,
+          "route": "claim/feedback",
+          "withDivider": true
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "id": "Payments.MainMenu",
+      "name": "Payments",
+      "text": "Payments",
+      "icon": "Payments",
+      "entries": [
+        {
+          "position": 51,
+          "icon": "Receipt",
+          "route": "invoices"
+        },
+        {
+          "position": 55,
+          "icon": "Receipt",
+          "route": "payment/paymentsInvoice"
+        },
+        {
+          "position": 52,
+          "icon": "CorporateFare",
+          "route": "bills",
+          "withDivider": true
+        },
+        {
+          "position": 3,
+          "icon": "PriceChange",
+          "route": "paymentPlans"
+        },
+        {
+          "position": 14,
+          "icon": "Money",
+          "route": "payer/payers"
+        },
+        {
+          "position": 10,
+          "icon": "Person",
+          "route": "payment/payments"
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "id": "Tasks.MainMenu",
+      "name": "Tasks",
+      "text": "Task menu",
+      "icon": "Assignment",
+      "entries": [
+        {
+          "position": 2,
+          "icon": "AssignmentTurnedIn",
+          "route": "tasks"
+        },
+        {
+          "position": 1,
+          "icon": "Assignment",
+          "route": "allTasks"
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "id": "Grievance.MainMenu",
+      "name": "Grievance",
+      "text": "Grievances",
+      "icon": "Feedback",
+      "entries": [
+        {
+          "position": 1,
+          "route": "ticket/newTicket"
+        },
+        {
+          "position": 2,
+          "route": "ticket/tickets"
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "id": "SchemeAdministration.MainMenu",
+      "name": "SchemeAdministration",
+      "text": "Protection",
+      "icon": "Diversity_2",
+      "entries": [
+        {
+          "position": 34,
+          "icon": "Business",
+          "route": "policyHolders",
+          "withDivider": true
+        },
+        {
+          "position": 1,
+          "route": "contributionPlans"
+        },
+        {
+          "position": 2,
+          "route": "contributionPlanBundles",
+          "withDivider": true
+        },
+        {
+          "position": 2,
+          "icon": "Spa",
+          "route": "admin/products"
+        },
+        {
+          "position": 9,
+          "route": "medical/medicalServices"
+        },
+        {
+          "position": 10,
+          "route": "medical/medicalItems"
+        },
+        {
+          "position": 11,
+          "route": "medical/pricelists/services"
+        },
+        {
+          "position": 12,
+          "route": "medical/pricelists/items"
+        }
+      ]
+    },
+    {
+      "position": 8,
+      "id": "UserManagement.MainMenu",
+      "name": "User Management",
+      "text": "User Management",
+      "icon": "AdminPanelSettings",
+      "description": "User management menu",
+      "entries": [
+        {
+          "position": 11,
+          "icon": "AssignmentInd",
+          "route": "tasks/groups"
+        },
+        {
+          "position": 2,
+          "route": "admin/users"
+        },
+        {
+          "position": 1,
+          "route": "roles",
+          "withDivider": true
+        }
+      ]
+    },
+    {
+      "position": 9,
+      "id": "Administration.MainMenu",
+      "name": "AdminMainMenu",
+      "text": "admin.mainMenu",
+      "icon": "LocationCity",
+      "entries": [
+        {
+          "position": 3,
+          "route": "location/healthFacilities"
+        },
+        {
+          "position": 4,
+          "route": "location/locations"
+        }
+      ]
+    },
+    {
+      "position": 10,
+      "id": "Profile.MainMenu",
+      "name": "Profile.mainMenu",
+      "text": "profile.mainMenu",
+      "icon": "AccountCircle",
+      "entries": [
+        {
+          "position": 4,
+          "icon": "AccountCircle",
+          "route": "profile/myProfile"
+        },
+        {
+          "position": 5,
+          "icon": "Password",
+          "route": "profile/changePassword"
+        }
+      ]
+    }
+  ],
+  "bePackages": {
+    "list": [
+      "grievance_social_protection",
+      "core",
+      "calculation",
+      "tasks_management",
+      "location",
+      "medical_pricelist",
+      "medical",
+      "controls",
+      "payment",
+      "contribution",
+      "payer",
+      "report",
+      "contribution_plan",
+      "invoice",
+      "product",
+      "claim_batch",
+      "claim",
+      "policy",
+      "insuree",
+      "calcrule_contribution_legacy",
+      "contract",
+      "policyholder"
+    ],
+    "definitions": {
+      "core": {
+        "package": "openimis-be-core",
+        "git": "https://github.com/openimis/openimis-be-core_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "individual": {
+        "package": "openimis-be-individual",
+        "git": "https://github.com/openimis/openimis-be-individual_py",
+        "version": "v1.3.0",
+        "branch": "develop"
+      },
+      "workflow": {
+        "package": "openimis-be-workflow",
+        "git": "https://github.com/openimis/openimis-be-workflow_py",
+        "version": "v1.0.1",
+        "branch": "develop"
+      },
+      "tasks_management": {
+        "package": "openimis-be-tasks_management",
+        "git": "https://github.com/openimis/openimis-be-tasks_management_py",
+        "version": "v1.3.0",
+        "branch": "develop"
+      },
+      "report": {
+        "package": "openimis-be-report",
+        "git": "https://github.com/openimis/openimis-be-report_py",
+        "version": "v1.6.2",
+        "branch": "develop"
+      },
+      "location": {
+        "package": "openimis-be-location",
+        "git": "https://github.com/openimis/openimis-be-location_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "medical": {
+        "package": "openimis-be-medical",
+        "git": "https://github.com/openimis/openimis-be-medical_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "medical_pricelist": {
+        "package": "openimis-be-medical_pricelist",
+        "git": "https://github.com/openimis/openimis-be-medical_pricelist_py",
+        "version": "v1.7.1",
+        "branch": "develop"
+      },
+      "product": {
+        "package": "openimis-be-product",
+        "git": "https://github.com/openimis/openimis-be-product_py",
+        "version": "v1.8.0",
+        "branch": "develop"
+      },
+      "insuree": {
+        "package": "openimis-be-insuree",
+        "git": "https://github.com/openimis/openimis-be-insuree_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "policy": {
+        "package": "openimis-be-policy",
+        "git": "https://github.com/openimis/openimis-be-policy_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "contribution": {
+        "package": "openimis-be-contribution",
+        "git": "https://github.com/openimis/openimis-be-contribution_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "payer": {
+        "package": "openimis-be-payer",
+        "git": "https://github.com/openimis/openimis-be-payer_py",
+        "version": "v1.6.2",
+        "branch": "develop"
+      },
+      "payment": {
+        "package": "openimis-be-payment",
+        "git": "https://github.com/openimis/openimis-be-payment_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "claim": {
+        "package": "openimis-be-claim",
+        "git": "https://github.com/openimis/openimis-be-claim_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "claim_batch": {
+        "package": "openimis-be-claim_batch",
+        "git": "https://github.com/openimis/openimis-be-claim_batch_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "tools": {
+        "package": "openimis-be-tools",
+        "git": "https://github.com/openimis/openimis-be-tools_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "api_fhir_r4": {
+        "package": "openimis-be-api_fhir_r4",
+        "git": "https://github.com/openimis/openimis-be-api_fhir_r4_py",
+        "version": "v1.8.1",
+        "branch": "develop"
+      },
+      "calculation": {
+        "package": "openimis-be-calculation",
+        "git": "https://github.com/openimis/openimis-be-calculation_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "contribution_plan": {
+        "package": "openimis-be-contribution-plan",
+        "git": "https://github.com/openimis/openimis-be-contribution_plan_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "policyholder": {
+        "package": "openimis-be-policyholder",
+        "git": "https://github.com/openimis/openimis-be-policyholder_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "contract": {
+        "package": "openimis-be-contract",
+        "git": "https://github.com/openimis/openimis-be-contract_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "invoice": {
+        "package": "openimis-be-invoice",
+        "git": "https://github.com/openimis/openimis-be-invoice_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "calcrule_contribution_legacy": {
+        "package": "openimis-be-calcrule-contribution-legacy",
+        "git": "https://github.com/openimis/openimis-be-calcrule_contribution_legacy_py",
+        "version": "v1.8.0",
+        "branch": "develop"
+      },
+      "calcrule_third_party_payment": {
+        "package": "openimis-be-calcrule-third_party_payment",
+        "git": "https://github.com/openimis/openimis-be-calcrule_third_party_payment_py",
+        "version": "v1.8.1",
+        "branch": "develop"
+      },
+      "calcrule_capitation_payment": {
+        "package": "openimis-be-calcrule-capitation_payment",
+        "git": "https://github.com/openimis/openimis-be-calcrule_capitation_payment_py",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "calcrule_commission": {
+        "package": "openimis-be-calcrule_commission",
+        "git": "https://github.com/openimis/openimis-be-calcrule_commission_py",
+        "version": "v1.6.1",
+        "branch": "develop"
+      },
+      "calcrule_validations": {
+        "package": "openimis-be-calcrule_validations",
+        "git": "https://github.com/openimis/openimis-be-calcrule_validations_py",
+        "version": "v1.2.0",
+        "branch": "develop"
+      },
+      "calcrule_contribution_income_percentage": {
+        "package": "openimis-be-calcrule_contribution_income_percentage",
+        "git": "https://github.com/openimis/openimis-be-calcrule_contribution_income_percentage_py",
+        "version": "v1.8.0",
+        "branch": "develop"
+      },
+      "calcrule_fees": {
+        "package": "openimis-be-calcrule_fees",
+        "git": "https://github.com/openimis/openimis-be-calcrule_fees_py",
+        "version": "v1.6.1",
+        "branch": "develop"
+      },
+      "calcrule_unconditional_cash_payment": {
+        "package": "openimis-be-calcrule_unconditional_cash_payment",
+        "git": "https://github.com/openimis/openimis-be-calcrule_unconditional_cash_payment_py",
+        "version": "v1.6.1",
+        "branch": "develop"
+      },
+      "im_export": {
+        "package": "openimis-be-im_export",
+        "git": "https://github.com/openimis/openimis-be-im_export_py",
+        "version": "v1.4.0",
+        "branch": "develop"
+      },
+      "dhis2_etl": {
+        "package": "openimis-be-dhis2_etl",
+        "git": "https://github.com/openimis/openimis-be-dhis2_etl_py",
+        "version": "v1.3.1",
+        "branch": "develop"
+      },
+      "social_protection": {
+        "package": "openimis-be-social_protection",
+        "git": "https://github.com/openimis/openimis-be-social_protection_py",
+        "version": "v1.3.0",
+        "branch": "develop"
+      },
+      "opensearch_reports": {
+        "package": "openimis-be-opensearch_reports",
+        "git": "https://github.com/openimis/openimis-be-opensearch_reports_py",
+        "version": "v1.2.2",
+        "branch": "develop"
+      },
+      "payment_cycle": {
+        "package": "openimis-be-payment_cycle",
+        "git": "https://github.com/openimis/openimis-be-payment_cycle_py",
+        "version": "v1.3.0",
+        "branch": "develop"
+      },
+      "calcrule_social_protection": {
+        "package": "openimis-be-calcrule_social_protection",
+        "git": "https://github.com/openimis/openimis-be-calcrule_social_protection_py",
+        "version": "v1.2.0",
+        "branch": "develop"
+      },
+      "payroll": {
+        "package": "openimis-be-payroll",
+        "git": "https://github.com/openimis/openimis-be-payroll_py",
+        "version": "v1.3.0",
+        "branch": "develop"
+      },
+      "controls": {
+        "package": "openimis-be-controls",
+        "git": "https://github.com/openimis/openimis-be-controls_py",
+        "version": "v1.2.0",
+        "branch": "develop"
+      },
+      "grievance_social_protection": {
+        "package": "openimis-be-grievance_social_protection",
+        "git": "https://github.com/openimis/openimis-be-grievance_social_protection_py",
+        "version": "v1.1.0",
+        "branch": "develop"
+      },
+      "claim_sampling": {
+        "package": "openimis-be-claim_sampling",
+        "git": "https://github.com/openimis/openimis-be-claim_sampling_py",
+        "version": "v1.1.0",
+        "branch": "develop"
+      },
+      "deduplication": {
+        "package": "openimis-be-deduplication",
+        "git": "https://github.com/openimis/openimis-be-deduplication_py",
+        "version": "v1.2.0",
+        "branch": "develop"
+      },
+      "api_etl": {
+        "package": "openimis-be-api_etl",
+        "git": "https://github.com/openimis/openimis-be-api_etl_py",
+        "version": "v1.1.0",
+        "branch": "develop"
+      },
+      "claim_ai": {
+        "package": "openimis-be-claim_ai",
+        "git": "https://github.com/openimis/openimis-be-claim_ai_py",
+        "version": "v2.0.0",
+        "branch": "develop"
+      },
+      "claim_ai_quality": {
+        "package": "openimis-be-claim_ai_quality",
+        "git": "https://github.com/openimis/openimis-be-claim_ai_quality_py",
+        "version": "v2.0.0",
+        "branch": "develop"
+      },
+      "assembly": {
+        "package": "openimis-be",
+        "git": "https://github.com/openimis/openimis-be_py",
+        "version": "26.04",
+        "branch": "develop"
+      }
+    }
+  },
+  "fePackages": {
+    "list": [
+      "GrievanceSocialProtectionModule",
+      "ProfileModule",
+      "CoreModule",
+      "HomeModule",
+      "CalculationModule",
+      "TasksManagementModule",
+      "LocationModule",
+      "PaymentModule",
+      "PayerModule",
+      "MedicalModule",
+      "MedicalPriceListModule",
+      "ToolsModule",
+      "ContributionPlanModule",
+      "InvoiceModule",
+      "ProductModule",
+      "ClaimBatchModule",
+      "ClaimModule",
+      "PolicyModule",
+      "ContributionModule",
+      "InsureeModule",
+      "ContractModule",
+      "PolicyHolderModule",
+      "LanguageFrModule"
+    ],
+    "definitions": {
+      "CoreModule": {
+        "package": "@openimis/fe-core",
+        "git": "https://github.com/openimis/openimis-fe-core_js",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "IndividualModule": {
+        "package": "@openimis/fe-individual",
+        "git": "https://github.com/openimis/openimis-fe-individual_js",
+        "version": "v1.2.0",
+        "branch": "develop"
+      },
+      "SocialProtectionModule": {
+        "package": "@openimis/fe-social_protection",
+        "git": "https://github.com/openimis/openimis-fe-social_protection_js",
+        "version": "v1.3.0",
+        "branch": "develop"
+      },
+      "OpenSearchReportsModule": {
+        "package": "@openimis/fe-opensearch_reports",
+        "git": "https://github.com/openimis/openimis-fe-opensearch_reports_js",
+        "version": "v1.3.0",
+        "branch": "develop"
+      },
+      "HomeModule": {
+        "package": "@openimis/fe-home",
+        "git": "https://github.com/openimis/openimis-fe-home_js",
+        "version": "v1.6.0",
+        "branch": "develop"
+      },
+      "LocationModule": {
+        "package": "@openimis/fe-location",
+        "git": "https://github.com/openimis/openimis-fe-location_js",
+        "version": "v1.6.0",
+        "branch": "develop"
+      },
+      "InsureeModule": {
+        "package": "@openimis/fe-insuree",
+        "git": "https://github.com/openimis/openimis-fe-insuree_js",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "MedicalModule": {
+        "package": "@openimis/fe-medical",
+        "git": "https://github.com/openimis/openimis-fe-medical_js",
+        "version": "v1.7.0",
+        "branch": "develop"
+      },
+      "MedicalPriceListModule": {
+        "package": "@openimis/fe-medical_pricelist",
+        "git": "https://github.com/openimis/openimis-fe-medical_pricelist_js",
+        "version": "v1.6.0",
+        "branch": "develop"
+      },
+      "ProductModule": {
+        "package": "@openimis/fe-product",
+        "git": "https://github.com/openimis/openimis-fe-product_js",
+        "version": "v1.8.0",
+        "branch": "develop"
+      },
+      "PolicyModule": {
+        "package": "@openimis/fe-policy",
+        "git": "https://github.com/openimis/openimis-fe-policy_js",
+        "version": "v1.8.0",
+        "branch": "develop"
+      },
+      "PayerModule": {
+        "package": "@openimis/fe-payer",
+        "git": "https://github.com/openimis/openimis-fe-payer_js",
+        "version": "v1.5.0",
+        "branch": "develop"
+      },
+      "ContributionModule": {
+        "package": "@openimis/fe-contribution",
+        "git": "https://github.com/openimis/openimis-fe-contribution_js",
+        "version": "v1.7.0",
+        "branch": "develop"
+      },
+      "PaymentModule": {
+        "package": "@openimis/fe-payment",
+        "git": "https://github.com/openimis/openimis-fe-payment_js",
+        "version": "v1.5.0",
+        "branch": "develop"
+      },
+      "ClaimModule": {
+        "package": "@openimis/fe-claim",
+        "git": "https://github.com/openimis/openimis-fe-claim_js",
+        "version": "v1.8.0",
+        "branch": "develop"
+      },
+      "ClaimBatchModule": {
+        "package": "@openimis/fe-claim_batch",
+        "git": "https://github.com/openimis/openimis-fe-claim_batch_js",
+        "version": "v1.5.0"
+      },
+      "ToolsModule": {
+        "package": "@openimis/fe-tools",
+        "git": "https://github.com/openimis/openimis-fe-tools_js",
+        "version": "v1.7.0",
+        "branch": "develop"
+      },
+      "ProfileModule": {
+        "package": "@openimis/fe-profile",
+        "git": "https://github.com/openimis/openimis-fe-profile_js",
+        "version": "v1.7.0",
+        "branch": "develop"
+      },
+      "CalculationModule": {
+        "package": "@openimis/fe-calculation",
+        "git": "https://github.com/openimis/openimis-fe-calculation_js",
+        "version": "v1.6.0",
+        "branch": "develop"
+      },
+      "PolicyHolderModule": {
+        "package": "@openimis/fe-policyholder",
+        "git": "https://github.com/openimis/openimis-fe-policyholder_js",
+        "version": "v1.7.0",
+        "branch": "develop"
+      },
+      "ContributionPlanModule": {
+        "package": "@openimis/fe-contribution_plan",
+        "git": "https://github.com/openimis/openimis-fe-contribution_plan_js",
+        "version": "v1.9.0",
+        "branch": "develop"
+      },
+      "PaymentCycleModule": {
+        "package": "@openimis/fe-payment_cycle",
+        "git": "https://github.com/openimis/openimis-fe-payment_cycle_js",
+        "version": "v1.2.0",
+        "branch": "develop"
+      },
+      "ContractModule": {
+        "package": "@openimis/fe-contract",
+        "git": "https://github.com/openimis/openimis-fe-contract_js",
+        "version": "v1.6.0",
+        "branch": "develop"
+      },
+      "TasksManagementModule": {
+        "package": "@openimis/fe-tasks_management",
+        "git": "https://github.com/openimis/openimis-fe-tasks_management_js",
+        "version": "v1.3.0",
+        "branch": "develop"
+      },
+      "InvoiceModule": {
+        "package": "@openimis/fe-invoice",
+        "git": "https://github.com/openimis/openimis-fe-invoice_js",
+        "version": "v1.8.0",
+        "branch": "develop"
+      },
+      "GrievanceSocialProtectionModule": {
+        "package": "@openimis/fe-grievance_social_protection",
+        "git": "https://github.com/openimis/openimis-fe-grievance_social_protection_js",
+        "branch": "feature/vite-migration",
+        "version": "v1.1.0"
+      },
+      "LanguageFrModule": {
+        "package": "@openimis/fe-language_fr",
+        "git": "https://github.com/openimis/openimis-fe-language_fr_js",
+        "version": "v1.8.0",
+        "branch": "develop"
+      },
+      "ClaimSamplingModule": {
+        "package": "@openimis/fe-claim_sampling",
+        "git": "https://github.com/openimis/openimis-fe-claim_sampling_js",
+        "version": "v1.1.0",
+        "branch": "develop"
+      },
+      "DeduplicationModule": {
+        "package": "@openimis/fe-deduplication",
+        "git": "https://github.com/openimis/openimis-fe-deduplication_js",
+        "version": "v1.0.1",
+        "branch": "develop"
+      },
+      "PayrollModule": {
+        "package": "@openimis/fe-payroll",
+        "git": "https://github.com/openimis/openimis-fe-payroll_js",
+        "version": "v1.3.0",
+        "branch": "develop"
+      },
+      "ClaimAIQualityModule": {
+        "package": "@openimis/fe-claim_ai_quality",
+        "git": "https://github.com/openimis/openimis-fe-claim_ai_quality_js.git",
+        "version": "v2.0.0",
+        "branch": "develop"
+      },
+      "CoreMISLanguageModule": {
+        "package": "@openimis/fe-coremis_language_pack",
+        "git": "https://github.com/openimis/openimis-fe-coremis_language_pack_js.git",
+        "version": "v1.2.0",
+        "branch": "develop"
+      },
+      "assembly": {
+        "package": "openimis-fe",
+        "git": "https://github.com/openimis/openimis-fe_js",
+        "version": "26.04",
+        "branch": "develop"
+      }
+    }
+  },
+  "locales": [
+    {
+      "languages": [
+        "fr",
+        "fr-FR"
+      ],
+      "intl": "fr-FR",
+      "fileNames": "fr"
+    },
+    {
+      "languages": [
+        "en",
+        "en-GB"
+      ],
+      "intl": "en-GB",
+      "fileNames": "en"
+    }
+  ],
+  "services": {
+    "list": [],
+    "definitions": {
+      "base": {
+        "path": "compose.base.yml",
+        "env_file": [
+          ".env",
+          ".env.cache"
+        ]
+      },
+      "db": {
+        "path": "compose.${DB_DEFAULT:-postgresql}.yml",
+        "env_file": [
+          ".env"
+        ]
+      },
+      "cache": {
+        "path": "compose.cache.yml",
+        "env_file": [
+          ".env.cache"
+        ]
+      }
+    }
+  },
+  "initData": [
+    "solution/fixtures/insuree/gender.json",
+    "solution/fixtures/insuree/education.json",
+    "solution/fixtures/insuree/profession.json",
+    "solution/fixtures/insuree/relations.json",
+    "solution/fixtures/insuree/identification-types.json",
+    "solution/fixtures/insuree/family-type.json",
+    "solution/fixtures/insuree/confirmation-type.json",
+    "solution/fixtures/heathfacility/legalform.json",
+    "solution/fixtures/heathfacility/sublevel.json",
+    "solution/fixtures/payer/payer-type.json",
+    "solution/fixtures/controls/control.json",
+    "solution/fixtures/core/language.json"
+  ]
+}

@@ -1,25 +1,20 @@
 {
   "modules": {
-    "policyholder": "/mnt/data/Development/solution-builder/solution/modules/policyholder.json",
-    "contribution-plan": "/mnt/data/Development/solution-builder/solution/modules/contribution-plan.json",
-    "contract": "/mnt/data/Development/solution-builder/solution/modules/contract.json",
-    "calculation-legacy": "/mnt/data/Development/solution-builder/solution/modules/calculation-legacy.json",
-    "insuree": "/mnt/data/Development/solution-builder/solution/modules/insuree.json",
-    "policy": "/mnt/data/Development/solution-builder/solution/modules/policy.json",
-    "claim": "/mnt/data/Development/solution-builder/solution/modules/claim.json",
-    "claim-batch": "/mnt/data/Development/solution-builder/solution/modules/claim_batch.json",
-    "product": "/mnt/data/Development/solution-builder/solution/modules/product.json",
-    "health-facility": "/mnt/data/Development/solution-builder/solution/modules/healthfacility.json",
-    "invoice-customer": "/mnt/data/Development/solution-builder/solution/modules/invoice-customer.json",
+    "individual": "/mnt/data/Development/solution-builder/solution/modules/individual.json",
+    "api-import": "/mnt/data/Development/solution-builder/solution/modules/api-import.json",
+    "social-protection": "/mnt/data/Development/solution-builder/solution/modules/social-protection.json",
+    "task-deduplication": "/mnt/data/Development/solution-builder/solution/modules/task-deduplication.json",
+    "calculation-social-protection": "/mnt/data/Development/solution-builder/solution/modules/calculation-social-protection.json",
+    "workflow": "/mnt/data/Development/solution-builder/solution/modules/workflow.json",
+    "sp-lang": "/mnt/data/Development/solution-builder/solution/modules/sp-lang.json",
+    "opensearch-reports": "/mnt/data/Development/solution-builder/solution/modules/opensearch-reports.json",
     "invoice-supplier": "/mnt/data/Development/solution-builder/solution/modules/invoice-supplier.json",
     "payment-plan": "/mnt/data/Development/solution-builder/solution/modules/payment-plan.json",
-    "report": "/mnt/data/Development/solution-builder/solution/modules/report.json",
-    "medical": "/mnt/data/Development/solution-builder/solution/modules/medical.json",
-    "payer": "/mnt/data/Development/solution-builder/solution/modules/payer.json",
-    "payment": "/mnt/data/Development/solution-builder/solution/modules/payment.json",
-    "controls": "/mnt/data/Development/solution-builder/solution/modules/controls.json",
-    "location": "/mnt/data/Development/solution-builder/solution/modules/administrative-location.json",
+    "payroll": "/mnt/data/Development/solution-builder/solution/modules/payroll.json",
+    "payment-cycle": "/mnt/data/Development/solution-builder/solution/modules/payment-cycle.json",
+    "payment-point": "/mnt/data/Development/solution-builder/solution/modules/payment-point.json",
     "task-management": "/mnt/data/Development/solution-builder/solution/modules/task-management.json",
+    "location": "/mnt/data/Development/solution-builder/solution/modules/administrative-location.json",
     "calculation": "/mnt/data/Development/solution-builder/solution/modules/calculation.json",
     "core": "/mnt/data/Development/solution-builder/solution/modules/core.json",
     "user-management": "/mnt/data/Development/solution-builder/solution/modules/user-management.json",
@@ -27,123 +22,70 @@
     "grievance": "/mnt/data/Development/solution-builder/solution/modules/grievance.json"
   },
   "roles": {
-    "enrolment_officer": {
-      "roleName": "Enrolment Officer",
-      "code": "enrolment_officer",
+    "program_manager": {
+      "roleName": "Program Manager",
+      "code": "program_manager",
       "permissions": [
-        "insuree.create_families",
-        "insuree.create_insurees",
-        "insuree.families",
-        "insuree.insuree",
-        "insuree.insuree_inquire",
-        "insuree.insurees",
-        "insuree.update_families",
-        "insuree.update_insurees",
-        "policy.create_policies",
-        "policy.edit_policies",
-        "policy.eligibilities",
-        "policy.policies",
-        "policy.policies_by_family",
-        "policy.policies_by_insuree",
-        "policy.renew_policies",
-        "contribution.create_premiums",
-        "contribution.premiums",
-        "contribution.update_premiums",
-        "contract.contract",
-        "contract.create_contract",
-        "contract.renew_contract",
-        "contract.submit_contract",
-        "location.locations",
-        "core.users_profile"
-      ]
-    },
-    "accountant": {
-      "roleName": "Accountant",
-      "code": "accountant",
-      "permissions": [
-        "payment.create_payments",
-        "payment.payments",
-        "payment.update_payments",
-        "payer.payers",
-        "invoice.invoice_search",
-        "invoice.invoice_payment_search",
-        "invoice.bill_search",
-        "invoice.bill_payment_search",
-        "contribution.premiums",
-        "contribution_plan.paymentplan",
-        "policy.policies",
-        "contract.payment",
-        "location.locations",
-        "core.users_profile"
-      ]
-    },
-    "medical_officer": {
-      "roleName": "Medical Officer",
-      "code": "medical_officer",
-      "permissions": [
-        "claim.claims",
-        "claim.select_claim_review",
-        "claim.deliver_claim_review",
-        "claim.process_claims",
-        "claim.bypass_claim_review",
-        "claim.claim_print",
-        "claim.feedback",
-        "medical.medical_services",
-        "medical.medical_items",
-        "location.healthFacilities",
-        "core.users_profile"
-      ]
-    },
-    "scheme_administrator": {
-      "roleName": "Scheme Administrator",
-      "code": "scheme_administrator",
-      "permissions": [
-        "product.products",
-        "product.products_add",
-        "product.products_edit",
-        "medical.medical_services_add",
-        "medical.medical_items_add",
-        "medical_pricelist.pricelists_medical_services_add",
-        "medical_pricelist.pricelists_medical_items_add",
-        "contribution_plan.create_contributionplan",
-        "contribution_plan.update_contributionplan",
-        "policyholder.policyholder",
-        "healthfacility.healthFacilities",
-        "location.locations",
+        "individual.group_search",
+        "individual.individual_search",
+        "social_protection.benefit_plan_search",
+        "social_protection.beneficiary_search",
+        "grievance_social_protection.tickets",
+        "opensearch_reports.opensearch_dashboard_search",
+        "tasks_management.task_search_all",
+        "payroll.payroll_search",
         "core.roles",
         "core.users"
       ]
     },
-    "local_admin": {
-      "roleName": "Local Administrator",
-      "code": "local_admin",
+    "case_worker": {
+      "roleName": "Case Worker / Social Officer",
+      "code": "case_worker",
       "permissions": [
-        "insuree.create_families",
-        "insuree.insurees",
-        "insuree.families",
-        "policy.policies",
-        "claim.claims",
-        "product.products",
-        "medical.medical_services",
-        "medical_pricelist.pricelists_medical_services",
-        "healthfacility.healthFacilities",
-        "location.locations",
-        "payer.payers",
-        "payment.payments",
-        "invoice.invoice_search",
-        "contribution_plan.contributionplan",
-        "contract.contract",
-        "policyholder.policyholder",
+        "individual.group_create",
+        "individual.group_search",
+        "individual.group_update",
+        "individual.individual_create",
+        "individual.individual_search",
+        "individual.individual_update",
+        "social_protection.beneficiary_create",
+        "social_protection.beneficiary_search",
+        "social_protection.beneficiary_update",
+        "grievance_social_protection.create_tickets",
         "grievance_social_protection.tickets",
-        "core.create_users",
-        "core.create_roles",
-        "core.update_users",
-        "core.update_roles",
-        "core.delete_users",
-        "core.delete_roles",
-        "core.users",
-        "core.roles",
-        "core.users_profile"
+        "grievance_social_protection.update_tickets",
+        "grievance_social_protection.resolve_grievance",
+        "tasks_management.task_create",
+        "tasks_management.task_search",
+        "opensearch_reports.opensearch_dashboard_search",
+        "deduplication.create_deduplication_review"
+      ]
+    },
+    "data_analyst": {
+      "roleName": "Data Analyst",
+      "code": "data_analyst",
+      "permissions": [
+        "individual.group_search",
+        "individual.individual_search",
+        "social_protection.benefit_plan_search",
+        "social_protection.beneficiary_search",
+        "grievance_social_protection.tickets",
+        "opensearch_reports.opensearch_dashboard_search",
+        "payroll.payroll_search",
+        "tasks_management.task_search",
+        "tasks_management.task_search_all"
+      ]
+    },
+    "finance_officer": {
+      "roleName": "Finance Officer",
+      "code": "finance_officer",
+      "permissions": [
+        "payroll.payroll_search",
+        "payroll.csv_reconciliation_search",
+        "payment.payments",
+        "invoice.bill_search",
+        "opensearch_reports.opensearch_dashboard_search",
+        "tasks_management.task_search"
       ]
     }
   },
@@ -156,67 +98,18 @@
       "icon": "Groups",
       "entries": [
         {
-          "position": 12,
-          "icon": "Group",
-          "route": "insuree/families"
-        },
-        {
-          "position": 11,
-          "icon": "GroupAdd",
-          "route": "insuree/family"
-        },
-        {
-          "position": 13,
-          "icon": "Person",
-          "route": "insuree/insurees"
-        }
-      ]
-    },
-    {
-      "position": 2,
-      "id": "Enrolment.MainMenu",
-      "name": "Enrolment",
-      "text": "Enrolment menu",
-      "icon": "Shield",
-      "entries": [
-        {
-          "position": 1,
-          "icon": "Contract",
-          "route": "contracts"
-        },
-        {
-          "position": 3,
-          "route": "policy/policies"
-        },
-        {
-          "position": 4,
-          "route": "contribution/contributions"
-        }
-      ]
-    },
-    {
-      "position": 3,
-      "id": "Benefit.MainMenu",
-      "name": "Benfits and claims",
-      "text": "Benefits",
-      "icon": "Payments",
-      "entries": [
-        {
-          "position": 1,
-          "route": "claim/healthFacilities"
-        },
-        {
-          "position": 2,
-          "route": "claim/reviews"
-        },
-        {
-          "position": 3,
-          "route": "claim/feedback",
+          "position": 14,
+          "route": "groups",
           "withDivider": true
         },
         {
+          "position": 13,
+          "route": "individuals"
+        },
+        {
           "position": 1,
-          "route": "claim_batch"
+          "id": "individual.api_imports",
+          "icon": "Publish"
         }
       ]
     },
@@ -228,20 +121,15 @@
       "icon": "Payments",
       "entries": [
         {
-          "position": 51,
-          "icon": "Receipt",
-          "route": "invoices"
+          "position": 52,
+          "icon": "CorporateFare",
+          "route": "bills",
+          "withDivider": true
         },
         {
           "position": 55,
           "icon": "Receipt",
           "route": "payment/paymentsInvoice"
-        },
-        {
-          "position": 52,
-          "icon": "CorporateFare",
-          "route": "bills",
-          "withDivider": true
         },
         {
           "position": 3,
@@ -250,13 +138,30 @@
         },
         {
           "position": 14,
-          "icon": "Money",
-          "route": "payer/payers"
+          "route": "payrollsReconciled",
+          "withDivider": true
         },
         {
-          "position": 10,
-          "icon": "Person",
-          "route": "payment/payments"
+          "position": 13,
+          "route": "payrollsApproved"
+        },
+        {
+          "position": 12,
+          "route": "payrollsPending"
+        },
+        {
+          "position": 11,
+          "route": "payrolls"
+        },
+        {
+          "position": 5,
+          "icon": "Timelapse",
+          "route": "paymentCycles"
+        },
+        {
+          "position": 20,
+          "icon": "Store",
+          "route": "paymentPoints"
         }
       ]
     },
@@ -304,9 +209,28 @@
       "icon": "Dashboard",
       "entries": [
         {
+          "position": 1,
+          "route": "individualReports"
+        },
+        {
           "position": 2,
-          "id": "tools.reports",
-          "icon": "TableChart"
+          "route": "groupReports"
+        },
+        {
+          "position": 3,
+          "route": "beneficiaryReports"
+        },
+        {
+          "position": 5,
+          "route": "grievanceReports"
+        },
+        {
+          "position": 4,
+          "route": "dataUpdatesReports"
+        },
+        {
+          "position": 6,
+          "route": "dashboardConfiguration"
         }
       ]
     },
@@ -318,40 +242,9 @@
       "icon": "Diversity_2",
       "entries": [
         {
-          "position": 34,
-          "icon": "Business",
-          "route": "policyHolders",
-          "withDivider": true
-        },
-        {
-          "position": 1,
-          "route": "contributionPlans"
-        },
-        {
-          "position": 2,
-          "route": "contributionPlanBundles",
-          "withDivider": true
-        },
-        {
           "position": 2,
           "icon": "Spa",
-          "route": "admin/products"
-        },
-        {
-          "position": 9,
-          "route": "medical/medicalServices"
-        },
-        {
-          "position": 10,
-          "route": "medical/medicalItems"
-        },
-        {
-          "position": 11,
-          "route": "medical/pricelists/services"
-        },
-        {
-          "position": 12,
-          "route": "medical/pricelists/items"
+          "route": "benefitPlans"
         }
       ]
     },
@@ -387,10 +280,6 @@
       "icon": "LocationCity",
       "entries": [
         {
-          "position": 3,
-          "route": "location/healthFacilities"
-        },
-        {
           "position": 4,
           "route": "location/locations"
         }
@@ -421,25 +310,22 @@
       "grievance_social_protection",
       "core",
       "calculation",
-      "tasks_management",
       "location",
       "medical_pricelist",
       "medical",
-      "controls",
-      "payment",
-      "contribution",
-      "payer",
-      "report",
+      "tasks_management",
+      "payroll",
+      "payment_cycle",
       "contribution_plan",
       "invoice",
-      "product",
-      "claim_batch",
-      "claim",
-      "policy",
-      "insuree",
-      "calcrule_contribution_legacy",
-      "contract",
-      "policyholder"
+      "opensearch_reports",
+      "workflow",
+      "calcrule_social_protection",
+      "deduplication",
+      "social_protection",
+      "calcrule_validations",
+      "api_etl",
+      "individual"
     ],
     "definitions": {
       "core": {
@@ -727,23 +613,18 @@
       "CoreModule",
       "HomeModule",
       "CalculationModule",
-      "TasksManagementModule",
       "LocationModule",
-      "PaymentModule",
-      "PayerModule",
-      "MedicalModule",
-      "MedicalPriceListModule",
-      "ToolsModule",
+      "TasksManagementModule",
+      "PayrollModule",
+      "PaymentCycleModule",
       "ContributionPlanModule",
       "InvoiceModule",
-      "ProductModule",
-      "ClaimBatchModule",
-      "ClaimModule",
-      "PolicyModule",
-      "ContributionModule",
-      "InsureeModule",
-      "ContractModule",
-      "PolicyHolderModule",
+      "PaymentModule",
+      "OpenSearchReportsModule",
+      "CoreMISLanguageModule",
+      "DeduplicationModule",
+      "SocialProtectionModule",
+      "IndividualModule",
       "LanguageFrModule"
     ],
     "definitions": {
@@ -967,6 +848,13 @@
   "services": {
     "list": [],
     "definitions": {
+      "openSearch": {
+        "path": "compose.openSearch.yml",
+        "env_file": [
+          ".env",
+          ".env.openSearch"
+        ]
+      },
       "base": {
         "path": "compose.base.yml",
         "env_file": [
@@ -989,19 +877,8 @@
     }
   },
   "initData": [
-    "/mnt/data/Development/solution-builder/solution/fixtures/core/roles-SHI.json",
-    "/mnt/data/Development/solution-builder/solution/fixtures/core/rights-SHI.json",
-    "solution/fixtures/insuree/gender.json",
-    "solution/fixtures/insuree/education.json",
-    "solution/fixtures/insuree/profession.json",
-    "solution/fixtures/insuree/relations.json",
-    "solution/fixtures/insuree/identification-types.json",
-    "solution/fixtures/insuree/family-type.json",
-    "solution/fixtures/insuree/confirmation-type.json",
-    "solution/fixtures/heathfacility/legalform.json",
-    "solution/fixtures/heathfacility/sublevel.json",
-    "solution/fixtures/payer/payer-type.json",
-    "solution/fixtures/controls/control.json",
+    "/mnt/data/Development/solution-builder/solution/fixtures/core/roles-IBR.json",
+    "/mnt/data/Development/solution-builder/solution/fixtures/core/rights-IBR.json",
     "solution/fixtures/core/language.json"
   ]
 }

@@ -31,29 +31,34 @@ services:
     image: ghcr.io/openimis/openimis-fe:${FE_TAG:-develop}
     restart: always
     environment:
+      - REACT_APP_SENTRY_DSN=${REACT_APP_SENTRY_DSN}
       - REACT_APP_API_URL=api
       - NEW_OPENIMIS_HOST=${DOMAIN}
       - OPENIMIS_CONF_JSON=${OPENIMIS_FE_CONF_JSON}
       - OPENSEARCH_BASIC_TOKEN=${OPENSEARCH_BASIC_TOKEN}
     networks:
-      proxy: null
       openimis-net: null
+    ports:
+      - ${HTTP_PORT:-80}:80
+      - ${HTTPS_PORT:-443}:443
     depends_on:
       - backend
     volumes:
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
-    ports:
-      - ${HTTP_PORT:-80}:80
-      - ${HTTPS_PORT:-443}:443
+      - ./conf/nginx:/conf/
     labels:
       - traefik.enable=true
-      - traefik.http.routers.${PROJECT_NAME}.rule=Host("${DOMAIN}")
-      - traefik.http.routers.${PROJECT_NAME}.entrypoints=websecure
-      - traefik.http.routers.${PROJECT_NAME}.tls=true
       - traefik.docker.network=proxy
-      - traefik.http.services.${PROJECT_NAME}.loadbalancer.server.port=80
-      - ./conf/nginx:/conf/
+      - traefik.http.routers.frontend.entrypoints=websecure
+      - traefik.http.routers.frontend.rule=Host(`${DOMAIN}`)
+      - traefik.http.routers.frontend.tls=true
+      - traefik.http.routers.frontend.tls.certresolver=letsencrypt
+      - traefik.http.services.frontend.loadbalancer.server.port=80
+      - traefik.http.routers.frontend-http.entrypoints=web
+      - traefik.http.routers.frontend-http.rule=Host(`${DOMAIN}`)
+      - traefik.http.routers.frontend-http.middlewares=redirect-to-https
+      - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
   migrations:
     image: ghcr.io/openimis/openimis-be:${BE_TAG:-develop}
     environment: *ref_0
@@ -69,6 +74,8 @@ services:
     depends_on:
       migrations:
         condition: service_completed_successfully
+      redis:
+        condition: service_healthy
     networks: *ref_3
     command: start
     restart: always
@@ -79,6 +86,8 @@ services:
     depends_on:
       migrations:
         condition: service_completed_successfully
+      redis:
+        condition: service_healthy
     networks: *ref_3
     command: worker
     restart: always
@@ -93,8 +102,6 @@ services:
 networks:
   openimis-net:
     name: ${PROJECT_NAME:-openimis}-net
-  proxy:
-    external: true
 volumes:
   database: null
   photos: null

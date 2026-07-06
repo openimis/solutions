@@ -5,10 +5,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "101402",
+      "right_id": "953001",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -18,10 +18,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "101401",
+      "right_id": "953002",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -31,10 +31,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "101403",
+      "right_id": "900101",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -44,10 +44,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121801",
+      "right_id": "127004",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -57,10 +57,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "155101",
+      "right_id": "127005",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -70,10 +70,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "155201",
+      "right_id": "127001",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -83,608 +83,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "156101",
+      "right_id": "127006",
       "audit_user_id": null,
       "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "156201",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101301",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "157101",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122000",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101002",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101102",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101001",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101101",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101105",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101101",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101003",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101103",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101202",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101203",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101205",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101302",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101301",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101303",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152101",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152102",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152106",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152107",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122000",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101002",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101101",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101001",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111001",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121001",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121401",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121201",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121801",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "155101",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "151201",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152101",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "150101",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -697,7 +99,7 @@
       "right_id": "127000",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -707,10 +109,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121702",
+      "right_id": "127002",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -720,10 +122,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "122002",
+      "right_id": "180002",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -733,10 +135,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121703",
+      "right_id": "180001",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -746,10 +148,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "122003",
+      "right_id": "180003",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -759,10 +161,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121704",
+      "right_id": "159002",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -772,10 +174,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "122004",
+      "right_id": "159001",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -785,10 +187,101 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121701",
+      "right_id": "159003",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121901",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191002",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191005",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191003",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -801,293 +294,7 @@
       "right_id": "122001",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122000",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111001",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111010",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111008",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111011",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111010",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111006",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121401",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122101",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122000",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121001",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121002",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121003",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121402",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122102",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121202",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121302",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "151202",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "151203",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "150101",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122001",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -1100,306 +307,7 @@
       "right_id": "121701",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101002",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101102",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101001",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101101",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101105",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101101",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101003",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101103",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101202",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101203",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101205",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101302",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101301",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101303",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152101",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152102",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152106",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152107",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -1412,670 +320,7 @@
       "right_id": "122000",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101402",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101403",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121801",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "155101",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "155201",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "156101",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "156201",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101301",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "157101",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122000",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111001",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111010",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111008",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111011",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111010",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111006",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121401",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122101",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122000",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121001",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121002",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121003",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121402",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122102",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121202",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121302",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "151202",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "151203",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "150101",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122001",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121701",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101002",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101101",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101001",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111001",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121001",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121401",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121201",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121801",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "155101",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "151201",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152101",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "150101",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
+        "Case Worker / Social Officer"
       ]
     }
   },
@@ -2088,7 +333,7 @@
       "right_id": "127000",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Data Analyst"
       ]
     }
   },
@@ -2098,10 +343,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121702",
+      "right_id": "180001",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Data Analyst"
       ]
     }
   },
@@ -2111,10 +356,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "122002",
+      "right_id": "159001",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Data Analyst"
       ]
     }
   },
@@ -2124,10 +369,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121703",
+      "right_id": "121901",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Data Analyst"
       ]
     }
   },
@@ -2137,10 +382,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "122003",
+      "right_id": "199001",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Data Analyst"
       ]
     }
   },
@@ -2150,10 +395,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121704",
+      "right_id": "191001",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Data Analyst"
       ]
     }
   },
@@ -2163,23 +408,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "122004",
+      "right_id": "191005",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121701",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
+        "Data Analyst"
       ]
     }
   },
@@ -2192,7 +424,20 @@
       "right_id": "122001",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121701",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
       ]
     }
   },
@@ -2205,7 +450,2516 @@
       "right_id": "122000",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199001",
+      "audit_user_id": null,
+      "role": [
+        "Finance Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191001",
+      "audit_user_id": null,
+      "role": [
+        "Finance Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191005",
+      "audit_user_id": null,
+      "role": [
+        "Finance Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122001",
+      "audit_user_id": null,
+      "role": [
+        "Finance Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121701",
+      "audit_user_id": null,
+      "role": [
+        "Finance Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122000",
+      "audit_user_id": null,
+      "role": [
+        "Finance Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127004",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127005",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127006",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127000",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127002",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180002",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180004",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159002",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159004",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159005",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121901",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191002",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190002",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191005",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121701",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122000",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "953001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "953002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "900101",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127005",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127006",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127000",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159005",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121902",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121906",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121904",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121903",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121901",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121905",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191005",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121702",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121704",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122005",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122006",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121703",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121701",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122000",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "953001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "953002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "900101",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127005",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127006",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127000",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159005",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121902",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121906",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121904",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121903",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121901",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121905",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191005",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122002",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121702",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122004",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121704",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122005",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122006",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122001",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122003",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121703",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121701",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122000",
+      "audit_user_id": null,
+      "role": [
+        "Registry Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "953001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "953002",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "900101",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127004",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127005",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127006",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127000",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127002",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180002",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180003",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159002",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159003",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121901",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191002",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191005",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191003",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122001",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121701",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122000",
+      "audit_user_id": null,
+      "role": [
+        "Case Worker / Social Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127000",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180001",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159001",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121901",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199001",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191001",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191005",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122001",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121701",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122000",
+      "audit_user_id": null,
+      "role": [
+        "Data Analyst"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127004",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127005",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127006",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127000",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "127002",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180002",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180004",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "180003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159002",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159004",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159005",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "159003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121901",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "199003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191002",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190002",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "190003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191005",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "191003",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122001",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121701",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122000",
+      "audit_user_id": null,
+      "role": [
+        "Program Manager"
       ]
     }
   }

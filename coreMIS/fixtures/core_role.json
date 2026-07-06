@@ -2,6 +2,76 @@
   {
     "model": "core.role",
     "fields": {
+      "uuid": "55063f63-4b40-4b26-b799-1fab4ceeeddf",
+      "name": "Accountant",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "e62716b6-b99e-41c9-af95-ace62dac21a6",
+      "name": "Data Analyst",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "fe906fb5-ad17-4d09-adaf-75352abb6883",
+      "name": "Local Admin",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "044ca7d2-dab8-4b2d-be40-e88640ec7fd5",
+      "name": "Social Protection Manager",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "00755e9f-9293-47ad-b40e-f274373f3dbe",
+      "name": "Social Protection Officer",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
       "uuid": "9caa92fd-d0e4-34bf-5ba7-9c2cadccce89",
       "name": "Local Admin",
       "alt_language": null,
@@ -46,6 +116,20 @@
     "fields": {
       "uuid": "03e62f8f-cc0a-8d05-b472-e77393c6bd45",
       "name": "Social Protection Officer",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "c71995ce-4bc4-dab8-f041-a860978e99e2",
+      "name": "Data Analyst",
       "alt_language": null,
       "is_system": 0,
       "is_blocked": false,

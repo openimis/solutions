@@ -2,8 +2,8 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "7ee5525d-7be3-4491-aaaf-97182f7c929d",
-      "name": "LOCAL Administrator",
+      "uuid": "684d1d43-9fda-4025-ab50-60488d109715",
+      "name": "Accountant",
       "alt_language": null,
       "is_system": 0,
       "is_blocked": false,
@@ -16,8 +16,8 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "839163cc-e7b2-4f3e-a7bd-e30f8a20cd19",
-      "name": "Social Protection Manager",
+      "uuid": "a1760539-bdc7-477d-b19a-2f83b84c2286",
+      "name": "Enrolment Officer",
       "alt_language": null,
       "is_system": 0,
       "is_blocked": false,
@@ -30,8 +30,106 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "df31fac6-66e5-4562-89ca-90c85a7ac922",
-      "name": "Grievance Manager",
+      "uuid": "c1f255e4-143f-40e4-9a12-aebb3540f21f",
+      "name": "Local Administrator",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "b2a4e638-5657-4f83-b7e6-d58f14cf45dc",
+      "name": "Medical Officer",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "53a2a798-2ce0-454a-9cff-e6cb883b5d82",
+      "name": "Scheme Administrator",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "5dab9877-0fe9-a6a0-485f-c2ebc8cb3646",
+      "name": "Enrolment Officer",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "fc533e80-03d3-cdd8-a508-1808971842ce",
+      "name": "Accountant",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "eb099057-6a99-e8f8-90e3-17eaaf1ddd7f",
+      "name": "Medical Officer",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "4b6620ec-4209-936a-d0c4-04fbb585cebb",
+      "name": "Scheme Administrator",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "9caa92fd-d0e4-34bf-5ba7-9c2cadccce89",
+      "name": "Local Administrator",
       "alt_language": null,
       "is_system": 0,
       "is_blocked": false,

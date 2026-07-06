@@ -2,7 +2,7 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "771d16d1-3f61-4983-bec2-b81a46594a55",
+      "uuid": "932958d4-c18a-4bb1-a569-0b169d51b5a0",
       "name": "Case Worker / Social Officer",
       "alt_language": null,
       "is_system": 0,
@@ -16,7 +16,7 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "5299a206-69fb-47c3-8e33-dfcc35a31e2a",
+      "uuid": "7e1b4cee-6647-4628-ae9a-d16f9ade1fe7",
       "name": "Data Analyst",
       "alt_language": null,
       "is_system": 0,
@@ -30,7 +30,7 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "7d8456df-4bb1-4de2-bbcf-0ebdc52c3ad9",
+      "uuid": "9b4b71f5-f1e6-4905-a14b-3250e74b67a5",
       "name": "Finance Officer",
       "alt_language": null,
       "is_system": 0,
@@ -44,7 +44,7 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "7b675659-5c94-41d2-af16-bd4b3a695cae",
+      "uuid": "82497bfe-6132-4355-a533-9a78952c2a5f",
       "name": "Program Manager",
       "alt_language": null,
       "is_system": 0,
@@ -58,8 +58,22 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "774c9673-efc2-bb81-6885-86de26245a13",
-      "name": "Program Manager",
+      "uuid": "82b4c182-5d12-424d-98a6-7b9e8d5db246",
+      "name": "Registry Administrator",
+      "alt_language": null,
+      "is_system": 0,
+      "is_blocked": false,
+      "audit_user_id": null,
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null
+    }
+  },
+  {
+    "model": "core.role",
+    "fields": {
+      "uuid": "3cd5e495-d78e-3cd6-8263-3956723530bd",
+      "name": "Registry Administrator",
       "alt_language": null,
       "is_system": 0,
       "is_blocked": false,
@@ -100,8 +114,8 @@
   {
     "model": "core.role",
     "fields": {
-      "uuid": "2e0a550c-698a-c170-c4c2-868945eefdbf",
-      "name": "Finance Officer",
+      "uuid": "774c9673-efc2-bb81-6885-86de26245a13",
+      "name": "Program Manager",
       "alt_language": null,
       "is_system": 0,
       "is_blocked": false,

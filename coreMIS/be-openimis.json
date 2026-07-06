@@ -6,7 +6,7 @@
     },
     {
       "name": "core",
-      "pip": "git+https://github.com/openimis/openimis-be-core_py.git@develop#egg=openimis-be-core"
+      "pip": "git+https://github.com/openimis/openimis-be-core_py.git@feature/add-user-business-access#egg=openimis-be-core"
     },
     {
       "name": "calculation",

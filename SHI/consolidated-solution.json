@@ -93,6 +93,10 @@
           "position": 3,
           "route": "claim/feedback",
           "withDivider": true
+        },
+        {
+          "position": 1,
+          "route": "claim_batch"
         }
       ]
     },
@@ -169,6 +173,20 @@
         {
           "position": 2,
           "route": "ticket/tickets"
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "id": "Reports.MainMenu",
+      "name": "Reports",
+      "text": "Dashboard and reports",
+      "icon": "Dashboard",
+      "entries": [
+        {
+          "position": 2,
+          "id": "tools.reports",
+          "icon": "TableChart"
         }
       ]
     },

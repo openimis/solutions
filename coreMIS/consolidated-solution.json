@@ -6,7 +6,6 @@
     "task-deduplication": "/mnt/data/Development/solution-builder/solution/modules/task-deduplication.json",
     "calculation-social-protection": "/mnt/data/Development/solution-builder/solution/modules/calculation-social-protection.json",
     "workflow": "/mnt/data/Development/solution-builder/solution/modules/workflow.json",
-    "sp-lang": "/mnt/data/Development/solution-builder/solution/modules/sp-lang.json",
     "opensearch-reports": "/mnt/data/Development/solution-builder/solution/modules/opensearch-reports.json",
     "invoice-supplier": "/mnt/data/Development/solution-builder/solution/modules/invoice-supplier.json",
     "payment-plan": "/mnt/data/Development/solution-builder/solution/modules/payment-plan.json",
@@ -21,6 +20,27 @@
     "profiles": "/mnt/data/Development/solution-builder/solution/modules/profiles.json",
     "grievance": "/mnt/data/Development/solution-builder/solution/modules/grievance.json"
   },
+  "confluenceLabel": [
+    "module-api-import",
+    "module-calculation",
+    "module-calculation-social-protection",
+    "module-core",
+    "module-grievance",
+    "module-individual",
+    "module-invoice-supplier",
+    "module-location",
+    "module-opensearch-reports",
+    "module-payment-cycle",
+    "module-payment-plan",
+    "module-payment-point",
+    "module-payroll",
+    "module-profiles",
+    "module-social-protection",
+    "module-task-deduplication",
+    "module-task-management",
+    "module-user-management",
+    "module-workflow"
+  ],
   "roles": {
     "local_admin": {
       "roleName": "Local Admin",
@@ -394,11 +414,6 @@
           "route": "payment/paymentsInvoice"
         },
         {
-          "position": 3,
-          "icon": "PriceChange",
-          "route": "paymentPlans"
-        },
-        {
           "position": 14,
           "route": "payrollsReconciled",
           "withDivider": true
@@ -419,11 +434,6 @@
           "position": 5,
           "icon": "Timelapse",
           "route": "paymentCycles"
-        },
-        {
-          "position": 20,
-          "icon": "Store",
-          "route": "paymentPoints"
         }
       ]
     },
@@ -507,6 +517,11 @@
           "position": 2,
           "icon": "Spa",
           "route": "benefitPlans"
+        },
+        {
+          "position": 3,
+          "icon": "PriceChange",
+          "route": "paymentPlans"
         }
       ]
     },
@@ -541,6 +556,11 @@
       "text": "admin.mainMenu",
       "icon": "LocationCity",
       "entries": [
+        {
+          "position": 20,
+          "icon": "Store",
+          "route": "paymentPoints"
+        },
         {
           "position": 4,
           "route": "location/locations"
@@ -594,7 +614,7 @@
         "package": "openimis-be-core",
         "git": "https://github.com/openimis/openimis-be-core_py",
         "version": "v1.9.0",
-        "branch": "feature/add-user-business-access"
+        "branch": "develop"
       },
       "individual": {
         "package": "openimis-be-individual",
@@ -864,7 +884,7 @@
         "package": "openimis-be",
         "git": "https://github.com/openimis/openimis-be_py",
         "version": "26.04",
-        "branch": "feature/load-demo"
+        "branch": "release/26.04"
       }
     }
   },
@@ -883,7 +903,6 @@
       "InvoiceModule",
       "PaymentModule",
       "OpenSearchReportsModule",
-      "CoreMISLanguageModule",
       "DeduplicationModule",
       "SocialProtectionModule",
       "IndividualModule",
@@ -1075,17 +1094,11 @@
         "version": "v2.0.0",
         "branch": "develop"
       },
-      "CoreMISLanguageModule": {
-        "package": "@openimis/fe-coremis_language_pack",
-        "git": "https://github.com/openimis/openimis-fe-coremis_language_pack_js.git",
-        "version": "v1.2.0",
-        "branch": "develop"
-      },
       "assembly": {
         "package": "openimis-fe",
         "git": "https://github.com/openimis/openimis-fe_js",
         "version": "26.04",
-        "branch": "develop"
+        "branch": "release/26.04"
       }
     }
   },

@@ -13,6 +13,20 @@
     "deduplication": "/mnt/data/Development/solution-builder/solution/modules/deduplication.json",
     "workflow": "/mnt/data/Development/solution-builder/solution/modules/workflow.json"
   },
+  "confluenceLabel": [
+    "module-api-import",
+    "module-calculation",
+    "module-core",
+    "module-deduplication",
+    "module-grievance",
+    "module-individual",
+    "module-location",
+    "module-opensearch-reports",
+    "module-profiles",
+    "module-task-management",
+    "module-user-management",
+    "module-workflow"
+  ],
   "roles": {
     "registry_admin": {
       "roleName": "Registry Administrator",
@@ -321,7 +335,7 @@
         "package": "openimis-be-core",
         "git": "https://github.com/openimis/openimis-be-core_py",
         "version": "v1.9.0",
-        "branch": "feature/add-user-business-access"
+        "branch": "develop"
       },
       "individual": {
         "package": "openimis-be-individual",
@@ -591,7 +605,7 @@
         "package": "openimis-be",
         "git": "https://github.com/openimis/openimis-be_py",
         "version": "26.04",
-        "branch": "feature/load-demo"
+        "branch": "release/26.04"
       }
     }
   },
@@ -795,17 +809,11 @@
         "version": "v2.0.0",
         "branch": "develop"
       },
-      "CoreMISLanguageModule": {
-        "package": "@openimis/fe-coremis_language_pack",
-        "git": "https://github.com/openimis/openimis-fe-coremis_language_pack_js.git",
-        "version": "v1.2.0",
-        "branch": "develop"
-      },
       "assembly": {
         "package": "openimis-fe",
         "git": "https://github.com/openimis/openimis-fe_js",
         "version": "26.04",
-        "branch": "develop"
+        "branch": "release/26.04"
       }
     }
   },

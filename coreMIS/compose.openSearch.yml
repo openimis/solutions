@@ -1,6 +1,6 @@
 services:
   opensearch:
-    image: opensearchproject/opensearch:latest
+    image: public.ecr.aws/opensearchproject/opensearch:${OPENSEARCH_VERSION:-latest}
     env_file:
       - .env.openSearch
     environment:
@@ -23,7 +23,8 @@ services:
     networks:
       openimis-net: null
   opensearch-dashboards:
-    image: opensearchproject/opensearch-dashboards:2.9.0
+    image: >-
+      public.ecr.aws/opensearchproject/opensearch-dashboards:${OPENSEARCH_VERSION:-latest}
     environment:
       - OPENSEARCH_HOSTS=${OPENSEARCH_HOSTS:-http://opensearch:9200}
       - DISABLE_SECURITY_DASHBOARDS_PLUGIN=true
@@ -34,5 +35,33 @@ services:
         ./conf/opensearch/opensearch.yml:/usr/share/opensearch-dashboards/config/opensearch.yml
     networks:
       openimis-net: null
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=proxy
+      - >-
+        traefik.http.routers.opensearch.rule=Host(`${DOMAIN}`) &&
+        PathPrefix(`/opensearch`)
+      - traefik.http.routers.opensearch.entrypoints=websecure
+      - traefik.http.routers.opensearch.tls=true
+      - traefik.http.routers.opensearch.tls.certresolver=letsencrypt
+      - traefik.http.services.opensearch.loadbalancer.server.port=5601
+      - >-
+        traefik.http.middlewares.opensearch-stripprefix.stripprefix.prefixes=/opensearch
+      - >-
+        traefik.http.middlewares.opensearch-auth.forwardauth.address=http://backend/${REACT_APP_API_URL}/core/users/current_user/
+      - >-
+        traefik.http.middlewares.opensearch-auth.forwardauth.authRequestHeaders=X-Original-URI,X-Real-IP,X-Forwarded-For,Authorization
+      - >-
+        traefik.http.middlewares.opensearch-auth.forwardauth.trustForwardHeader=true
+      - >-
+        traefik.http.middlewares.opensearch-basicauth.headers.customRequestHeaders.Authorization=Basic
+        ${OPENSEARCH_BASIC_TOKEN}
+      - >-
+        traefik.http.routers.opensearch.middlewares=opensearch-auth,opensearch-basicauth,opensearch-stripprefix
+      - >-
+        traefik.http.routers.opensearch-http.rule=Host(`${DOMAIN}`) &&
+        PathPrefix(`/opensearch`)
+      - traefik.http.routers.opensearch-http.entrypoints=web
+      - traefik.http.routers.opensearch-http.middlewares=redirect-to-https
 volumes:
   opensearch-data1: null

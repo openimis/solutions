@@ -7,7 +7,7 @@
     "insuree": "/mnt/data/Development/solution-builder/solution/modules/insuree.json",
     "policy": "/mnt/data/Development/solution-builder/solution/modules/policy.json",
     "claim": "/mnt/data/Development/solution-builder/solution/modules/claim.json",
-    "claim-batch": "/mnt/data/Development/solution-builder/solution/modules/claim_batch.json",
+    "claim-batch": "/mnt/data/Development/solution-builder/solution/modules/claim-batch.json",
     "product": "/mnt/data/Development/solution-builder/solution/modules/product.json",
     "health-facility": "/mnt/data/Development/solution-builder/solution/modules/healthfacility.json",
     "invoice-customer": "/mnt/data/Development/solution-builder/solution/modules/invoice-customer.json",
@@ -26,6 +26,33 @@
     "profiles": "/mnt/data/Development/solution-builder/solution/modules/profiles.json",
     "grievance": "/mnt/data/Development/solution-builder/solution/modules/grievance.json"
   },
+  "confluenceLabel": [
+    "module-calculation",
+    "module-calculation-legacy",
+    "module-claim",
+    "module-claim-batch",
+    "module-contract",
+    "module-contribution-plan",
+    "module-controls",
+    "module-core",
+    "module-grievance",
+    "module-health-facility",
+    "module-insuree",
+    "module-invoice-customer",
+    "module-invoice-supplier",
+    "module-location",
+    "module-medical",
+    "module-payer",
+    "module-payment",
+    "module-payment-plan",
+    "module-policy",
+    "module-policyholder",
+    "module-product",
+    "module-profiles",
+    "module-report",
+    "module-task-management",
+    "module-user-management"
+  ],
   "roles": {
     "enrolment_officer": {
       "roleName": "Enrolment Officer",
@@ -180,6 +207,11 @@
       "icon": "Shield",
       "entries": [
         {
+          "position": 33,
+          "icon": "Business",
+          "route": "policyHolders"
+        },
+        {
           "position": 1,
           "icon": "Contract",
           "route": "contracts"
@@ -210,11 +242,6 @@
           "route": "claim/reviews"
         },
         {
-          "position": 3,
-          "route": "claim/feedback",
-          "withDivider": true
-        },
-        {
           "position": 1,
           "route": "claim_batch"
         }
@@ -242,11 +269,6 @@
           "icon": "CorporateFare",
           "route": "bills",
           "withDivider": true
-        },
-        {
-          "position": 3,
-          "icon": "PriceChange",
-          "route": "paymentPlans"
         },
         {
           "position": 14,
@@ -318,24 +340,23 @@
       "icon": "Diversity_2",
       "entries": [
         {
-          "position": 34,
-          "icon": "Business",
-          "route": "policyHolders",
-          "withDivider": true
-        },
-        {
-          "position": 1,
+          "position": 14,
           "route": "contributionPlans"
         },
         {
-          "position": 2,
+          "position": 15,
           "route": "contributionPlanBundles",
           "withDivider": true
         },
         {
-          "position": 2,
+          "position": 1,
           "icon": "Spa",
           "route": "admin/products"
+        },
+        {
+          "position": 3,
+          "icon": "PriceChange",
+          "route": "paymentPlans"
         },
         {
           "position": 9,
@@ -363,6 +384,12 @@
       "icon": "AdminPanelSettings",
       "description": "User management menu",
       "entries": [
+        {
+          "position": 34,
+          "icon": "Business",
+          "route": "policyHolderUsers",
+          "withDivider": true
+        },
         {
           "position": 11,
           "icon": "AssignmentInd",
@@ -446,7 +473,7 @@
         "package": "openimis-be-core",
         "git": "https://github.com/openimis/openimis-be-core_py",
         "version": "v1.9.0",
-        "branch": "feature/add-user-business-access"
+        "branch": "develop"
       },
       "individual": {
         "package": "openimis-be-individual",
@@ -716,7 +743,7 @@
         "package": "openimis-be",
         "git": "https://github.com/openimis/openimis-be_py",
         "version": "26.04",
-        "branch": "feature/load-demo"
+        "branch": "release/26.04"
       }
     }
   },
@@ -932,17 +959,11 @@
         "version": "v2.0.0",
         "branch": "develop"
       },
-      "CoreMISLanguageModule": {
-        "package": "@openimis/fe-coremis_language_pack",
-        "git": "https://github.com/openimis/openimis-fe-coremis_language_pack_js.git",
-        "version": "v1.2.0",
-        "branch": "develop"
-      },
       "assembly": {
         "package": "openimis-fe",
         "git": "https://github.com/openimis/openimis-fe_js",
         "version": "26.04",
-        "branch": "develop"
+        "branch": "release/26.04"
       }
     }
   },

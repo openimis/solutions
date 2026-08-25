@@ -2,55 +2,55 @@
   "modules": [
     {
       "name": "workflow",
-      "pip": "git+https://github.com/openimis/openimis-be-workflow_py.git@develop#egg=openimis-be-workflow"
+      "pip": "openimis-be-workflow~=v1.0.1"
     },
     {
       "name": "deduplication",
-      "pip": "git+https://github.com/openimis/openimis-be-deduplication_py.git@develop#egg=openimis-be-deduplication"
+      "pip": "openimis-be-deduplication~=v1.2.0"
     },
     {
       "name": "api_etl",
-      "pip": "git+https://github.com/openimis/openimis-be-api_etl_py.git@develop#egg=openimis-be-api_etl"
+      "pip": "openimis-be-api_etl~=v1.1.0"
     },
     {
       "name": "individual",
-      "pip": "git+https://github.com/openimis/openimis-be-individual_py.git@develop#egg=openimis-be-individual"
+      "pip": "openimis-be-individual~=v1.3.0"
     },
     {
       "name": "opensearch_reports",
-      "pip": "git+https://github.com/openimis/openimis-be-opensearch_reports_py.git@develop#egg=openimis-be-opensearch_reports"
+      "pip": "openimis-be-opensearch_reports~=v1.2.2"
     },
     {
       "name": "grievance_social_protection",
-      "pip": "git+https://github.com/openimis/openimis-be-grievance_social_protection_py.git@develop#egg=openimis-be-grievance_social_protection"
+      "pip": "openimis-be-grievance_social_protection~=v1.1.0"
     },
     {
       "name": "core",
-      "pip": "git+https://github.com/openimis/openimis-be-core_py.git@feature/add-user-business-access#egg=openimis-be-core"
+      "pip": "openimis-be-core~=v1.9.0"
     },
     {
       "name": "calculation",
-      "pip": "git+https://github.com/openimis/openimis-be-calculation_py.git@develop#egg=openimis-be-calculation"
+      "pip": "openimis-be-calculation~=v1.9.0"
     },
     {
       "name": "tasks_management",
-      "pip": "git+https://github.com/openimis/openimis-be-tasks_management_py.git@develop#egg=openimis-be-tasks_management"
+      "pip": "openimis-be-tasks_management~=v1.3.0"
     },
     {
       "name": "location",
-      "pip": "git+https://github.com/openimis/openimis-be-location_py.git@develop#egg=openimis-be-location"
+      "pip": "openimis-be-location~=v1.9.0"
     },
     {
       "name": "medical_pricelist",
-      "pip": "git+https://github.com/openimis/openimis-be-medical_pricelist_py.git@develop#egg=openimis-be-medical_pricelist"
+      "pip": "openimis-be-medical_pricelist~=v1.7.1"
     },
     {
       "name": "medical",
-      "pip": "git+https://github.com/openimis/openimis-be-medical_py.git@develop#egg=openimis-be-medical"
+      "pip": "openimis-be-medical~=v1.9.0"
     },
     {
       "name": "contribution_plan",
-      "pip": "git+https://github.com/openimis/openimis-be-contribution_plan_py.git@develop#egg=openimis-be-contribution-plan"
+      "pip": "openimis-be-contribution-plan~=v1.9.0"
     }
   ]
 }

@@ -79,6 +79,16 @@ services:
     networks: *ref_3
     command: start
     restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=proxy
+      - >-
+        traefik.http.routers.backend.rule=Host(`${DOMAIN}`) &&
+        PathPrefix(`/api`)
+      - traefik.http.routers.backend.entrypoints=websecure
+      - traefik.http.routers.backend.tls=true
+      - traefik.http.routers.backend.tls.certresolver=letsencrypt
+      - traefik.http.services.backend.loadbalancer.server.port=8000
   worker:
     image: ghcr.io/openimis/openimis-be:${BE_TAG:-develop}
     environment: *ref_0
@@ -95,7 +105,7 @@ services:
       mode: replicated
       replicas: ${WORKER_REPLICAS:-3}
   rabbitmq:
-    image: rabbitmq:3-management
+    image: public.ecr.aws/docker/library/rabbitmq:3-management
     restart: always
     networks:
       openimis-net: null

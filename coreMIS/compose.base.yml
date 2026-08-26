@@ -1,4 +1,5 @@
 x-api:
+  # BE_TAG must be the solution image (e.g. 26.04-coremis) that bakes in be-openimis.json
   image: ghcr.io/openimis/openimis-be:${BE_TAG:-develop}
   environment: &ref_0
     - DB_DEFAULT=${DB_DEFAULT:-postgresql}
@@ -28,6 +29,7 @@ x-api:
     openimis-net: null
 services:
   frontend:
+    # FE_TAG must be the solution image (e.g. 26.04-coremis) that bakes in fe-openimis.json
     image: ghcr.io/openimis/openimis-fe:${FE_TAG:-develop}
     restart: always
     environment:

@@ -132,21 +132,57 @@ jobs:
       - name: Prepare BE build context
         if: env.BUILD_BE == 'true'
         run: |
+          set -euo pipefail
           LOWER_SOL=$(echo "${{ inputs.solution }}" | tr '[:upper:]' '[:lower:]')
           BUILD_DIR="build-be-$LOWER_SOL"
+          SRC_JSON="${{ inputs.solution }}/be-openimis.json"
           mkdir -p "$BUILD_DIR"
 
-          cp -r openimis-be_py/* "$BUILD_DIR/"
-
-          if [ ! -f "${{ inputs.solution }}/be-openimis.json" ]; then
+          if [ ! -f "$SRC_JSON" ]; then
             echo "ERROR: be-openimis.json not found in ${{ inputs.solution }}"
             exit 1
           fi
-          cp "${{ inputs.solution }}/be-openimis.json" "$BUILD_DIR/openimis.json"
+
+          # Replace openimis.json in the assembly checkout, then copy the tree.
+          # cp -a src/. dest/ keeps hidden files (.dockerignore) that src/* would drop.
+          cp -f "$SRC_JSON" openimis-be_py/openimis.json
+          cp -a openimis-be_py/. "$BUILD_DIR/"
+          rm -rf "$BUILD_DIR/.git"
+          cp -f "$SRC_JSON" "$BUILD_DIR/openimis.json"
+
+          python3 - "$BUILD_DIR/Dockerfile" <<'PY'
+          from pathlib import Path
+          import sys
+          p = Path(sys.argv[1])
+          lines = p.read_text().splitlines(True)
+          out, injected = [], 0
+          for line in lines:
+              out.append(line)
+              s = line.strip()
+              if not s.startswith("COPY ") or s.startswith("COPY --from="):
+                  continue
+              args = [x for x in s.split()[1:] if not x.startswith("--")]
+              if len(args) >= 2 and args[0] in (".", "./"):
+                  dest = args[1].rstrip("/")
+                  out.append(f"COPY openimis.json {dest}/openimis.json\n")
+                  injected += 1
+          if injected == 0:
+              raise SystemExit("ERROR: could not inject openimis.json COPY into BE Dockerfile")
+          p.write_text("".join(out))
+          print(f"Injected {injected} BE openimis.json overlay COPY instruction(s)")
+          PY
 
           echo "=== BE openimis.json for ${{ inputs.solution }} ==="
           cat "$BUILD_DIR/openimis.json"
           echo "=== END ==="
+          if cmp -s "$SRC_JSON" "$BUILD_DIR/openimis.json"; then
+            echo "OK: build context openimis.json matches ${SRC_JSON}"
+          else
+            echo "ERROR: build context openimis.json does not match ${SRC_JSON}"
+            exit 1
+          fi
+          echo "=== Dockerfile COPY overlay ==="
+          grep -n "openimis.json" "$BUILD_DIR/Dockerfile" || true
 
           [ -d "${{ inputs.solution }}/fixtures" ] && cp -r "${{ inputs.solution }}/fixtures" "$BUILD_DIR/" || echo "No fixtures"
 
@@ -157,21 +193,59 @@ jobs:
       - name: Prepare FE build context
         if: env.BUILD_FE == 'true'
         run: |
+          set -euo pipefail
           LOWER_SOL=$(echo "${{ inputs.solution }}" | tr '[:upper:]' '[:lower:]')
           BUILD_DIR="build-fe-$LOWER_SOL"
+          SRC_JSON="${{ inputs.solution }}/fe-openimis.json"
           mkdir -p "$BUILD_DIR"
 
-          cp -r openimis-fe_js/* "$BUILD_DIR/"
-
-          if [ ! -f "${{ inputs.solution }}/fe-openimis.json" ]; then
+          if [ ! -f "$SRC_JSON" ]; then
             echo "ERROR: fe-openimis.json not found in ${{ inputs.solution }}"
             exit 1
           fi
-          cp "${{ inputs.solution }}/fe-openimis.json" "$BUILD_DIR/openimis.json"
+
+          # Replace openimis.json in the assembly checkout, then copy the tree.
+          # The FE Dockerfile only does COPY ./ <workdir>, so the solution file
+          # must already be named openimis.json in the context — and we also
+          # inject an extra COPY so a later layer always overlays it.
+          cp -f "$SRC_JSON" openimis-fe_js/openimis.json
+          cp -a openimis-fe_js/. "$BUILD_DIR/"
+          rm -rf "$BUILD_DIR/.git"
+          cp -f "$SRC_JSON" "$BUILD_DIR/openimis.json"
+
+          python3 - "$BUILD_DIR/Dockerfile" <<'PY'
+          from pathlib import Path
+          import sys
+          p = Path(sys.argv[1])
+          lines = p.read_text().splitlines(True)
+          out, injected = [], 0
+          for line in lines:
+              out.append(line)
+              s = line.strip()
+              if not s.startswith("COPY ") or s.startswith("COPY --from="):
+                  continue
+              args = [x for x in s.split()[1:] if not x.startswith("--")]
+              if len(args) >= 2 and args[0] in (".", "./"):
+                  dest = args[1].rstrip("/")
+                  out.append(f"COPY openimis.json {dest}/openimis.json\n")
+                  injected += 1
+          if injected == 0:
+              raise SystemExit("ERROR: could not inject openimis.json COPY into FE Dockerfile")
+          p.write_text("".join(out))
+          print(f"Injected {injected} FE openimis.json overlay COPY instruction(s)")
+          PY
 
           echo "=== FE openimis.json for ${{ inputs.solution }} ==="
           cat "$BUILD_DIR/openimis.json"
           echo "=== END ==="
+          if cmp -s "$SRC_JSON" "$BUILD_DIR/openimis.json"; then
+            echo "OK: build context openimis.json matches ${SRC_JSON}"
+          else
+            echo "ERROR: build context openimis.json does not match ${SRC_JSON}"
+            exit 1
+          fi
+          echo "=== Dockerfile COPY overlay ==="
+          grep -n "openimis.json" "$BUILD_DIR/Dockerfile" || true
 
           echo "BUILD_DIR_FE=$BUILD_DIR" >> $GITHUB_ENV
           echo "LOWER_SOL=$LOWER_SOL" >> $GITHUB_ENV
@@ -185,6 +259,14 @@ jobs:
           echo "=== Contents of ${{ env.BUILD_DIR_BE }}/fixtures ==="
           ls -la ${{ env.BUILD_DIR_BE }}/fixtures || echo "fixtures/ not found!"
 
+      - name: Debug - List build context (FE)
+        if: env.BUILD_FE == 'true'
+        run: |
+          echo "=== Contents of ${{ env.BUILD_DIR_FE }} ==="
+          ls -la ${{ env.BUILD_DIR_FE }}
+          echo "=== openimis.json (head) ==="
+          head -n 40 ${{ env.BUILD_DIR_FE }}/openimis.json
+
       - name: Build BE solution image
         if: env.BUILD_BE == 'true'
         uses: docker/build-push-action@v5
@@ -195,6 +277,7 @@ jobs:
           push: true
           tags: |
             ghcr.io/openimis/openimis-be:${{ env.TAG_BE }}
+          target: app
           cache-from: type=gha,scope=solution-${{ env.LOWER_SOL }}-be
           cache-to: type=gha,mode=max,scope=solution-${{ env.LOWER_SOL }}-be
 

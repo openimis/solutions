@@ -2,55 +2,55 @@
   "modules": [
     {
       "name": "workflow",
-      "pip": "openimis-be-workflow~=v1.0.1"
+      "pip": "openimis-be-workflow~=1.1.0"
     },
     {
       "name": "deduplication",
-      "pip": "openimis-be-deduplication~=v1.2.0"
+      "pip": "openimis-be-deduplication~=1.4.0"
     },
     {
       "name": "api_etl",
-      "pip": "openimis-be-api_etl~=v1.1.0"
+      "pip": "openimis-be-api_etl~=1.3.0"
     },
     {
       "name": "individual",
-      "pip": "openimis-be-individual~=v1.3.0"
+      "pip": "openimis-be-individual~=1.4.0"
     },
     {
       "name": "opensearch_reports",
-      "pip": "openimis-be-opensearch_reports~=v1.2.2"
+      "pip": "openimis-be-opensearch_reports~=1.4.0"
     },
     {
       "name": "grievance_social_protection",
-      "pip": "openimis-be-grievance_social_protection~=v1.1.0"
+      "pip": "openimis-be-grievance_social_protection~=1.3.0"
     },
     {
       "name": "core",
-      "pip": "openimis-be-core~=v1.9.0"
+      "pip": "openimis-be-core~=1.11.0"
     },
     {
       "name": "calculation",
-      "pip": "openimis-be-calculation~=v1.9.0"
+      "pip": "openimis-be-calculation~=1.10.0"
     },
     {
       "name": "tasks_management",
-      "pip": "openimis-be-tasks_management~=v1.3.0"
+      "pip": "openimis-be-tasks_management~=1.5.0"
     },
     {
       "name": "location",
-      "pip": "openimis-be-location~=v1.9.0"
+      "pip": "openimis-be-location~=1.11.0"
     },
     {
       "name": "medical_pricelist",
-      "pip": "openimis-be-medical_pricelist~=v1.7.1"
+      "pip": "openimis-be-medical_pricelist~=1.8.0"
     },
     {
       "name": "medical",
-      "pip": "openimis-be-medical~=v1.9.0"
+      "pip": "openimis-be-medical~=1.11.0"
     },
     {
       "name": "contribution_plan",
-      "pip": "openimis-be-contribution-plan~=v1.9.0"
+      "pip": "openimis-be-contribution-plan~=1.11.0"
     }
   ]
 }

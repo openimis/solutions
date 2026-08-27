@@ -36,12 +36,21 @@ jobs:
   dispatch:
     needs: discover
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
     strategy:
       matrix:
         include: ${{ fromJson(needs.discover.outputs.matrix) }}
     steps:
       - name: Dispatch build for ${{ matrix.solution }}
         run: |
-          gh workflow run build.yml -f tag=${{ inputs.tag }} -f solution=${{ matrix.solution }}
+          gh workflow run build.yml \
+            --repo "${{ github.repository }}" \
+            --ref "${{ github.ref_name }}" \
+            -f tag="${{ inputs.tag }}" \
+            -f solution="${{ matrix.solution }}" \
+            -f scope=all \
+            -f platform=all
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,5 +1,5 @@
 x-api:
-  # BE_TAG must be the solution image (e.g. 26.04-shi) that bakes in be-openimis.json
+  # BE_TAG must be the solution image (e.g. 26.10-shi) that bakes in be-openimis.json
   image: ghcr.io/openimis/openimis-be:${BE_TAG:-develop}
   environment: &ref_0
     - DB_DEFAULT=${DB_DEFAULT:-postgresql}
@@ -20,8 +20,13 @@ x-api:
     - OPENSEARCH_ADMIN=${OPENSEARCH_ADMIN}
     - OPENSEARCH_PASSWORD=${OPENSEARCH_PASSWORD}
     - OPENSEARCH_HOSTS=${OPENSEARCH_HOSTS}
+    - IMPERSONATION_ENABLED=true
+    - EMAIL_HOST=${EMAIL_HOST}
+    - EMAIL_PORT=${EMAIL_PORT}
+    - EMAIL_BACKEND=${EMAIL_BACKEND}
   volumes: &ref_1
     - photos:/openimis-be/openIMIS/images/insurees
+    - file_storage:/openimis-be/openIMIS/file_storage
   depends_on: &ref_2
     db:
       condition: service_healthy
@@ -29,7 +34,7 @@ x-api:
     openimis-net: null
 services:
   frontend:
-    # FE_TAG must be the solution image (e.g. 26.04-shi) that bakes in fe-openimis.json
+    # FE_TAG must be the solution image (e.g. 26.10-shi) that bakes in fe-openimis.json
     image: ghcr.io/openimis/openimis-fe:${FE_TAG:-develop}
     restart: always
     environment:
@@ -81,16 +86,6 @@ services:
     networks: *ref_3
     command: start
     restart: always
-    labels:
-      - traefik.enable=true
-      - traefik.docker.network=proxy
-      - >-
-        traefik.http.routers.backend.rule=Host(`${DOMAIN}`) &&
-        PathPrefix(`/api`)
-      - traefik.http.routers.backend.entrypoints=websecure
-      - traefik.http.routers.backend.tls=true
-      - traefik.http.routers.backend.tls.certresolver=letsencrypt
-      - traefik.http.services.backend.loadbalancer.server.port=8000
   worker:
     image: ghcr.io/openimis/openimis-be:${BE_TAG:-develop}
     environment: *ref_0
@@ -101,14 +96,34 @@ services:
       redis:
         condition: service_healthy
     networks: *ref_3
-    command: worker
+    command: >-
+      worker --concurrency=${CELERY_CONCURRENCY:-4}
+      --max-tasks-per-child=${CELERY_MAX_TASK_PER_CHILD:-50} --loglevel=INFO
     restart: always
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - >-
+          celery -A openIMIS inspect ping --timeout=10 --destination
+          celery@$$HOSTNAME || exit 1
+      interval: 25s
+      timeout: 12s
+      retries: 4
+      start_period: 40s
     deploy:
       mode: replicated
       replicas: ${WORKER_REPLICAS:-3}
   rabbitmq:
-    image: public.ecr.aws/docker/library/rabbitmq:3-management
+    image: rabbitmq:3-management
     restart: always
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
     networks:
       openimis-net: null
 networks:
@@ -117,3 +132,4 @@ networks:
 volumes:
   database: null
   photos: null
+  file_storage: null

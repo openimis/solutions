@@ -1,6 +1,6 @@
 services:
   redis:
-    image: public.ecr.aws/docker/library/redis:latest
+    image: redis:latest
     restart: always
     ports:
       - '6379:6379'

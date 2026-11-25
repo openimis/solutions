@@ -3,7 +3,7 @@
     "model": "core.role",
     "fields": {
       "uuid": "55063f63-4b40-4b26-b799-1fab4ceeeddf",
-      "name": "Accountant",
+      "name": "CoreMIS Accountant",
       "alt_language": null,
       "is_system": 0,
       "is_blocked": false,
@@ -60,76 +60,6 @@
     "fields": {
       "uuid": "00755e9f-9293-47ad-b40e-f274373f3dbe",
       "name": "Social Protection Officer",
-      "alt_language": null,
-      "is_system": 0,
-      "is_blocked": false,
-      "audit_user_id": null,
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null
-    }
-  },
-  {
-    "model": "core.role",
-    "fields": {
-      "uuid": "9caa92fd-d0e4-34bf-5ba7-9c2cadccce89",
-      "name": "Local Admin",
-      "alt_language": null,
-      "is_system": 0,
-      "is_blocked": false,
-      "audit_user_id": null,
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null
-    }
-  },
-  {
-    "model": "core.role",
-    "fields": {
-      "uuid": "fc533e80-03d3-cdd8-a508-1808971842ce",
-      "name": "Accountant",
-      "alt_language": null,
-      "is_system": 0,
-      "is_blocked": false,
-      "audit_user_id": null,
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null
-    }
-  },
-  {
-    "model": "core.role",
-    "fields": {
-      "uuid": "eb7c5ce6-5d49-d8e6-6bf6-6ee79649332c",
-      "name": "Social Protection Manager",
-      "alt_language": null,
-      "is_system": 0,
-      "is_blocked": false,
-      "audit_user_id": null,
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null
-    }
-  },
-  {
-    "model": "core.role",
-    "fields": {
-      "uuid": "03e62f8f-cc0a-8d05-b472-e77393c6bd45",
-      "name": "Social Protection Officer",
-      "alt_language": null,
-      "is_system": 0,
-      "is_blocked": false,
-      "audit_user_id": null,
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null
-    }
-  },
-  {
-    "model": "core.role",
-    "fields": {
-      "uuid": "c71995ce-4bc4-dab8-f041-a860978e99e2",
-      "name": "Data Analyst",
       "alt_language": null,
       "is_system": 0,
       "is_blocked": false,

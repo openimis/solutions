@@ -95,7 +95,6 @@
     "tasks_management.task_group_search",
     "tasks_management.task_group_update",
     "tasks_management.task_search",
-    "tasks_management.task_search_all",
     "tasks_management.task_update"
   ],
   "location": [
@@ -111,7 +110,8 @@
     "calculation.update_calculation_rule"
   ],
   "core": [
-    "core.enable_viewing_masked_data"
+    "core.enable_viewing_masked_data",
+    "core.scheduled_jobs"
   ],
   "user-management": [
     "core.create_roles",
@@ -134,6 +134,8 @@
     "grievance_social_protection.delete_tickets",
     "grievance_social_protection.resolve_grievance",
     "grievance_social_protection.tickets",
-    "grievance_social_protection.update_tickets"
+    "grievance_social_protection.uncategorized_category_tickets",
+    "grievance_social_protection.update_tickets",
+    "grievance_social_protection.update_uncategorized_category_tickets"
   ]
 }

@@ -136,7 +136,11 @@
     "core.claim_administrator",
     "core.create_claim_administrator",
     "core.delete_claim_administrator",
-    "core.update_claim_administrator"
+    "core.update_claim_administrator",
+    "location.create_health_facilities",
+    "location.delete_health_facilities",
+    "location.edit_health_facilities",
+    "location.health_facilities"
   ],
   "invoice-customer": [
     "invoice.invoice_amend",
@@ -185,7 +189,34 @@
   ],
   "report": [
     "opensearch_reports.opensearch_dashboard_search",
-    "opensearch_reports.opensearch_dashboard_update"
+    "opensearch_reports.opensearch_dashboard_update",
+    "report.report",
+    "report.report_add",
+    "report.report_delete",
+    "report.report_edit",
+    "report.reports_capitation_payment",
+    "report.reports_claim_history_report",
+    "report.reports_claim_overview_report",
+    "report.reports_contribution_collection",
+    "report.reports_contribution_distribution",
+    "report.reports_contribution_payment",
+    "report.reports_control_number_assignment",
+    "report.reports_derived_operational_indicators",
+    "report.reports_enrolment_performance_indicators",
+    "report.reports_families_insurees_overview",
+    "report.reports_insuree_without_photos",
+    "report.reports_matching_funds",
+    "report.reports_overview_of_commissions",
+    "report.reports_payment_category_overview",
+    "report.reports_pending_insurees",
+    "report.reports_percentage_referrals",
+    "report.reports_primary_operational_indicator_policies",
+    "report.reports_primary_operational_indicators_claims",
+    "report.reports_product_sales",
+    "report.reports_rejected_photo",
+    "report.reports_renewals",
+    "report.reports_status_of_register",
+    "report.reports_user_activity"
   ],
   "medical": [
     "medical.medical_items",
@@ -235,7 +266,6 @@
     "tasks_management.task_group_search",
     "tasks_management.task_group_update",
     "tasks_management.task_search",
-    "tasks_management.task_search_all",
     "tasks_management.task_update"
   ],
   "calculation": [
@@ -243,7 +273,8 @@
     "calculation.update_calculation_rule"
   ],
   "core": [
-    "core.enable_viewing_masked_data"
+    "core.enable_viewing_masked_data",
+    "core.scheduled_jobs"
   ],
   "user-management": [
     "core.create_roles",
@@ -266,6 +297,8 @@
     "grievance_social_protection.delete_tickets",
     "grievance_social_protection.resolve_grievance",
     "grievance_social_protection.tickets",
-    "grievance_social_protection.update_tickets"
+    "grievance_social_protection.uncategorized_category_tickets",
+    "grievance_social_protection.update_tickets",
+    "grievance_social_protection.update_uncategorized_category_tickets"
   ]
 }

@@ -8,7 +8,7 @@
       "right_id": "101402",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -21,7 +21,7 @@
       "right_id": "101401",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -34,7 +34,7 @@
       "right_id": "101403",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -47,7 +47,7 @@
       "right_id": "121801",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -60,7 +60,7 @@
       "right_id": "155101",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -73,7 +73,7 @@
       "right_id": "155201",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -86,7 +86,7 @@
       "right_id": "156101",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -99,7 +99,7 @@
       "right_id": "156201",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -112,7 +112,7 @@
       "right_id": "101301",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -125,7 +125,7 @@
       "right_id": "157101",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -138,20 +138,7 @@
       "right_id": "101201",
       "audit_user_id": null,
       "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -164,7 +151,7 @@
       "right_id": "121901",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -177,7 +164,7 @@
       "right_id": "122000",
       "audit_user_id": null,
       "role": [
-        "Accountant"
+        "SHI Accountant"
       ]
     }
   },
@@ -190,7 +177,7 @@
       "right_id": "101002",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -203,7 +190,7 @@
       "right_id": "101102",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -216,7 +203,7 @@
       "right_id": "101001",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -229,7 +216,7 @@
       "right_id": "101101",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -242,20 +229,7 @@
       "right_id": "101105",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101101",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -268,7 +242,7 @@
       "right_id": "101003",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -281,7 +255,7 @@
       "right_id": "101103",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -294,7 +268,7 @@
       "right_id": "101202",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -307,7 +281,7 @@
       "right_id": "101203",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -320,46 +294,7 @@
       "right_id": "101201",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -372,7 +307,7 @@
       "right_id": "101205",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -385,7 +320,7 @@
       "right_id": "101302",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -398,7 +333,7 @@
       "right_id": "101301",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -411,7 +346,7 @@
       "right_id": "101303",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -424,7 +359,7 @@
       "right_id": "152101",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -437,7 +372,7 @@
       "right_id": "152102",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -450,7 +385,7 @@
       "right_id": "152106",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -463,7 +398,7 @@
       "right_id": "152107",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -476,7 +411,7 @@
       "right_id": "121901",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -489,7 +424,7 @@
       "right_id": "122000",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Enrolment & Policy Officer"
       ]
     }
   },
@@ -827,7 +762,7 @@
       "right_id": "111001",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -840,7 +775,7 @@
       "right_id": "111010",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -853,7 +788,7 @@
       "right_id": "111008",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -866,20 +801,7 @@
       "right_id": "111011",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111010",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -892,7 +814,7 @@
       "right_id": "111006",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -905,7 +827,7 @@
       "right_id": "121401",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -918,7 +840,7 @@
       "right_id": "122101",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -931,7 +853,7 @@
       "right_id": "122000",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -944,7 +866,7 @@
       "right_id": "121001",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -957,7 +879,7 @@
       "right_id": "121002",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -970,7 +892,7 @@
       "right_id": "121003",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -983,7 +905,7 @@
       "right_id": "121402",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -996,7 +918,7 @@
       "right_id": "122102",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -1009,7 +931,7 @@
       "right_id": "121202",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -1022,7 +944,7 @@
       "right_id": "121302",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -1035,7 +957,7 @@
       "right_id": "151202",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -1048,7 +970,7 @@
       "right_id": "151203",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -1061,7 +983,7 @@
       "right_id": "150101",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -1074,7 +996,7 @@
       "right_id": "121901",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -1087,7 +1009,7 @@
       "right_id": "122001",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -1100,59 +1022,7 @@
       "right_id": "121701",
       "audit_user_id": null,
       "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101002",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101102",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101001",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101101",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -1165,7 +1035,7 @@
       "right_id": "101105",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -1175,426 +1045,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "101101",
+      "right_id": "101105",
       "audit_user_id": null,
       "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101003",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101103",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101202",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101203",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101205",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101302",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101301",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101303",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152101",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152102",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152106",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "152107",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122000",
-      "audit_user_id": null,
-      "role": [
-        "Enrolment Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101402",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101403",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121801",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "155101",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "155201",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "156101",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "156201",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101301",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "157101",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101401",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122000",
-      "audit_user_id": null,
-      "role": [
-        "Accountant"
+        "SHI HF Receptionist"
       ]
     }
   },
@@ -1607,7 +1061,7 @@
       "right_id": "111001",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
+        "SHI HF Claim Administrator"
       ]
     }
   },
@@ -1617,10 +1071,36 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "111010",
+      "right_id": "111002",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
+        "SHI HF Claim Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "111007",
+      "audit_user_id": null,
+      "role": [
+        "SHI HF Claim Administrator"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "111001",
+      "audit_user_id": null,
+      "role": [
+        "SHI Claim Reviewer (Medical Officer)"
       ]
     }
   },
@@ -1633,306 +1113,7 @@
       "right_id": "111008",
       "audit_user_id": null,
       "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111011",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111010",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "111006",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121401",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122101",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122000",
-      "audit_user_id": null,
-      "role": [
-        "Medical Officer"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121001",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121002",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121003",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121402",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122102",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121202",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121302",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "151202",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "151203",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "150101",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121901",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "122001",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "121701",
-      "audit_user_id": null,
-      "role": [
-        "Scheme Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101002",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101101",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101001",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
-      ]
-    }
-  },
-  {
-    "model": "core.roleright",
-    "fields": {
-      "validity_from": "2025-01-01T00:00:00Z",
-      "validity_to": null,
-      "legacy_id": null,
-      "right_id": "101201",
-      "audit_user_id": null,
-      "role": [
-        "Local Administrator"
+        "SHI Claim Reviewer (Medical Officer)"
       ]
     }
   },
@@ -1945,7 +1126,228 @@
       "right_id": "111001",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Claim Feedback Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "111009",
+      "audit_user_id": null,
+      "role": [
+        "SHI Claim Feedback Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "111001",
+      "audit_user_id": null,
+      "role": [
+        "SHI Claim Processor"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "111011",
+      "audit_user_id": null,
+      "role": [
+        "SHI Claim Processor"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "111001",
+      "audit_user_id": null,
+      "role": [
+        "SHI Claim Batch / Payment Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "111101",
+      "audit_user_id": null,
+      "role": [
+        "SHI Claim Batch / Payment Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "111102",
+      "audit_user_id": null,
+      "role": [
+        "SHI Claim Batch / Payment Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "111103",
+      "audit_user_id": null,
+      "role": [
+        "SHI Claim Batch / Payment Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "111001",
+      "audit_user_id": null,
+      "role": [
+        "SHI Claims Status Inquiry Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121101",
+      "audit_user_id": null,
+      "role": [
+        "SHI Provider Network Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121102",
+      "audit_user_id": null,
+      "role": [
+        "SHI Provider Network Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121103",
+      "audit_user_id": null,
+      "role": [
+        "SHI Provider Network Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121601",
+      "audit_user_id": null,
+      "role": [
+        "SHI Provider Network Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121602",
+      "audit_user_id": null,
+      "role": [
+        "SHI Provider Network Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121603",
+      "audit_user_id": null,
+      "role": [
+        "SHI Provider Network Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121501",
+      "audit_user_id": null,
+      "role": [
+        "SHI Provider Network Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121502",
+      "audit_user_id": null,
+      "role": [
+        "SHI Provider Network Manager"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121503",
+      "audit_user_id": null,
+      "role": [
+        "SHI Provider Network Manager"
       ]
     }
   },
@@ -1958,7 +1360,7 @@
       "right_id": "121001",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Product / Benefit Designer"
       ]
     }
   },
@@ -1968,10 +1370,36 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121401",
+      "right_id": "121002",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Product / Benefit Designer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121003",
+      "audit_user_id": null,
+      "role": [
+        "SHI Product / Benefit Designer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121005",
+      "audit_user_id": null,
+      "role": [
+        "SHI Product / Benefit Designer"
       ]
     }
   },
@@ -1984,7 +1412,7 @@
       "right_id": "121201",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Pricelist & Medical Catalogue Steward"
       ]
     }
   },
@@ -1994,10 +1422,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121901",
+      "right_id": "121202",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Pricelist & Medical Catalogue Steward"
       ]
     }
   },
@@ -2007,10 +1435,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121801",
+      "right_id": "121203",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Pricelist & Medical Catalogue Steward"
       ]
     }
   },
@@ -2020,10 +1448,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "101401",
+      "right_id": "121205",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Pricelist & Medical Catalogue Steward"
       ]
     }
   },
@@ -2033,10 +1461,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "155101",
+      "right_id": "121301",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Pricelist & Medical Catalogue Steward"
       ]
     }
   },
@@ -2046,10 +1474,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "151201",
+      "right_id": "121302",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Pricelist & Medical Catalogue Steward"
       ]
     }
   },
@@ -2059,10 +1487,452 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "152101",
+      "right_id": "121303",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Pricelist & Medical Catalogue Steward"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121305",
+      "audit_user_id": null,
+      "role": [
+        "SHI Pricelist & Medical Catalogue Steward"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121401",
+      "audit_user_id": null,
+      "role": [
+        "SHI Pricelist & Medical Catalogue Steward"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121402",
+      "audit_user_id": null,
+      "role": [
+        "SHI Pricelist & Medical Catalogue Steward"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121403",
+      "audit_user_id": null,
+      "role": [
+        "SHI Pricelist & Medical Catalogue Steward"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122101",
+      "audit_user_id": null,
+      "role": [
+        "SHI Pricelist & Medical Catalogue Steward"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122102",
+      "audit_user_id": null,
+      "role": [
+        "SHI Pricelist & Medical Catalogue Steward"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "122103",
+      "audit_user_id": null,
+      "role": [
+        "SHI Pricelist & Medical Catalogue Steward"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101001",
+      "audit_user_id": null,
+      "role": [
+        "SHI Enrolment Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101002",
+      "audit_user_id": null,
+      "role": [
+        "SHI Enrolment Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101101",
+      "audit_user_id": null,
+      "role": [
+        "SHI Enrolment Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101102",
+      "audit_user_id": null,
+      "role": [
+        "SHI Enrolment Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101105",
+      "audit_user_id": null,
+      "role": [
+        "SHI Enrolment Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101101",
+      "audit_user_id": null,
+      "role": [
+        "SHI Village Executive Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101105",
+      "audit_user_id": null,
+      "role": [
+        "SHI Village Executive Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101001",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101002",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101003",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101101",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101102",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101103",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101201",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101202",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101203",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101301",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101302",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101303",
+      "audit_user_id": null,
+      "role": [
+        "SHI Clerk"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101101",
+      "audit_user_id": null,
+      "role": [
+        "SHI Policy Renewal Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101205",
+      "audit_user_id": null,
+      "role": [
+        "SHI Policy Renewal Officer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101101",
+      "audit_user_id": null,
+      "role": [
+        "SHI Identity / Photo Reviewer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "101301",
+      "audit_user_id": null,
+      "role": [
+        "SHI Contribution Accountant"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "131218",
+      "audit_user_id": null,
+      "role": [
+        "SHI Contribution Accountant"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154001",
+      "audit_user_id": null,
+      "role": [
+        "SHI Employer / Policyholder Admin"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154101",
+      "audit_user_id": null,
+      "role": [
+        "SHI Employer / Policyholder Admin"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154401",
+      "audit_user_id": null,
+      "role": [
+        "SHI Employer / Policyholder Admin"
       ]
     }
   },
@@ -2075,7 +1945,7 @@
       "right_id": "150101",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Policyholder Manager (scheme side)"
       ]
     }
   },
@@ -2085,7 +1955,72 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "127000",
+      "right_id": "150102",
+      "audit_user_id": null,
+      "role": [
+        "SHI Policyholder Manager (scheme side)"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "150103",
+      "audit_user_id": null,
+      "role": [
+        "SHI Policyholder Manager (scheme side)"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "150201",
+      "audit_user_id": null,
+      "role": [
+        "SHI Policyholder Manager (scheme side)"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "150301",
+      "audit_user_id": null,
+      "role": [
+        "SHI Policyholder Manager (scheme side)"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "150401",
+      "audit_user_id": null,
+      "role": [
+        "SHI Policyholder Manager (scheme side)"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "121101",
       "audit_user_id": null,
       "role": [
         "Local Administrator"
@@ -2098,10 +2033,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121702",
+      "right_id": "111009",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -2111,10 +2046,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "122002",
+      "right_id": "121101",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Medical Officer"
       ]
     }
   },
@@ -2124,10 +2059,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121703",
+      "right_id": "121101",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Scheme Administrator"
       ]
     }
   },
@@ -2137,10 +2072,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "122003",
+      "right_id": "131200",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Contribution Accountant"
       ]
     }
   },
@@ -2150,10 +2085,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121704",
+      "right_id": "131204",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Contribution Accountant"
       ]
     }
   },
@@ -2163,10 +2098,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "122004",
+      "right_id": "131200",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Identity / Photo Reviewer"
       ]
     }
   },
@@ -2176,10 +2111,10 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "121701",
+      "right_id": "101201",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Policy Renewal Officer"
       ]
     }
   },
@@ -2189,10 +2124,400 @@
       "validity_from": "2025-01-01T00:00:00Z",
       "validity_to": null,
       "legacy_id": null,
-      "right_id": "122001",
+      "right_id": "150202",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "SHI Policyholder Manager (scheme side)"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "150203",
+      "audit_user_id": null,
+      "role": [
+        "SHI Policyholder Manager (scheme side)"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "150402",
+      "audit_user_id": null,
+      "role": [
+        "SHI Policyholder Manager (scheme side)"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "150403",
+      "audit_user_id": null,
+      "role": [
+        "SHI Policyholder Manager (scheme side)"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "131200",
+      "audit_user_id": null,
+      "role": [
+        "SHI Report Runner"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "131201",
+      "audit_user_id": null,
+      "role": [
+        "SHI Report Runner"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "131202",
+      "audit_user_id": null,
+      "role": [
+        "SHI Report Runner"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "131203",
+      "audit_user_id": null,
+      "role": [
+        "SHI Report Runner"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "131204",
+      "audit_user_id": null,
+      "role": [
+        "SHI Report Runner"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "131207",
+      "audit_user_id": null,
+      "role": [
+        "SHI Report Runner"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "131213",
+      "audit_user_id": null,
+      "role": [
+        "SHI Report Runner"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "131215",
+      "audit_user_id": null,
+      "role": [
+        "SHI Identity / Photo Reviewer"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154001",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154101",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154102",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154103",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154104",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154106",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154401",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154402",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154403",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154404",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154406",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154601",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154501",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154901",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154201",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154202",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154203",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154207",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
+      ]
+    }
+  },
+  {
+    "model": "core.roleright",
+    "fields": {
+      "validity_from": "2025-01-01T00:00:00Z",
+      "validity_to": null,
+      "legacy_id": null,
+      "right_id": "154209",
+      "audit_user_id": null,
+      "role": [
+        "Policy Holder User"
       ]
     }
   },
@@ -2205,7 +2530,7 @@
       "right_id": "122000",
       "audit_user_id": null,
       "role": [
-        "Local Administrator"
+        "Policy Holder User"
       ]
     }
   }

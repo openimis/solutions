@@ -1187,6 +1187,7 @@
       "LocationModule",
       "TasksManagementModule",
       "PayrollModule",
+      "PolicyHolderModule",
       "PaymentCycleModule",
       "ContributionPlanModule",
       "InvoiceModule",

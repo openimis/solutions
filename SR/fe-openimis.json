@@ -9,6 +9,14 @@
       "npm": "@openimis/fe-individual@>=v1.4.0"
     },
     {
+      "name": "PolicyHolderModule",
+      "npm": "@openimis/fe-policyholder@>=v1.11.1"
+    },
+    {
+      "name": "SocialProtectionModule",
+      "npm": "@openimis/fe-social_protection@>=v1.6.0"
+    },
+    {
       "name": "OpenSearchReportsModule",
       "npm": "@openimis/fe-opensearch_reports@>=v1.6.0"
     },

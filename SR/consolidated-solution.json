@@ -625,6 +625,8 @@
     "list": [
       "DeduplicationModule",
       "IndividualModule",
+      "PolicyHolderModule",
+      "SocialProtectionModule",
       "OpenSearchReportsModule",
       "GrievanceSocialProtectionModule",
       "ProfileModule",

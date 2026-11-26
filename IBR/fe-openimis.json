@@ -33,6 +33,10 @@
       "npm": "@openimis/fe-payroll@>=v1.6.1"
     },
     {
+      "name": "PolicyHolderModule",
+      "npm": "@openimis/fe-policyholder@>=v1.11.1"
+    },
+    {
       "name": "PaymentCycleModule",
       "npm": "@openimis/fe-payment_cycle@>=v1.5.0"
     },

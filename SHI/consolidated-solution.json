@@ -18,6 +18,7 @@
     "payer": "/mnt/data/Development/solution-builder/solution/modules/payer.json",
     "payment": "/mnt/data/Development/solution-builder/solution/modules/payment.json",
     "controls": "/mnt/data/Development/solution-builder/solution/modules/controls.json",
+    "calculation-health": "/mnt/data/Development/solution-builder/solution/modules/calculation-health.json",
     "location": "/mnt/data/Development/solution-builder/solution/modules/administrative-location.json",
     "task-management": "/mnt/data/Development/solution-builder/solution/modules/task-management.json",
     "calculation": "/mnt/data/Development/solution-builder/solution/modules/calculation.json",
@@ -28,6 +29,7 @@
   },
   "confluenceLabel": [
     "module-calculation",
+    "module-calculation-health",
     "module-calculation-legacy",
     "module-claim",
     "module-claim-batch",
@@ -810,12 +812,18 @@
   "bePackages": {
     "list": [
       "grievance_social_protection",
+      "individual",
       "core",
       "calculation",
       "tasks_management",
       "location",
       "medical_pricelist",
       "medical",
+      "calcrule_contribution_income_percentage",
+      "calcrule_fees",
+      "calcrule_commission",
+      "calcrule_capitation_payment",
+      "calcrule_third_party_payment",
       "controls",
       "payment",
       "contribution",
@@ -1115,6 +1123,7 @@
   "fePackages": {
     "list": [
       "GrievanceSocialProtectionModule",
+      "IndividualModule",
       "ProfileModule",
       "CoreModule",
       "HomeModule",

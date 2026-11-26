@@ -5,6 +5,10 @@
       "pip": "openimis-be-grievance_social_protection~=1.4.0"
     },
     {
+      "name": "individual",
+      "pip": "openimis-be-individual~=1.5.1"
+    },
+    {
       "name": "core",
       "pip": "openimis-be-core~=1.12.0"
     },
@@ -27,6 +31,26 @@
     {
       "name": "medical",
       "pip": "openimis-be-medical~=1.12.0"
+    },
+    {
+      "name": "calcrule_contribution_income_percentage",
+      "pip": "openimis-be-calcrule_contribution_income_percentage~=1.9.0"
+    },
+    {
+      "name": "calcrule_fees",
+      "pip": "openimis-be-calcrule_fees~=1.7.0"
+    },
+    {
+      "name": "calcrule_commission",
+      "pip": "openimis-be-calcrule_commission~=1.7.0"
+    },
+    {
+      "name": "calcrule_capitation_payment",
+      "pip": "openimis-be-calcrule-capitation_payment~=1.10.0"
+    },
+    {
+      "name": "calcrule_third_party_payment",
+      "pip": "openimis-be-calcrule-third_party_payment~=1.9.0"
     },
     {
       "name": "controls",

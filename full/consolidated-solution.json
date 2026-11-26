@@ -34,11 +34,13 @@
     "medical": "/mnt/data/Development/solution-builder/solution/modules/medical.json",
     "payer": "/mnt/data/Development/solution-builder/solution/modules/payer.json",
     "payment": "/mnt/data/Development/solution-builder/solution/modules/payment.json",
-    "controls": "/mnt/data/Development/solution-builder/solution/modules/controls.json"
+    "controls": "/mnt/data/Development/solution-builder/solution/modules/controls.json",
+    "calculation-health": "/mnt/data/Development/solution-builder/solution/modules/calculation-health.json"
   },
   "confluenceLabel": [
     "module-api-import",
     "module-calculation",
+    "module-calculation-health",
     "module-calculation-legacy",
     "module-calculation-social-protection",
     "module-claim",
@@ -1265,6 +1267,11 @@
   },
   "bePackages": {
     "list": [
+      "calcrule_contribution_income_percentage",
+      "calcrule_fees",
+      "calcrule_commission",
+      "calcrule_capitation_payment",
+      "calcrule_third_party_payment",
       "controls",
       "payment",
       "contribution",
@@ -1285,6 +1292,7 @@
       "contribution_plan",
       "policyholder",
       "grievance_social_protection",
+      "individual",
       "core",
       "calculation",
       "tasks_management",
@@ -1296,8 +1304,7 @@
       "deduplication",
       "social_protection",
       "calcrule_validations",
-      "api_etl",
-      "individual"
+      "api_etl"
     ],
     "definitions": {
       "core": {
@@ -1597,6 +1604,7 @@
       "ContractModule",
       "ContributionPlanModule",
       "GrievanceSocialProtectionModule",
+      "IndividualModule",
       "ProfileModule",
       "CoreModule",
       "HomeModule",
@@ -1607,7 +1615,6 @@
       "OpenSearchReportsModule",
       "DeduplicationModule",
       "SocialProtectionModule",
-      "IndividualModule",
       "LanguageFrModule"
     ],
     "definitions": {

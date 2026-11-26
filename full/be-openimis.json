@@ -29,6 +29,10 @@
       "pip": "openimis-be-report~=1.8.0"
     },
     {
+      "name": "tools",
+      "pip": "openimis-be-tools~=1.12.1"
+    },
+    {
       "name": "invoice",
       "pip": "openimis-be-invoice~=1.12.0"
     },

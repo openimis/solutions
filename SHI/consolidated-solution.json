@@ -821,6 +821,7 @@
       "contribution",
       "payer",
       "report",
+      "tools",
       "contribution_plan",
       "invoice",
       "product",
@@ -1121,6 +1122,7 @@
       "TasksManagementModule",
       "LocationModule",
       "PaymentModule",
+      "PolicyHolderModule",
       "PayerModule",
       "MedicalModule",
       "MedicalPriceListModule",
@@ -1134,7 +1136,6 @@
       "ContributionModule",
       "InsureeModule",
       "ContractModule",
-      "PolicyHolderModule",
       "LanguageFrModule"
     ],
     "definitions": {

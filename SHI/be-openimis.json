@@ -49,6 +49,10 @@
       "pip": "openimis-be-report~=1.8.0"
     },
     {
+      "name": "tools",
+      "pip": "openimis-be-tools~=1.12.1"
+    },
+    {
       "name": "contribution_plan",
       "pip": "openimis-be-contribution-plan~=1.12.0"
     },

@@ -1272,6 +1272,7 @@
       "medical",
       "medical_pricelist",
       "report",
+      "tools",
       "invoice",
       "location",
       "product",
@@ -1580,6 +1581,7 @@
   "fePackages": {
     "list": [
       "PaymentModule",
+      "PolicyHolderModule",
       "PayerModule",
       "MedicalModule",
       "MedicalPriceListModule",
@@ -1594,7 +1596,6 @@
       "InsureeModule",
       "ContractModule",
       "ContributionPlanModule",
-      "PolicyHolderModule",
       "GrievanceSocialProtectionModule",
       "ProfileModule",
       "CoreModule",

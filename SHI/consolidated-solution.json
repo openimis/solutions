@@ -813,6 +813,7 @@
     "list": [
       "grievance_social_protection",
       "individual",
+      "workflow",
       "core",
       "calculation",
       "tasks_management",

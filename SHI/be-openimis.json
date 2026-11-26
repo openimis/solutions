@@ -9,6 +9,10 @@
       "pip": "openimis-be-individual~=1.5.1"
     },
     {
+      "name": "workflow",
+      "pip": "openimis-be-workflow~=1.2.0"
+    },
+    {
       "name": "core",
       "pip": "openimis-be-core~=1.12.0"
     },

@@ -17,6 +17,10 @@
       "pip": "openimis-be-individual~=1.5.1"
     },
     {
+      "name": "social_protection",
+      "pip": "openimis-be-social_protection~=1.6.2"
+    },
+    {
       "name": "opensearch_reports",
       "pip": "openimis-be-opensearch_reports~=1.5.0"
     },
